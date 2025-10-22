@@ -23,7 +23,7 @@ const Register = () => {
   const passwordCasePattern = /^(?=.*[a-z])(?=.*[A-Z]).+$/;
   const passwordSpecialPattern = /^(?=.*[@$!%*?&]).+$/;
 
-  // password varification
+  // password validation
   const passWordValidtion = () => {
     if (!emailPattern.test(email)) {
       setError("This is not valid email!");
@@ -46,16 +46,16 @@ const Register = () => {
     return true;
   };
 
-  // email varification
+  // email verification
   const checkVerificationStatus = async (currentUser, verificationInterval) => {
     try {
-      currentUser.reload();
+      await currentUser.reload();
 
       if (currentUser.emailVerified) {
         clearInterval(verificationInterval);
         setIsWaitingForVerfication(false);
         setUser(currentUser);
-        swal("Verification Successfull.", "", "success");
+        toast.success("Verification Successfull.");
         navigate("/");
       }
     } catch (error) {
@@ -200,7 +200,7 @@ const Register = () => {
             {isWaitingForVerfication && (
               <p className="flex items-center justify-center text-sm text-blue-600 gap-1 bg-blue-100 px-4 py-3 rounded-lg s">
                 <LuLoaderCircle className="w-4 h-4 animate-spin"></LuLoaderCircle>
-                Email verfication...
+                Waiting for email verfication...
               </p>
             )}
           </div>

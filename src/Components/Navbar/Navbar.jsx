@@ -4,10 +4,17 @@ import MyLink from "../MyLink/MyLink";
 import "./navbar.css";
 import AuthContext from "../../Context/AuthContext";
 import userImage from "../../assets/user.png";
+import { toast } from "react-toastify";
 const Navbar = () => {
   const { user, signOutFunc } = use(AuthContext);
-  const handleSignOut = async () => {
-    await signOutFunc();
+  const handleSignOut = () => {
+    signOutFunc()
+      .then(() => {
+        toast.success("Sign out succesfully!");
+      })
+      .catch((err) => {
+        toast.error(err.message);
+      });
   };
   const links = (
     <>
@@ -20,33 +27,6 @@ const Navbar = () => {
       <li>
         <MyLink to={"/news"}>News</MyLink>
       </li>
-      {user ? (
-        <>
-          <li>
-            <MyLink to={"/profile"} className={"lg:hidden"}>
-              Profile
-            </MyLink>
-          </li>
-          <li>
-            <button onClick={handleSignOut} className={"text-base font-medium lg:hidden"}>
-              Logout
-            </button>
-          </li>
-        </>
-      ) : (
-        <>
-          <li>
-            <MyLink to={"/login"} className={"lg:hidden"}>
-              Login
-            </MyLink>
-          </li>
-          <li>
-            <MyLink to={"/register"} className={"lg:hidden"}>
-              Register
-            </MyLink>
-          </li>
-        </>
-      )}
     </>
   );
   return (
@@ -82,6 +62,34 @@ const Navbar = () => {
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-40 p-2 shadow divide-y divide-gray-200 gap-1"
             >
               {links}
+              {user ? (
+                <>
+                  <li>
+                    <MyLink to={"/profile"}>Profile</MyLink>
+                  </li>
+                  <li>
+                    <button
+                      onClick={handleSignOut}
+                      className={"text-base font-medium"}
+                    >
+                      Logout
+                    </button>
+                  </li>
+                </>
+              ) : (
+                <>
+                  <li>
+                    <MyLink to={"/login"} className={"lg:hidden"}>
+                      Login
+                    </MyLink>
+                  </li>
+                  <li>
+                    <MyLink to={"/register"} className={"lg:hidden"}>
+                      Register
+                    </MyLink>
+                  </li>
+                </>
+              )}
             </ul>
           </div>
           {/* desktop nav  */}
