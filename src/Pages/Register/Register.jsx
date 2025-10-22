@@ -3,9 +3,10 @@ import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { Link } from "react-router";
 import AuthContext from "../../Context/AuthContext";
 import { toast } from "react-toastify";
+import { tr } from "motion/react-client";
 
 const Register = () => {
-  const { SignUpFunc } = useContext(AuthContext);
+  const { SignUpFunc, updateProfileFunc } = useContext(AuthContext);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [name, setName] = useState("");
@@ -19,35 +20,44 @@ const Register = () => {
   const passwordCasePattern = /^(?=.*[a-z])(?=.*[A-Z]).+$/;
   const passwordSpecialPattern = /^(?=.*[@$!%*?&]).+$/;
 
+  const passWordValidtion = () => {
+    if (!emailPattern.test(email)) {
+      setError("This is not valid email!");
+      return false;
+    }
+    if (!passwordLenghtPattern.test(password)) {
+      setError("Password at least 8 character or longer!");
+      return false;
+    }
+    if (!passwordCasePattern.test(password)) {
+      setError(
+        "Password must have one upper case and one lower case character!"
+      );
+      return false;
+    }
+    if (!passwordSpecialPattern.test(password)) {
+      setError("Password must have at least one character!");
+      return false;
+    }
+    return true;
+  };
+
   // handleRegister
   const handleRegister = async (e) => {
     e.preventDefault();
 
-    if (emailPattern.test(email)) {
-      setError("This is not valid email!");
+    //password validation func
+    if (!passWordValidtion()) {
       return;
     }
-    if (passwordLenghtPattern.test(password)) {
-      setError("Password at least 8 character or longer!");
-      return;
-    }
-    if (passwordCasePattern.test(password)) {
-      setError(
-        "Password must have one upper case and one lower case character!"
-      );
-      return;
-    }
-    if (passwordSpecialPattern.test(password)) {
-      setError("Password must have at least one character!");
-      return;
-    }
-
     setError("");
 
     try {
       const userCredential = await SignUpFunc(email, password);
       const currentUser = userCredential.user;
       console.log(currentUser);
+      const updateProfile = await updateProfileFunc(name, photo);
+      console.log(updateProfile);
     } catch (error) {
       console.log(error);
 
