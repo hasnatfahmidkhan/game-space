@@ -2,6 +2,7 @@ import { Outlet } from "react-router";
 import Navbar from "../../Components/Navbar/Navbar";
 import Container from "../../Components/Container/Container";
 import Footer from "../../Components/Footer/Footer";
+import PageWrapper from "../../Components/PageWrapper/PageWrapper";
 
 const RootLayout = () => {
   return (
@@ -10,8 +11,10 @@ const RootLayout = () => {
         <Navbar />
       </header>
       <main className="flex-1">
-        <Container>
-          <Outlet />
+        <Container className={"overflow-hidden py-8"}>
+          <PageWrapper>
+            <Outlet />
+          </PageWrapper>
         </Container>
       </main>
       <footer>
