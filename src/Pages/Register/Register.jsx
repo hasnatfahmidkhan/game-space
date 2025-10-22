@@ -1,10 +1,63 @@
-import { FaEye } from "react-icons/fa";
+import { useContext, useState } from "react";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { Link } from "react-router";
+import AuthContext from "../../Context/AuthContext";
+import { toast } from "react-toastify";
 
 const Register = () => {
+  const { SignUpFunc } = useContext(AuthContext);
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [name, setName] = useState("");
+  const [photo, setPhoto] = useState("");
+  const [error, setError] = useState("");
+  const [showPassword, setShowPassword] = useState("");
+
+  // regex for validation
+  const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  const passwordLenghtPattern = /^.{8,}$/;
+  const passwordCasePattern = /^(?=.*[a-z])(?=.*[A-Z]).+$/;
+  const passwordSpecialPattern = /^(?=.*[@$!%*?&]).+$/;
+
+  // handleRegister
+  const handleRegister = async (e) => {
+    e.preventDefault();
+
+    if (emailPattern.test(email)) {
+      setError("This is not valid email!");
+      return;
+    }
+    if (passwordLenghtPattern.test(password)) {
+      setError("Password at least 8 character or longer!");
+      return;
+    }
+    if (passwordCasePattern.test(password)) {
+      setError(
+        "Password must have one upper case and one lower case character!"
+      );
+      return;
+    }
+    if (passwordSpecialPattern.test(password)) {
+      setError("Password must have at least one character!");
+      return;
+    }
+
+    setError("");
+
+    try {
+      const userCredential = await SignUpFunc(email, password);
+      const currentUser = userCredential.user;
+      console.log(currentUser);
+    } catch (error) {
+      console.log(error);
+
+      toast.error(error.message);
+    }
+  };
+
   return (
     <section className="flex items-center justify-center h-[calc(100vh-170px)] ">
-      <form className="max-w-sm w-full ">
+      <form onSubmit={handleRegister} className="max-w-sm w-full ">
         <fieldset className="fieldset w-full bg-base-100 border-base-200 rounded-box shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] gap-4 backdrop-blur-md p-8">
           {/* Register title  */}
           <h1 className="text-3xl text-center font-medium text-cyan-500">
@@ -16,6 +69,8 @@ const Register = () => {
             <label className="label text-sm">Name</label>
             <input
               required
+              value={name}
+              onChange={(e) => setName(e.target.value)}
               type="text"
               className="w-full input text-sm focus:outline-none focus:border-cyan-500 placeholder:text-xs placeholder:text-gray-500"
               placeholder="Enter your name"
@@ -27,6 +82,8 @@ const Register = () => {
             <label className="label text-sm"> Photo URL</label>
             <input
               required
+              value={photo}
+              onChange={(e) => setPhoto(e.target.value)}
               type="text"
               className="w-full input text-sm focus:outline-none focus:border-cyan-500 placeholder:text-xs placeholder:text-gray-500"
               placeholder="Enter your photo url"
@@ -38,6 +95,8 @@ const Register = () => {
             <label className="label text-sm">Email</label>
             <input
               required
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               type="email"
               className="w-full input text-sm focus:outline-none focus:border-cyan-500 placeholder:text-xs placeholder:text-gray-500"
               placeholder="Enter your email"
@@ -50,17 +109,26 @@ const Register = () => {
             <div className="flex items-center relative">
               <input
                 required
-                type="password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                type={showPassword ? "text" : "password"}
                 className="w-full input text-sm focus:outline-none focus:border-cyan-500 placeholder:text-xs placeholder:text-gray-500"
                 placeholder="Enter your password"
               />
-              <span className="cursor-pointer active:translate-y-0.5 transition-transform duration-300 absolute right-4 z-50">
-                <FaEye size={22} />
+              <span
+                onClick={() => setShowPassword(!showPassword)}
+                className="cursor-pointer active:translate-y-0.5 transition-transform duration-300 absolute right-4 z-50"
+              >
+                {showPassword ? <FaEye size={22} /> : <FaEyeSlash size={24} />}
               </span>
             </div>
           </div>
+
+          {/* Error  */}
+          <div>{error && <p className="text-sm text-red-500">{error}</p>}</div>
+
           {/* register btn  */}
-          <button className="btn btn-info mt-2">Register</button>
+          <button className="btn btn-info">Register</button>
 
           <div>
             <div>
