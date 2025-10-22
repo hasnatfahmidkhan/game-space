@@ -233,7 +233,7 @@ const Register = () => {
             <div>
               <p className="text-sm text-gray-500">
                 Already have an account?{" "}
-                <Link to={"/login"} className="hover:underline">
+                <Link to={"/auth/login"} className="hover:underline">
                   login
                 </Link>
               </p>

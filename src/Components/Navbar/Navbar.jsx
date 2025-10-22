@@ -81,12 +81,12 @@ const Navbar = () => {
               ) : (
                 <>
                   <li>
-                    <MyLink to={"/login"} className={"lg:hidden"}>
+                    <MyLink to={"/auth/login"} className={"lg:hidden"}>
                       Login
                     </MyLink>
                   </li>
                   <li>
-                    <MyLink to={"/register"} className={"lg:hidden"}>
+                    <MyLink to={"/auth/register"} className={"lg:hidden"}>
                       Register
                     </MyLink>
                   </li>
@@ -128,12 +128,12 @@ const Navbar = () => {
               ) : (
                 <div className="flex items-center justify-center gap-4">
                   <li>
-                    <MyLink to={"/login"} className={"authButton"}>
+                    <MyLink to={"/auth/login"} className={"authButton"}>
                       Login
                     </MyLink>
                   </li>
                   <li>
-                    <MyLink className={"authButton"} to={"/register"}>
+                    <MyLink className={"authButton"} to={"/auth/register"}>
                       Register
                     </MyLink>
                   </li>

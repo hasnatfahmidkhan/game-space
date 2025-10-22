@@ -3,7 +3,7 @@ import React from "react";
 const Home = () => {
   return (
     <div>
-      <title>GameHub – Home</title>
+      <title>GameSpace – Home</title>
       Home
     </div>
   );

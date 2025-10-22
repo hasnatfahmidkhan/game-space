@@ -1,10 +1,47 @@
-import { FaEye } from "react-icons/fa";
-import { Link } from "react-router";
+import { use, useState } from "react";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
+import { Link, useNavigate } from "react-router";
+import AuthContext from "../../Context/AuthContext";
+import { toast } from "react-toastify";
 
 const Login = () => {
+  const { singInFunc, googleSignInFunc, setAuthLoading } = use(AuthContext);
+  const [showPassword, setShowPassword] = useState(false);
+
+  const navigate = useNavigate();
+
+  const handleLogin = async (e) => {
+    e.preventDefault();
+    const email = e.target.email.value;
+    const password = e.target.password.value;
+
+    try {
+      await singInFunc(email, password);
+      e.target.reset();
+    } catch (error) {
+      toast.error(error.message);
+    } finally {
+      setAuthLoading(false);
+      toast.success("Login successfully!");
+      navigate("/");
+    }
+  };
+
+  // google sign in
+  const handleGoogleSignIn = async () => {
+    try {
+      await googleSignInFunc();
+    } catch (error) {
+      toast.error(error.message);
+    } finally {
+      setAuthLoading(false);
+      toast.success("Sign in succesfully!");
+      navigate("/");
+    }
+  };
   return (
     <section className="flex items-center justify-center h-[calc(100vh-170px)] ">
-      <form className="max-w-sm w-full ">
+      <form onSubmit={handleLogin} className="max-w-sm w-full ">
         <fieldset className="fieldset w-full bg-base-100 border-base-200 rounded-box shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] gap-4 backdrop-blur-md p-8">
           <h1 className="text-3xl text-center font-medium text-cyan-500">
             Login
@@ -15,6 +52,7 @@ const Login = () => {
             <label className="label text-sm">Email</label>
             <input
               required
+              name="email"
               type="email"
               className="w-full input text-sm focus:outline-none focus:border-cyan-500 placeholder:text-xs placeholder:text-gray-500"
               placeholder="Enter your email"
@@ -27,29 +65,44 @@ const Login = () => {
             <div className="flex items-center relative">
               <input
                 required
-                type="password"
+                name="password"
+                type={showPassword ? "text" : "password"}
                 className="w-full input text-sm focus:outline-none focus:border-cyan-500 placeholder:text-xs placeholder:text-gray-500"
                 placeholder="Enter your password"
               />
-              <span className="cursor-pointer active:translate-y-0.5 transition-transform duration-300 absolute right-4 z-50">
-                <FaEye size={22} />
+              <span
+                onClick={() => setShowPassword(!showPassword)}
+                className="cursor-pointer active:translate-y-0.5 transition-transform duration-300 absolute right-4 z-50"
+              >
+                {showPassword ? <FaEye size={22} /> : <FaEyeSlash size={24} />}
               </span>
             </div>
+            <p className="text-xs text-gray-500">
+              <Link to={"/auth/forget-password"} className="hover:underline">
+                Forget Password?
+              </Link>
+            </p>
           </div>
 
-          <button className="btn btn-info mt-2">Login</button>
+          <button type="submit" className="btn btn-info mt-2">
+            Login
+          </button>
           <div>
             <div>
               <p className="text-sm text-gray-500">
                 Don't have an account?{" "}
-                <Link to={"/register"} className="hover:underline">
+                <Link to={"/auth/register"} className="hover:underline">
                   create account
                 </Link>
               </p>
             </div>
             <div className="divider text-sm text-gray-500">Or sign in with</div>
             {/* Google */}
-            <button className="btn bg-white  w-full text-cyan-600 border-[#e5e5e5]">
+            <button
+              onClick={handleGoogleSignIn}
+              type="button"
+              className="btn bg-white  w-full text-cyan-600 border-[#e5e5e5]"
+            >
               <svg
                 aria-label="Google logo"
                 width="16"
