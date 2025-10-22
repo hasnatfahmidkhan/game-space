@@ -5,8 +5,10 @@ import "./navbar.css";
 import AuthContext from "../../Context/AuthContext";
 import userImage from "../../assets/user.png";
 import { toast } from "react-toastify";
+import { ClockLoader } from "react-spinners";
+
 const Navbar = () => {
-  const { user, signOutFunc } = use(AuthContext);
+  const { user, signOutFunc, authLoading } = use(AuthContext);
   const handleSignOut = () => {
     signOutFunc()
       .then(() => {
@@ -96,20 +98,24 @@ const Navbar = () => {
           <div className="hidden lg:flex">
             <ul className="menu menu-horizontal items-center gap-1">
               {links}
-              {user && user.emailVerified ? (
+              {user && user?.emailVerified ? (
                 <div className="flex items-center justify-center gap-1">
-                  <li>
-                    <MyLink to={"/profile"} className={"h-12 w-12"}>
-                      {user.photoURL ? (
-                        <img
-                          className="h-full w-full rounded-full object-cover"
-                          src={user.photoURL}
-                        />
-                      ) : (
-                        <img src={userImage} className="h-full w-full" />
-                      )}
-                    </MyLink>
-                  </li>
+                  {authLoading ? (
+                    <ClockLoader color="#32d2c8" />
+                  ) : (
+                    <li>
+                      <MyLink to={"/profile"}>
+                        {user.photoURL ? (
+                          <img
+                            className="h-12 w-12 rounded-full object-cover"
+                            src={user.photoURL}
+                          />
+                        ) : (
+                          <img src={userImage} className="h-10 w-10" />
+                        )}
+                      </MyLink>
+                    </li>
+                  )}
                   <li>
                     <button
                       onClick={handleSignOut}

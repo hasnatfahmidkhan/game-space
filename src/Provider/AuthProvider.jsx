@@ -5,38 +5,56 @@ import {
   createUserWithEmailAndPassword,
   onAuthStateChanged,
   sendEmailVerification,
+  signInWithPopup,
   signOut,
   updateProfile,
 } from "firebase/auth";
+import { GoogleAuthProvider } from "firebase/auth";
+
+const googleProvider = new GoogleAuthProvider();
 
 const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [authLoading, setAuthLoading] = useState(true);
 
   // signup
-  const SignUpFunc = (email, password) => {
-    return createUserWithEmailAndPassword(auth, email, password);
+  const SignUpFunc = async (email, password) => {
+    setAuthLoading(true);
+    return await createUserWithEmailAndPassword(auth, email, password);
   };
 
   // sign out
-  const signOutFunc = () => {
-    return signOut(auth);
+  const signOutFunc = async () => {
+    setAuthLoading(true);
+    return await signOut(auth);
   };
 
   // update profile
-  const updateProfileFunc = (displayName, photoURL) => {
-    return updateProfile(auth.currentUser, { displayName, photoURL });
+  const updateProfileFunc = async (displayName, photoURL) => {
+    setAuthLoading(true);
+    return await updateProfile(auth.currentUser, {
+      displayName,
+      photoURL,
+    });
   };
 
   // email varificaion
-  const emailVerificationFunc = () => {
-    return sendEmailVerification(auth.currentUser);
+  const emailVerificationFunc = async () => {
+    setAuthLoading(true);
+    return await sendEmailVerification(auth.currentUser);
+  };
+
+  // google sing in
+  const googleSignInFunc = async () => {
+    setAuthLoading(true);
+    return await signInWithPopup(auth, googleProvider);
   };
 
   // observer for user state(login or log out)
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
       setUser(currentUser);
+      setAuthLoading(false);
     });
 
     // unmount the observer
@@ -52,8 +70,9 @@ const AuthProvider = ({ children }) => {
     signOutFunc,
     updateProfileFunc,
     emailVerificationFunc,
+    googleSignInFunc,
   };
-
+  console.log(user);
   return (
     <AuthContext.Provider value={authInfo}>{children}</AuthContext.Provider>
   );

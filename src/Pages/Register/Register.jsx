@@ -7,15 +7,21 @@ import swal from "sweetalert";
 import { LuLoaderCircle } from "react-icons/lu";
 
 const Register = () => {
-  const { SignUpFunc, updateProfileFunc, emailVerificationFunc, setUser } =
-    useContext(AuthContext);
+  const {
+    SignUpFunc,
+    updateProfileFunc,
+    emailVerificationFunc,
+    setUser,
+    googleSignInFunc,
+    setAuthLoading,
+  } = useContext(AuthContext);
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [name, setName] = useState("");
   const [photo, setPhoto] = useState("");
   const [error, setError] = useState("");
-  const [showPassword, setShowPassword] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
   const [isWaitingForVerfication, setIsWaitingForVerfication] = useState(false);
   // regex for validation
   const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
@@ -47,14 +53,14 @@ const Register = () => {
   };
 
   // email verification
-  const checkVerificationStatus = async (currentUser, verificationInterval) => {
+  const checkVerificationStatus = async (user, intervalId) => {
     try {
-      await currentUser.reload();
+      await user.reload();
 
-      if (currentUser.emailVerified) {
-        clearInterval(verificationInterval);
+      if (user.emailVerified) {
+        clearInterval(intervalId);
         setIsWaitingForVerfication(false);
-        setUser(currentUser);
+        setUser(user);
         toast.success("Verification Successfull.");
         navigate("/");
       }
@@ -111,6 +117,21 @@ const Register = () => {
       console.log(error);
 
       toast.error(error.message);
+    } finally {
+      setAuthLoading(false);
+    }
+  };
+
+  // google sign in
+  const handleGoogleSignIn = async () => {
+    try {
+      await googleSignInFunc();
+    } catch (error) {
+      toast.error(error.message);
+    } finally {
+      setAuthLoading(false);
+      toast.success("Sign in succesfully!");
+      navigate("/");
     }
   };
 
@@ -220,6 +241,7 @@ const Register = () => {
             <div className="divider text-sm text-gray-500">Or sign in with</div>
             {/* Google */}
             <button
+              onClick={handleGoogleSignIn}
               type="button"
               disabled={isWaitingForVerfication}
               className="btn bg-white w-full text-cyan-600 border-[#e5e5e5]"
