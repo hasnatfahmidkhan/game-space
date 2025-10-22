@@ -1,26 +1,29 @@
 import { useContext, useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router";
 import AuthContext from "../../Context/AuthContext";
 import { toast } from "react-toastify";
-import Swal from "sweetalert2";
+import swal from "sweetalert";
+import { LuLoaderCircle } from "react-icons/lu";
 
 const Register = () => {
-  const { SignUpFunc, updateProfileFunc, emailVarificationFunc } =
+  const { SignUpFunc, updateProfileFunc, emailVerificationFunc, setUser } =
     useContext(AuthContext);
+  const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [name, setName] = useState("");
   const [photo, setPhoto] = useState("");
   const [error, setError] = useState("");
   const [showPassword, setShowPassword] = useState("");
-
+  const [isWaitingForVerfication, setIsWaitingForVerfication] = useState(false);
   // regex for validation
   const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
   const passwordLenghtPattern = /^.{8,}$/;
   const passwordCasePattern = /^(?=.*[a-z])(?=.*[A-Z]).+$/;
   const passwordSpecialPattern = /^(?=.*[@$!%*?&]).+$/;
 
+  // password varification
   const passWordValidtion = () => {
     if (!emailPattern.test(email)) {
       setError("This is not valid email!");
@@ -43,6 +46,23 @@ const Register = () => {
     return true;
   };
 
+  // email varification
+  const checkVerificationStatus = async (currentUser, verificationInterval) => {
+    try {
+      currentUser.reload();
+
+      if (currentUser.emailVerified) {
+        clearInterval(verificationInterval);
+        setIsWaitingForVerfication(false);
+        setUser(currentUser);
+        swal("Verification Successfull.", "", "success");
+        navigate("/");
+      }
+    } catch (error) {
+      console.log(error.message);
+    }
+  };
+
   // handleRegister
   const handleRegister = async (e) => {
     e.preventDefault();
@@ -57,14 +77,36 @@ const Register = () => {
       const userCredential = await SignUpFunc(email, password);
       const currentUser = userCredential.user;
       console.log(currentUser);
+
+      // update profile
       await updateProfileFunc(name, photo);
-      await emailVarificationFunc();
-      Swal.fire({
-        title: "Verification email sent!",
-        text: "Please check your email and click the verification link. This page will automatically redirect once verified.",
-        icon: "info",
-        confirmButtonText: "Ok",
-      });
+
+      // email verfication
+      await emailVerificationFunc();
+
+      // verification start
+      setIsWaitingForVerfication(true);
+      swal(
+        "Verification email sent!",
+        "Please check your email and click the verification link. This page will automatically redirect once verified.",
+        "info"
+      );
+
+      // check every 3 second is email is verified or not
+      const verificationInterval = setInterval(() => {
+        checkVerificationStatus(currentUser, verificationInterval);
+      }, 3000);
+
+      // stop interval after 10 minutes
+      setTimeout(() => {
+        clearInterval(verificationInterval);
+        if (!currentUser.emailVerified) {
+          setIsWaitingForVerfication(false);
+          toast.warning(
+            "Verification timeout! please login after verfication your email."
+          );
+        }
+      }, 600000);
     } catch (error) {
       console.log(error);
 
@@ -75,7 +117,10 @@ const Register = () => {
   return (
     <section className="flex items-center justify-center h-[calc(100vh-170px)] ">
       <form onSubmit={handleRegister} className="max-w-sm w-full ">
-        <fieldset className="fieldset w-full bg-base-100 border-base-200 rounded-box shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] gap-4 backdrop-blur-md p-8">
+        <fieldset
+          disabled={isWaitingForVerfication}
+          className="fieldset w-full bg-base-100 border-base-200 rounded-box shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] gap-4 backdrop-blur-md p-8"
+        >
           {/* Register title  */}
           <h1 className="text-3xl text-center font-medium text-cyan-500">
             Register
@@ -133,8 +178,14 @@ const Register = () => {
                 placeholder="Enter your password"
               />
               <span
-                onClick={() => setShowPassword(!showPassword)}
-                className="cursor-pointer active:translate-y-0.5 transition-transform duration-300 absolute right-4 z-50"
+                onClick={() =>
+                  !isWaitingForVerfication && setShowPassword(!showPassword)
+                }
+                className={`transition-transform duration-300 absolute right-4 z-50 ${
+                  isWaitingForVerfication
+                    ? "cursor-not-allowed opacity-50"
+                    : "cursor-pointer active:translate-y-0.5"
+                }`}
               >
                 {showPassword ? <FaEye size={22} /> : <FaEyeSlash size={24} />}
               </span>
@@ -143,6 +194,16 @@ const Register = () => {
 
           {/* Error  */}
           <div>{error && <p className="text-sm text-red-500">{error}</p>}</div>
+
+          {/* verfication loading  */}
+          <div className="">
+            {isWaitingForVerfication && (
+              <p className="flex items-center justify-center text-sm text-blue-600 gap-1 bg-blue-100 px-4 py-3 rounded-lg s">
+                <LuLoaderCircle className="w-4 h-4 animate-spin"></LuLoaderCircle>
+                Email verfication...
+              </p>
+            )}
+          </div>
 
           {/* register btn  */}
           <button className="btn btn-info">Register</button>
@@ -158,7 +219,11 @@ const Register = () => {
             </div>
             <div className="divider text-sm text-gray-500">Or sign in with</div>
             {/* Google */}
-            <button className="btn bg-white w-full text-cyan-600 border-[#e5e5e5]">
+            <button
+              type="button"
+              disabled={isWaitingForVerfication}
+              className="btn bg-white w-full text-cyan-600 border-[#e5e5e5]"
+            >
               <svg
                 aria-label="Google logo"
                 width="16"

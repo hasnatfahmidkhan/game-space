@@ -29,7 +29,7 @@ const AuthProvider = ({ children }) => {
   };
 
   // email varificaion
-  const emailVarificationFunc = () => {
+  const emailVerificationFunc = () => {
     return sendEmailVerification(auth.currentUser);
   };
 
@@ -51,7 +51,7 @@ const AuthProvider = ({ children }) => {
     SignUpFunc,
     signOutFunc,
     updateProfileFunc,
-    emailVarificationFunc,
+    emailVerificationFunc,
   };
 
   return <AuthContext value={authInfo}>{children}</AuthContext>;

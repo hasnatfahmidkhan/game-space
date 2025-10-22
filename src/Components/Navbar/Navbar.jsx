@@ -23,10 +23,12 @@ const Navbar = () => {
       {user ? (
         <>
           <li>
-            <MyLink to={"/profile"}>Profile</MyLink>
+            <MyLink to={"/profile"} className={"lg:hidden"}>
+              Profile
+            </MyLink>
           </li>
           <li>
-            <button onClick={handleSignOut} className={"text-base font-medium"}>
+            <button onClick={handleSignOut} className={"text-base font-medium lg:hidden"}>
               Logout
             </button>
           </li>
