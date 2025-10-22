@@ -3,10 +3,11 @@ import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { Link } from "react-router";
 import AuthContext from "../../Context/AuthContext";
 import { toast } from "react-toastify";
-import { tr } from "motion/react-client";
+import Swal from "sweetalert2";
 
 const Register = () => {
-  const { SignUpFunc, updateProfileFunc } = useContext(AuthContext);
+  const { SignUpFunc, updateProfileFunc, emailVarificationFunc } =
+    useContext(AuthContext);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [name, setName] = useState("");
@@ -56,8 +57,14 @@ const Register = () => {
       const userCredential = await SignUpFunc(email, password);
       const currentUser = userCredential.user;
       console.log(currentUser);
-      const updateProfile = await updateProfileFunc(name, photo);
-      console.log(updateProfile);
+      await updateProfileFunc(name, photo);
+      await emailVarificationFunc();
+      Swal.fire({
+        title: "Verification email sent!",
+        text: "Please check your email and click the verification link. This page will automatically redirect once verified.",
+        icon: "info",
+        confirmButtonText: "Ok",
+      });
     } catch (error) {
       console.log(error);
 
