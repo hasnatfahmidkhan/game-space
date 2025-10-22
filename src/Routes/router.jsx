@@ -5,6 +5,8 @@ import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import ForgetPassword from "../Pages/ForgetPassword/ForgetPassword";
+import PrivateRoute from "./PrivateRoute";
+import MyFavorite from "../Pages/MyFavorite/MyFavorite";
 
 const router = createBrowserRouter([
   {
@@ -26,7 +28,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/profile",
-        element: <h2>Profile</h2>,
+        element: (
+          <PrivateRoute>
+            <h2>Profile</h2>
+          </PrivateRoute>
+        ),
       },
       {
         path: "/auth/login",
@@ -39,6 +45,14 @@ const router = createBrowserRouter([
       {
         path: "/auth/register",
         element: <Register />,
+      },
+      {
+        path: "/myfavorite",
+        element: (
+          <PrivateRoute>
+            <MyFavorite />
+          </PrivateRoute>
+        ),
       },
     ],
   },

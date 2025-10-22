@@ -1,13 +1,13 @@
 import { use, useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
-import { Link, useNavigate } from "react-router";
+import { Link, useLocation, useNavigate } from "react-router";
 import AuthContext from "../../Context/AuthContext";
 import { toast } from "react-toastify";
 
 const Login = () => {
   const { singInFunc, googleSignInFunc, setAuthLoading } = use(AuthContext);
   const [showPassword, setShowPassword] = useState(false);
-
+  const navigation = useLocation();
   const navigate = useNavigate();
 
   const handleLogin = async (e) => {
@@ -23,7 +23,7 @@ const Login = () => {
     } finally {
       setAuthLoading(false);
       toast.success("Login successfully!");
-      navigate("/");
+      navigate(navigation.state || "/");
     }
   };
 
@@ -36,7 +36,7 @@ const Login = () => {
     } finally {
       setAuthLoading(false);
       toast.success("Sign in succesfully!");
-      navigate("/");
+      navigate(navigation.state || "/");
     }
   };
   return (
