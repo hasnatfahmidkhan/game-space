@@ -7,6 +7,8 @@ import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import ForgetPassword from "../Pages/ForgetPassword/ForgetPassword";
 import PrivateRoute from "./PrivateRoute";
 import MyFavorite from "../Pages/MyFavorite/MyFavorite";
+import Games from "../Pages/Games/Games";
+import Profile from "../Pages/Profile/Profile";
 
 const router = createBrowserRouter([
   {
@@ -20,7 +22,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/games",
-        element: <h2>Game</h2>,
+        element: <Games />,
       },
       {
         path: "/news",
@@ -30,7 +32,7 @@ const router = createBrowserRouter([
         path: "/profile",
         element: (
           <PrivateRoute>
-            <h2>Profile</h2>
+            <Profile />
           </PrivateRoute>
         ),
       },
