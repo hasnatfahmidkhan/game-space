@@ -47,7 +47,7 @@ const GameDetails = () => {
           className="h-52 md:h-64 lg:h-72 xl:h-80 2xl:h-96 rounded-2xl"
         >
           <SwiperSlide>
-            <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+            <img src={game?.coverPhoto}  />
           </SwiperSlide>
           <SwiperSlide>
             <img src="https://swiperjs.com/demos/images/nature-2.jpg" />

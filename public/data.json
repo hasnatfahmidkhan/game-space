@@ -1,8 +1,24 @@
 [
   {
+    "id": "21",
+    "title": "Garena Free Fire",
+    "coverPhoto": "https://i.postimg.cc/6pKDYzWC/65.jpg",
+    "category": "Battle Royale",
+    "subCategory": "Survival Shooter",
+    "platform": ["Mobile"],
+    "releaseDate": "2017-12-04",
+    "developer": "Garena",
+    "publisher": "Garena",
+    "description": "Free Fire is a fast-paced mobile battle royale where 50 players parachute onto a remote island to fight for survival. With quick 10-minute matches, unique character abilities, and vibrant maps, it delivers intense action optimized for mobile play.",
+    "ratings": 4.4,
+    "downloadLink": "https://ff.garena.com/",
+    "price": "Free",
+    "multiplayer": true
+  },
+  {
     "id": "2",
     "title": "Call of Duty: Warzone",
-    "coverPhoto": "https://example.com/images/warzone.png",
+    "coverPhoto": "https://i.postimg.cc/FH0tN8RY/40.jpg",
     "category": "FPS",
     "subCategory": "Battle Royale",
     "platform": ["PC", "Console"],
@@ -15,26 +31,11 @@
     "price": "Free",
     "multiplayer": true
   },
-  {
-    "id": "3",
-    "title": "Valorant",
-    "coverPhoto": "https://example.com/images/valorant.png",
-    "category": "FPS",
-    "subCategory": "Tactical Shooter",
-    "platform": ["PC"],
-    "releaseDate": "2020-06-02",
-    "developer": "Riot Games",
-    "publisher": "Riot Games",
-    "description": "Valorant combines precision shooting with unique hero abilities to create a tactical team-based experience. Each match requires strategy, communication, and sharp aim, as players compete in 5v5 bomb-planting or defusal scenarios with agents from around the world.",
-    "ratings": 4.7,
-    "downloadLink": "https://playvalorant.com/",
-    "price": "Free",
-    "multiplayer": true
-  },
+
   {
     "id": "4",
     "title": "Fortnite",
-    "coverPhoto": "https://example.com/images/fortnite.png",
+    "coverPhoto": "https://i.postimg.cc/FK9DJB9T/60.jpg",
     "category": "Battle Royale",
     "subCategory": "Survival",
     "platform": ["PC", "Mobile", "Console"],
@@ -50,7 +51,7 @@
   {
     "id": "5",
     "title": "Minecraft",
-    "coverPhoto": "https://example.com/images/minecraft.png",
+    "coverPhoto": "https://i.ibb.co.com/j9KRFzvB/93.jpg",
     "category": "Adventure",
     "subCategory": "Sandbox",
     "platform": ["PC", "Mobile", "Console"],
@@ -66,7 +67,7 @@
   {
     "id": "6",
     "title": "Genshin Impact",
-    "coverPhoto": "https://example.com/images/genshinimpact.png",
+    "coverPhoto": "https://i.postimg.cc/7h7WNJj7/70.jpg",
     "category": "RPG",
     "subCategory": "Open World",
     "platform": ["Mobile", "PC", "Console"],
@@ -82,7 +83,7 @@
   {
     "id": "7",
     "title": "Apex Legends",
-    "coverPhoto": "https://example.com/images/apexlegends.png",
+    "coverPhoto": "https://i.postimg.cc/CK1b0TMS/15.jpg",
     "category": "FPS",
     "subCategory": "Battle Royale",
     "platform": ["PC", "Console"],
@@ -98,7 +99,7 @@
   {
     "id": "8",
     "title": "The Witcher 3: Wild Hunt",
-    "coverPhoto": "https://example.com/images/witcher3.png",
+    "coverPhoto": "https://i.postimg.cc/G2ZDvX0c/55.jpg",
     "category": "RPG",
     "subCategory": "Open World",
     "platform": ["PC", "Console"],
@@ -114,7 +115,7 @@
   {
     "id": "9",
     "title": "Cyberpunk 2077",
-    "coverPhoto": "https://example.com/images/cyberpunk2077.png",
+    "coverPhoto": "https://i.postimg.cc/6qSmrLHT/49.jpg",
     "category": "RPG",
     "subCategory": "Open World",
     "platform": ["PC", "Console"],
@@ -130,7 +131,7 @@
   {
     "id": "10",
     "title": "League of Legends",
-    "coverPhoto": "https://example.com/images/lol.png",
+    "coverPhoto": "https://i.ibb.co.com/XryFMSRP/89.jpg",
     "category": "MOBA",
     "subCategory": "Strategy",
     "platform": ["PC"],
@@ -144,25 +145,26 @@
     "multiplayer": true
   },
   {
-    "id": "21",
-    "title": "Garena Free Fire",
-    "coverPhoto": "https://example.com/images/freefire.png",
-    "category": "Battle Royale",
-    "subCategory": "Survival Shooter",
-    "platform": ["Mobile"],
-    "releaseDate": "2017-12-04",
-    "developer": "Garena",
-    "publisher": "Garena",
-    "description": "Free Fire is a fast-paced mobile battle royale where 50 players parachute onto a remote island to fight for survival. With quick 10-minute matches, unique character abilities, and vibrant maps, it delivers intense action optimized for mobile play.",
-    "ratings": 4.4,
-    "downloadLink": "https://ff.garena.com/",
+    "id": "3",
+    "title": "Valorant",
+    "coverPhoto": "https://i.postimg.cc/rpNZntyF/44.jpg",
+    "category": "FPS",
+    "subCategory": "Tactical Shooter",
+    "platform": ["PC"],
+    "releaseDate": "2020-06-02",
+    "developer": "Riot Games",
+    "publisher": "Riot Games",
+    "description": "Valorant combines precision shooting with unique hero abilities to create a tactical team-based experience. Each match requires strategy, communication, and sharp aim, as players compete in 5v5 bomb-planting or defusal scenarios with agents from around the world.",
+    "ratings": 4.7,
+    "downloadLink": "https://playvalorant.com/",
     "price": "Free",
     "multiplayer": true
   },
+
   {
     "id": "22",
     "title": "Call of Duty: Mobile",
-    "coverPhoto": "https://example.com/images/codmobile.png",
+    "coverPhoto": "https://i.postimg.cc/658s8THq/43.jpg",
     "category": "FPS",
     "subCategory": "Action Shooter",
     "platform": ["Mobile"],
@@ -178,7 +180,7 @@
   {
     "id": "23",
     "title": "Clash of Clans",
-    "coverPhoto": "https://example.com/images/clashofclans.png",
+    "coverPhoto": "https://i.postimg.cc/mrH2C88G/26.jpg",
     "category": "Strategy",
     "subCategory": "Base Building",
     "platform": ["Mobile"],
@@ -194,7 +196,7 @@
   {
     "id": "24",
     "title": "Mobile Legends: Bang Bang",
-    "coverPhoto": "https://example.com/images/mobilelegends.png",
+    "coverPhoto": "https://i.postimg.cc/Z57znpmC/99.jpg",
     "category": "MOBA",
     "subCategory": "Team Battle",
     "platform": ["Mobile"],
@@ -210,7 +212,7 @@
   {
     "id": "25",
     "title": "Asphalt 9: Legends",
-    "coverPhoto": "https://example.com/images/asphalt9.png",
+    "coverPhoto": "https://i.postimg.cc/s2vG8Ymn/18.jpg",
     "category": "Racing",
     "subCategory": "Arcade",
     "platform": ["Mobile"],
@@ -226,7 +228,7 @@
   {
     "id": "26",
     "title": "PUBG Mobile Lite",
-    "coverPhoto": "https://example.com/images/pubgmobilelite.png",
+    "coverPhoto": "https://i.postimg.cc/pL13RvQH/110.jpg",
     "category": "Battle Royale",
     "subCategory": "Action",
     "platform": ["Mobile"],
@@ -242,7 +244,7 @@
   {
     "id": "27",
     "title": "Brawl Stars",
-    "coverPhoto": "https://example.com/images/brawlstars.png",
+    "coverPhoto": "https://i.postimg.cc/TPLhQR2Z/25.jpg",
     "category": "Action",
     "subCategory": "Multiplayer Arena",
     "platform": ["Mobile"],
@@ -258,7 +260,7 @@
   {
     "id": "28",
     "title": "Subway Surfers",
-    "coverPhoto": "https://example.com/images/subwaysurfers.png",
+    "coverPhoto": "https://i.postimg.cc/XNz5fDgP/133.jpg",
     "category": "Arcade",
     "subCategory": "Endless Runner",
     "platform": ["Mobile"],
@@ -274,7 +276,7 @@
   {
     "id": "29",
     "title": "Clash Royale",
-    "coverPhoto": "https://example.com/images/clashroyale.png",
+    "coverPhoto": "https://i.postimg.cc/tC4q2X2d/31.jpg",
     "category": "Strategy",
     "subCategory": "Card Battle",
     "platform": ["Mobile"],
@@ -288,25 +290,9 @@
     "multiplayer": true
   },
   {
-    "id": "30",
-    "title": "Among Us",
-    "coverPhoto": "https://example.com/images/amongusmobile.png",
-    "category": "Party",
-    "subCategory": "Social Deduction",
-    "platform": ["Mobile"],
-    "releaseDate": "2018-06-15",
-    "developer": "Innersloth",
-    "publisher": "Innersloth",
-    "description": "Among Us Mobile brings the viral social deduction game to smartphones, where players complete spaceship tasks while identifying impostors. Its simple design and fun multiplayer sessions make it perfect for quick, chaotic gaming moments.",
-    "ratings": 4.4,
-    "downloadLink": "https://www.innersloth.com/games/among-us/",
-    "price": "Free",
-    "multiplayer": true
-  },
-  {
     "id": "11",
     "title": "Grand Theft Auto V",
-    "coverPhoto": "https://example.com/images/gtav.png",
+    "coverPhoto": "https://i.postimg.cc/CKgLCbtb/gta-v.jpg",
     "category": "Action",
     "subCategory": "Open World",
     "platform": ["PC", "Console"],
@@ -322,7 +308,7 @@
   {
     "id": "12",
     "title": "Among Us",
-    "coverPhoto": "https://example.com/images/amongus.png",
+    "coverPhoto": "https://i.postimg.cc/bvT1cYfS/4.jpg",
     "category": "Party",
     "subCategory": "Social Deduction",
     "platform": ["PC", "Mobile"],
@@ -338,7 +324,7 @@
   {
     "id": "13",
     "title": "Red Dead Redemption 2",
-    "coverPhoto": "https://example.com/images/rdr2.png",
+    "coverPhoto": "https://i.postimg.cc/gJ4Vbz8G/120.jpg",
     "category": "Action",
     "subCategory": "Open World",
     "platform": ["PC", "Console"],
@@ -354,7 +340,7 @@
   {
     "id": "14",
     "title": "Elden Ring",
-    "coverPhoto": "https://example.com/images/eldenring.png",
+    "coverPhoto": "https://i.postimg.cc/0QXWv01S/54.jpg",
     "category": "RPG",
     "subCategory": "Action Adventure",
     "platform": ["PC", "Console"],
@@ -370,7 +356,7 @@
   {
     "id": "15",
     "title": "Hollow Knight",
-    "coverPhoto": "https://example.com/images/hollowknight.png",
+    "coverPhoto": "https://i.ibb.co.com/bgTw7h8t/89.jpg",
     "category": "Adventure",
     "subCategory": "Metroidvania",
     "platform": ["PC", "Console"],
@@ -386,7 +372,7 @@
   {
     "id": "16",
     "title": "Overwatch 2",
-    "coverPhoto": "https://example.com/images/overwatch2.png",
+    "coverPhoto": "https://i.postimg.cc/6qNDghrk/104.jpg",
     "category": "FPS",
     "subCategory": "Hero Shooter",
     "platform": ["PC", "Console"],
@@ -402,7 +388,7 @@
   {
     "id": "17",
     "title": "The Legend of Zelda: Breath of the Wild",
-    "coverPhoto": "https://example.com/images/zelda-botw.png",
+    "coverPhoto": "https://i.postimg.cc/9Mf4TGw3/136.jpg",
     "category": "Adventure",
     "subCategory": "Open World",
     "platform": ["Nintendo Switch", "Wii U"],
@@ -418,7 +404,7 @@
   {
     "id": "18",
     "title": "God of War Ragnarök",
-    "coverPhoto": "https://example.com/images/godofwarragnarok.png",
+    "coverPhoto": "https://i.postimg.cc/MGF32YS9/74.jpg",
     "category": "Action",
     "subCategory": "Adventure",
     "platform": ["PlayStation 5", "PlayStation 4"],
@@ -434,7 +420,7 @@
   {
     "id": "19",
     "title": "Rocket League",
-    "coverPhoto": "https://example.com/images/rocketleague.png",
+    "coverPhoto": "https://i.postimg.cc/wT1hndBh/122.jpg",
     "category": "Sports",
     "subCategory": "Arcade",
     "platform": ["PC", "Mobile", "Console"],
@@ -448,25 +434,9 @@
     "multiplayer": true
   },
   {
-    "id": "20",
-    "title": "Stardew Valley",
-    "coverPhoto": "https://example.com/images/stardewvalley.png",
-    "category": "Simulation",
-    "subCategory": "Farming",
-    "platform": ["PC", "Mobile", "Console"],
-    "releaseDate": "2016-02-26",
-    "developer": "ConcernedApe",
-    "publisher": "ConcernedApe",
-    "description": "Stardew Valley is a cozy farming simulation where you escape city life to build your dream farm. Grow crops, raise animals, make friends, fall in love, and explore mines in a relaxing yet deeply rewarding experience.",
-    "ratings": 4.9,
-    "downloadLink": "https://www.stardewvalley.net/",
-    "price": "$14.99",
-    "multiplayer": true
-  },
-  {
     "id": "1",
     "title": "Player Unknown's Battlegrounds (PUBG)",
-    "coverPhoto": "https://example.com/images/pubg.png",
+    "coverPhoto": "https://i.postimg.cc/pL13RvQH/110.jpg",
     "category": "FPS",
     "subCategory": "Battle Royale",
     "platform": ["Mobile", "PC", "Console"],

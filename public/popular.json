@@ -2,7 +2,7 @@
   {
     "id": "21",
     "title": "Garena Free Fire",
-    "coverPhoto": "https://example.com/images/freefire.png",
+    "coverPhoto": "https://i.postimg.cc/6pKDYzWC/65.jpg",
     "category": "Battle Royale",
     "subCategory": "Survival Shooter",
     "platform": ["Mobile"],
@@ -18,7 +18,7 @@
   {
     "id": "5",
     "title": "Minecraft",
-    "coverPhoto": "https://example.com/images/minecraft.png",
+    "coverPhoto": "https://i.ibb.co.com/j9KRFzvB/93.jpg",
     "category": "Adventure",
     "subCategory": "Sandbox",
     "platform": ["PC", "Mobile", "Console"],
@@ -34,7 +34,7 @@
   {
     "id": "8",
     "title": "The Witcher 3: Wild Hunt",
-    "coverPhoto": "https://example.com/images/witcher3.png",
+    "coverPhoto": "https://i.postimg.cc/G2ZDvX0c/55.jpg",
     "category": "RPG",
     "subCategory": "Open World",
     "platform": ["PC", "Console"],
@@ -50,7 +50,7 @@
   {
     "id": "13",
     "title": "Red Dead Redemption 2",
-    "coverPhoto": "https://example.com/images/rdr2.png",
+    "coverPhoto": "https://i.postimg.cc/gJ4Vbz8G/120.jpg",
     "category": "Action",
     "subCategory": "Open World",
     "platform": ["PC", "Console"],
@@ -66,7 +66,7 @@
   {
     "id": "14",
     "title": "Elden Ring",
-    "coverPhoto": "https://example.com/images/eldenring.png",
+    "coverPhoto": "https://i.postimg.cc/0QXWv01S/54.jpg",
     "category": "RPG",
     "subCategory": "Action Adventure",
     "platform": ["PC", "Console"],
@@ -81,8 +81,8 @@
   },
   {
     "id": "17",
-    "title": "The Legend of Zelda",
-    "coverPhoto": "https://example.com/images/zelda-botw.png",
+    "title": "The Legend of Zelda: Breath of the Wild",
+    "coverPhoto": "https://i.postimg.cc/9Mf4TGw3/136.jpg",
     "category": "Adventure",
     "subCategory": "Open World",
     "platform": ["Nintendo Switch", "Wii U"],
@@ -98,7 +98,7 @@
   {
     "id": "18",
     "title": "God of War Ragnarök",
-    "coverPhoto": "https://example.com/images/godofwarragnarok.png",
+    "coverPhoto": "https://i.postimg.cc/MGF32YS9/74.jpg",
     "category": "Action",
     "subCategory": "Adventure",
     "platform": ["PlayStation 5", "PlayStation 4"],
@@ -112,19 +112,19 @@
     "multiplayer": false
   },
   {
-    "id": "20",
-    "title": "Stardew Valley",
-    "coverPhoto": "https://example.com/images/stardewvalley.png",
-    "category": "Simulation",
-    "subCategory": "Farming",
-    "platform": ["PC", "Mobile", "Console"],
-    "releaseDate": "2016-02-26",
-    "developer": "ConcernedApe",
-    "publisher": "ConcernedApe",
-    "description": "Stardew Valley is a cozy farming simulation where you escape city life to build your dream farm. Grow crops, raise animals, make friends, fall in love, and explore mines in a relaxing yet deeply rewarding experience.",
-    "ratings": 4.9,
-    "downloadLink": "https://www.stardewvalley.net/",
-    "price": "$14.99",
+    "id": "1",
+    "title": "Player Unknown's Battlegrounds (PUBG)",
+    "coverPhoto": "https://i.postimg.cc/pL13RvQH/110.jpg",
+    "category": "FPS",
+    "subCategory": "Battle Royale",
+    "platform": ["Mobile", "PC", "Console"],
+    "releaseDate": "2017-12-20",
+    "developer": "Krafton",
+    "publisher": "PUBG Corporation",
+    "description": "PUBG is a thrilling multiplayer battle royale game where 100 players drop onto an island, scavenge for weapons, and fight to be the last one standing. With realistic graphics, strategic gameplay, and constant updates, it has become one of the most intense competitive experiences in gaming.",
+    "ratings": 4.5,
+    "downloadLink": "https://www.pubgmobile.com/en-US/home.shtml",
+    "price": "Free",
     "multiplayer": true
   }
 ]

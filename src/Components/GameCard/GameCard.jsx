@@ -11,7 +11,7 @@ const GameCard = ({ game }) => {
       <figure className="relative h-52 overflow-hidden">
         <img
           className="group-hover:scale-105 transition-transform duration-300 w-full h-full object-cover object-center"
-          src="https://dl.dir.freefiremobile.com/common/web_event/official2.ff.garena.all/202210/aa959aa3d8790d3a44f7f20f16adfa01.jpg"
+          src={game.coverPhoto}
           alt={game.title}
         />
       </figure>
