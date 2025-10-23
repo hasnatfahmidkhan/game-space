@@ -15,7 +15,7 @@ const GameCard = ({ game }) => {
           alt={game.title}
         />
       </figure>
-      <div className="card-body">
+      <div className="card-body justify-between">
         {/* title  */}
         <h2 className="card-title text-info">{game.title}</h2>
 
@@ -27,7 +27,7 @@ const GameCard = ({ game }) => {
         <div className="card-actions justify-between items-center pt-2">
           {/* rating  badge  */}
           <div>
-            <span className="badge badge-warning gap-1">
+            <span className="badge badge-success gap-1">
               <FaStar />
               {game.ratings}
             </span>
@@ -35,7 +35,7 @@ const GameCard = ({ game }) => {
 
           {/* multiplayer badge  */}
           <div>
-            <span className="badge badge-success gap-1">
+            <span className="badge badge-info gap-1">
               {game.multiplayer ? "Multiplayer" : "Signleplayer"}
             </span>
           </div>

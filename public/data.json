@@ -1,21 +1,5 @@
 [
   {
-    "id": "1",
-    "title": "Player Unknown's Battlegrounds (PUBG)",
-    "coverPhoto": "https://example.com/images/pubg.png",
-    "category": "FPS",
-    "subCategory": "Battle Royale",
-    "platform": ["Mobile", "PC", "Console"],
-    "releaseDate": "2017-12-20",
-    "developer": "Krafton",
-    "publisher": "PUBG Corporation",
-    "description": "PUBG is a thrilling multiplayer battle royale game where 100 players drop onto an island, scavenge for weapons, and fight to be the last one standing. With realistic graphics, strategic gameplay, and constant updates, it has become one of the most intense competitive experiences in gaming.",
-    "ratings": 4.5,
-    "downloadLink": "https://www.pubgmobile.com/en-US/home.shtml",
-    "price": "Free",
-    "multiplayer": true
-  },
-  {
     "id": "2",
     "title": "Call of Duty: Warzone",
     "coverPhoto": "https://example.com/images/warzone.png",
@@ -477,6 +461,22 @@
     "ratings": 4.9,
     "downloadLink": "https://www.stardewvalley.net/",
     "price": "$14.99",
+    "multiplayer": true
+  },
+  {
+    "id": "1",
+    "title": "Player Unknown's Battlegrounds (PUBG)",
+    "coverPhoto": "https://example.com/images/pubg.png",
+    "category": "FPS",
+    "subCategory": "Battle Royale",
+    "platform": ["Mobile", "PC", "Console"],
+    "releaseDate": "2017-12-20",
+    "developer": "Krafton",
+    "publisher": "PUBG Corporation",
+    "description": "PUBG is a thrilling multiplayer battle royale game where 100 players drop onto an island, scavenge for weapons, and fight to be the last one standing. With realistic graphics, strategic gameplay, and constant updates, it has become one of the most intense competitive experiences in gaming.",
+    "ratings": 4.5,
+    "downloadLink": "https://www.pubgmobile.com/en-US/home.shtml",
+    "price": "Free",
     "multiplayer": true
   }
 ]
