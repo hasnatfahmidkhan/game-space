@@ -19,12 +19,11 @@ const Login = () => {
     try {
       await singInFunc(email, password);
       e.target.reset();
-    } catch (error) {
-      toast.error(error.message);
-    } finally {
       setAuthLoading(false);
       toast.success("Login successfully!");
       navigate(navigation.state || "/");
+    } catch (error) {
+      toast.error(error.message);
     }
   };
 
@@ -32,21 +31,18 @@ const Login = () => {
   const handleGoogleSignIn = async () => {
     try {
       await googleSignInFunc();
-    } catch (error) {
-      toast.error(error.message);
-    } finally {
       setAuthLoading(false);
       toast.success("Sign in succesfully!");
       navigate(navigation.state || "/");
+    } catch (error) {
+      toast.error(error.message);
     }
   };
   return (
     <section className="flex items-center justify-center h-[calc(100vh-170px)] ">
       <form onSubmit={handleLogin} className="max-w-sm w-full ">
         <fieldset className="fieldset w-full bg-base-100 border border-white/50 rounded-box gap-4 p-8">
-          <h1 className="text-3xl text-center font-medium text-cyan-500">
-            Login
-          </h1>
+          <h1 className="text-3xl text-center font-medium text-info">Login</h1>
 
           {/* Email  */}
           <div className="space-y-1">
@@ -102,7 +98,7 @@ const Login = () => {
             <button
               onClick={handleGoogleSignIn}
               type="button"
-              className="btn w-full bg-white/10 hover:bg-white/5 text-info border-white/30"
+              className="btn w-full bg-white/10 hover:bg-white/5 text-info border-white/30 hover:border-sky-400"
             >
               <FaGoogle />
               Login with Google

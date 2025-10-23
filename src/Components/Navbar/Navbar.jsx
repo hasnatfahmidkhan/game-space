@@ -38,14 +38,14 @@ const Navbar = () => {
     <nav className="bg-base-300 shadow-md">
       <Container className={"navbar"}>
         <div className="navbar-start">
-          <a className="text-3xl text-[#06b6d4] font-semibold">Game space</a>
+          <a className="text-3xl text-info font-semibold">Game space</a>
         </div>
         <div className="navbar-end ">
           <div className="dropdown dropdown-end">
             <div
               tabIndex={0}
               role="button"
-              className="w-10 h-10 flex items-center justify-center border-2 border-cyan-500 rounded-full lg:hidden"
+              className="w-10 h-10 flex items-center justify-center border-2 border-info rounded-full lg:hidden"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

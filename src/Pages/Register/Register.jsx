@@ -127,12 +127,11 @@ const Register = () => {
   const handleGoogleSignIn = async () => {
     try {
       await googleSignInFunc();
-    } catch (error) {
-      toast.error(error.message);
-    } finally {
       setAuthLoading(false);
       toast.success("Sign in succesfully!");
       navigate("/");
+    } catch (error) {
+      toast.error(error.message);
     }
   };
 
@@ -144,7 +143,7 @@ const Register = () => {
           className="fieldset w-full border border-white/50 rounded-box gap-4 p-8"
         >
           {/* Register title  */}
-          <h1 className="text-3xl text-center font-medium text-cyan-500">
+          <h1 className="text-3xl text-center font-medium text-info">
             Register
           </h1>
 
@@ -245,7 +244,7 @@ const Register = () => {
               onClick={handleGoogleSignIn}
               type="button"
               disabled={isWaitingForVerfication}
-              className="btn w-full bg-white/10 hover:bg-white/5 text-info border-white/30"
+              className="btn w-full bg-white/10 hover:bg-white/5 text-info border-white/30 hover:border-sky-400"
             >
               <FaGoogle />
               Login with Google

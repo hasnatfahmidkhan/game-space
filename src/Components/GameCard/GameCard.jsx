@@ -5,7 +5,6 @@ const GameCard = ({ game }) => {
   // console.log(game)
 
   return (
-    <>
       <motion.div className="card bg-base-800 shadow-sm hover:shadow-2xl transition-shadow duration-300 border border-white/30 hover:border-info/50 group">
         <figure className="relative h-52 overflow-hidden">
           <img
@@ -70,7 +69,6 @@ const GameCard = ({ game }) => {
           </div>
         </div>
       </motion.div>
-    </>
   );
 };
 
