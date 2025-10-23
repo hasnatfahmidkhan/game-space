@@ -19,6 +19,7 @@ import slide2 from "../../assets/slide2.jpg";
 import slide3 from "../../assets/slide3.jpg";
 import slide4 from "../../assets/slide4.jpg";
 import { FaArrowDown } from "react-icons/fa6";
+import FeaturedGames from "../../Components/FeaturedGames/FeaturedGames";
 
 const slides = [slide1, slide4, slide3];
 
@@ -50,7 +51,8 @@ const Home = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-      <div className="flex items-center justify-center mt-3.5">
+      {/*
+       <div className="flex items-center justify-center mt-3.5">
         <button
           onClick={() =>
             window.scrollTo({
@@ -62,7 +64,9 @@ const Home = () => {
         >
           <FaArrowDown color="#fff" />
         </button>
-      </div>
+      </div> 
+      */}
+      <FeaturedGames />
     </div>
   );
 };

@@ -9,6 +9,7 @@ import PrivateRoute from "./PrivateRoute";
 import MyFavorite from "../Pages/MyFavorite/MyFavorite";
 import Games from "../Pages/Games/Games";
 import Profile from "../Pages/Profile/Profile";
+import GameDetails from "../Pages/GameDetails/GameDetails";
 
 const router = createBrowserRouter([
   {
@@ -53,6 +54,14 @@ const router = createBrowserRouter([
         element: (
           <PrivateRoute>
             <MyFavorite />
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "/game-details/:id",
+        element: (
+          <PrivateRoute>
+            <GameDetails />
           </PrivateRoute>
         ),
       },

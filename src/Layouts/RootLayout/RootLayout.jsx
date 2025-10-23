@@ -13,7 +13,7 @@ const RootLayout = () => {
     setPreload(true);
     setTimeout(() => {
       setPreload(false);
-    }, 3900);
+    }, 4000);
   }, []);
 
   if (preload) {
@@ -25,7 +25,7 @@ const RootLayout = () => {
         <Navbar />
       </header>
       <main className="flex-1">
-        <Container className={"overflow-hidden pt-4.5"}>
+        <Container className={"overflow-hidden pb-6 pt-8"}>
           <PageWrapper>
             <Outlet />
           </PageWrapper>

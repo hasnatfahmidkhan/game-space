@@ -1,5 +1,21 @@
 [
   {
+    "id": "21",
+    "title": "Garena Free Fire",
+    "coverPhoto": "https://example.com/images/freefire.png",
+    "category": "Battle Royale",
+    "subCategory": "Survival Shooter",
+    "platform": ["Mobile"],
+    "releaseDate": "2017-12-04",
+    "developer": "Garena",
+    "publisher": "Garena",
+    "description": "Free Fire is a fast-paced mobile battle royale where 50 players parachute onto a remote island to fight for survival. With quick 10-minute matches, unique character abilities, and vibrant maps, it delivers intense action optimized for mobile play.",
+    "ratings": 4.4,
+    "downloadLink": "https://ff.garena.com/",
+    "price": "Free",
+    "multiplayer": true
+  },
+  {
     "id": "5",
     "title": "Minecraft",
     "coverPhoto": "https://example.com/images/minecraft.png",
@@ -65,7 +81,7 @@
   },
   {
     "id": "17",
-    "title": "The Legend of Zelda: Breath of the Wild",
+    "title": "The Legend of Zelda",
     "coverPhoto": "https://example.com/images/zelda-botw.png",
     "category": "Adventure",
     "subCategory": "Open World",
@@ -94,5 +110,21 @@
     "downloadLink": "https://www.playstation.com/en-us/games/god-of-war-ragnarok/",
     "price": "$69.99",
     "multiplayer": false
+  },
+  {
+    "id": "20",
+    "title": "Stardew Valley",
+    "coverPhoto": "https://example.com/images/stardewvalley.png",
+    "category": "Simulation",
+    "subCategory": "Farming",
+    "platform": ["PC", "Mobile", "Console"],
+    "releaseDate": "2016-02-26",
+    "developer": "ConcernedApe",
+    "publisher": "ConcernedApe",
+    "description": "Stardew Valley is a cozy farming simulation where you escape city life to build your dream farm. Grow crops, raise animals, make friends, fall in love, and explore mines in a relaxing yet deeply rewarding experience.",
+    "ratings": 4.9,
+    "downloadLink": "https://www.stardewvalley.net/",
+    "price": "$14.99",
+    "multiplayer": true
   }
 ]
