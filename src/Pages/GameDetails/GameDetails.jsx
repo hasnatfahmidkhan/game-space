@@ -1,7 +1,6 @@
 import { useParams } from "react-router";
 import useGameData from "../../Hooks/useGameData";
-import { useEffect, useState, useRef } from "react";
-import GameDetailsCard from "../../Components/GameDetailsCard/GameDetailsCard";
+import { useEffect, useState } from "react";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -112,6 +111,8 @@ const GameDetails = () => {
           <div>
             <p className="font-light">{game?.description}</p>
           </div>
+
+          {/*  */}
         </div>
       </div>
     </section>

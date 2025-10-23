@@ -1,4 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap");
+
 @import "tailwindcss";
 .authButton {
   @apply flex items-center justify-center gap-2 rounded-full bg-white/10 border border-white/0 hover:border-white/30 px-5.5 py-1.5 transition-transform duration-200 hover:bg-white/5 active:scale-95;
+}
+
+#logo {
+  font-family: "Baloo Bhai 2", sans-serif;
 }

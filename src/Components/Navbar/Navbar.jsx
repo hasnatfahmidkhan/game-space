@@ -38,7 +38,10 @@ const Navbar = () => {
     <nav className="bg-base-300 shadow-md">
       <Container className={"navbar"}>
         <div className="navbar-start">
-          <a className="text-3xl text-info font-semibold">Game space</a>
+          <a className="text-3xl text-info font-semibold flex items-end">
+            <img src="/logo.png" className="w-10" />
+            <span id="logo">AME SPACE</span>
+          </a>
         </div>
         <div className="navbar-end ">
           <div className="dropdown dropdown-end">

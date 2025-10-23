@@ -1,5 +1,4 @@
 import { motion } from "motion/react";
-import logo from "../../assets/logo.png";
 const Preloader = () => {
   return (
     <div className="h-screen flex items-center justify-center bg-[#0A0F1F]">
@@ -31,7 +30,7 @@ const Preloader = () => {
           exit={{
             scale: 2,
           }}
-          src={logo}
+          src='/logo.png'
           className="w-40 h-40 object-cover"
           alt=""
         />
