@@ -35,7 +35,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <nav className="bg-base-100 shadow-sm">
+    <nav className="bg-base-300 shadow-md">
       <Container className={"navbar"}>
         <div className="navbar-start">
           <a className="text-3xl text-[#06b6d4] font-semibold">Game space</a>
@@ -45,11 +45,11 @@ const Navbar = () => {
             <div
               tabIndex={0}
               role="button"
-              className="w-10 h-10 flex items-center justify-center bg-cyan-500 hover:bg-cyan-600 rounded-full lg:hidden"
+              className="w-10 h-10 flex items-center justify-center border-2 border-cyan-500 rounded-full lg:hidden"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 rotate-180 text-white"
+                className="h-5 w-5 rotate-180 text-cyan-400"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -64,7 +64,7 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex="-1"
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-40 p-2 shadow divide-y divide-gray-200 gap-1"
+              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-10 mt-3 w-40 p-2 shadow divide-y divide-gray-200 gap-1 "
             >
               {links}
               {user ? (

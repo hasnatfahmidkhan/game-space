@@ -5,7 +5,8 @@ import AuthContext from "../../Context/AuthContext";
 import { toast } from "react-toastify";
 import swal from "sweetalert";
 import { LuLoaderCircle } from "react-icons/lu";
-
+import { FaGoogle } from "react-icons/fa6";
+import "./register.css";
 const Register = () => {
   const {
     SignUpFunc,
@@ -140,7 +141,7 @@ const Register = () => {
       <form onSubmit={handleRegister} className="max-w-sm w-full ">
         <fieldset
           disabled={isWaitingForVerfication}
-          className="fieldset w-full bg-base-100 border-base-200 rounded-box shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] gap-4 backdrop-blur-md p-8"
+          className="fieldset w-full border border-white/50 rounded-box gap-4 p-8"
         >
           {/* Register title  */}
           <h1 className="text-3xl text-center font-medium text-cyan-500">
@@ -149,13 +150,13 @@ const Register = () => {
 
           {/* Name  */}
           <div className="space-y-1">
-            <label className="label text-sm">Name</label>
+            <label className="label text-sm ">Name</label>
             <input
               required
               value={name}
               onChange={(e) => setName(e.target.value)}
               type="text"
-              className="w-full input text-sm focus:outline-none focus:border-cyan-500 placeholder:text-xs placeholder:text-gray-500"
+              className="input forminp"
               placeholder="Enter your name"
             />
           </div>
@@ -168,7 +169,7 @@ const Register = () => {
               value={photo}
               onChange={(e) => setPhoto(e.target.value)}
               type="text"
-              className="w-full input text-sm focus:outline-none focus:border-cyan-500 placeholder:text-xs placeholder:text-gray-500"
+              className="input forminp"
               placeholder="Enter your photo url"
             />
           </div>
@@ -181,7 +182,7 @@ const Register = () => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               type="email"
-              className="w-full input text-sm focus:outline-none focus:border-cyan-500 placeholder:text-xs placeholder:text-gray-500"
+              className="input forminp"
               placeholder="Enter your email"
             />
           </div>
@@ -195,7 +196,7 @@ const Register = () => {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 type={showPassword ? "text" : "password"}
-                className="w-full input text-sm focus:outline-none focus:border-cyan-500 placeholder:text-xs placeholder:text-gray-500"
+                className="input forminp"
                 placeholder="Enter your password"
               />
               <span
@@ -244,35 +245,9 @@ const Register = () => {
               onClick={handleGoogleSignIn}
               type="button"
               disabled={isWaitingForVerfication}
-              className="btn bg-white w-full text-cyan-600 border-[#e5e5e5]"
+              className="btn w-full bg-white/10 hover:bg-white/5 text-info border-white/30"
             >
-              <svg
-                aria-label="Google logo"
-                width="16"
-                height="16"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 512 512"
-              >
-                <g>
-                  <path d="m0 0H512V512H0" fill="#fff"></path>
-                  <path
-                    fill="#34a853"
-                    d="M153 292c30 82 118 95 171 60h62v48A192 192 0 0190 341"
-                  ></path>
-                  <path
-                    fill="#4285f4"
-                    d="m386 400a140 175 0 0053-179H260v74h102q-7 37-38 57"
-                  ></path>
-                  <path
-                    fill="#fbbc02"
-                    d="m90 341a208 200 0 010-171l63 49q-12 37 0 73"
-                  ></path>
-                  <path
-                    fill="#ea4335"
-                    d="m153 219c22-69 116-109 179-50l55-54c-78-75-230-72-297 55"
-                  ></path>
-                </g>
-              </svg>
+              <FaGoogle />
               Login with Google
             </button>
           </div>

@@ -25,15 +25,13 @@ const RootLayout = () => {
         <Navbar />
       </header>
       <main className="flex-1">
-        <Container className={"overflow-hidden py-8"}>
+        <Container className={"overflow-hidden pt-4.5"}>
           <PageWrapper>
             <Outlet />
           </PageWrapper>
         </Container>
       </main>
-      <footer>
-        <Footer></Footer>
-      </footer>
+      <Footer></Footer>
     </section>
   );
 };

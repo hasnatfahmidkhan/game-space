@@ -2,8 +2,10 @@
 
 @import "tailwindcss";
 @plugin "daisyui" {
-  themes: light --default dark;
+  themes: night --default;
 }
+
+
 
 * {
   font-family: "Baloo Bhai 2", sans-serif;
