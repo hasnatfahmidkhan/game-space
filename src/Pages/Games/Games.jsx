@@ -2,7 +2,9 @@ import { useState } from "react";
 import GameCard from "../../Components/GameCard/GameCard";
 import useGameData from "../../Hooks/useGameData";
 import { BounceLoader } from "react-spinners";
-
+import GameCardSkeleton from "../../Skeleton/GameCardSkeleton";
+import Lottie from "lottie-react";
+import noGameFound from "../../assets/no-game-found.json";
 const Games = () => {
   const { games, loading } = useGameData("/data.json");
   const [searchLoading, setSearchLoading] = useState(false);
@@ -11,8 +13,7 @@ const Games = () => {
 
   const handleSearch = (e) => {
     setSearchLoading(true);
-    const term = e.target.value.trim().toLowerCase();
-    setSearch(term);
+    setSearch(e.target.value);
 
     setTimeout(() => {
       setSearchLoading(false);
@@ -20,7 +21,8 @@ const Games = () => {
   };
 
   // search games
-  const searchedGames = search
+  const terms = search.trim().toLowerCase();
+  const searchedGames = terms
     ? games.filter((game) => game.title.toLowerCase().includes(search))
     : games;
 
@@ -98,14 +100,20 @@ const Games = () => {
 
       {/* all game card  */}
       {searchLoading ? (
-        <div className="flex justify-center items-center h-96">
+        <div className="flex items-center justify-center h-96">
           <BounceLoader color="#0ca5e9" />
         </div>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-5 py-7">
-          {displayGames.map((game) => (
-            <GameCard key={game.id} game={game} />
-          ))}
+          {loading ? (
+            <GameCardSkeleton count={displayGames.length} />
+          ) : displayGames?.length === 0 ? (
+            <div className="flex items-center justify-center col-span-full pt-10">
+              <Lottie animationData={noGameFound} loop={true} />
+            </div>
+          ) : (
+            displayGames.map((game) => <GameCard key={game.id} game={game} />)
+          )}
         </div>
       )}
     </section>

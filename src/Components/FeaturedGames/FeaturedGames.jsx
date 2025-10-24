@@ -1,10 +1,11 @@
 import { FaGamepad } from "react-icons/fa6";
 import useGameData from "../../Hooks/useGameData";
 import GameCard from "../GameCard/GameCard";
+import GameCardSkeleton from "../../Skeleton/GameCardSkeleton";
 
 const FeaturedGames = () => {
   const { games, loading } = useGameData("/popular.json");
-  console.log(games, loading);
+  // console.log(games, loading);
   return (
     <section className="pt-10 md:pt-20 px-4 space-y-15">
       {/* header of popular games  */}
@@ -19,9 +20,11 @@ const FeaturedGames = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-5">
-        {games.map((game) => (
-          <GameCard key={game.id} game={game} />
-        ))}
+        {loading ? (
+          <GameCardSkeleton />
+        ) : (
+          games.map((game) => <GameCard key={game.id} game={game} />)
+        )}
       </div>
     </section>
   );
