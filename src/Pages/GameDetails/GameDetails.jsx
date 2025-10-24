@@ -14,6 +14,9 @@ import "swiper/css/thumbs";
 // import required modules
 import { Autoplay, FreeMode, Navigation, Thumbs } from "swiper/modules";
 import { FaStar } from "react-icons/fa6";
+import { LuClipboardList } from "react-icons/lu";
+import { MdInstallDesktop } from "react-icons/md";
+import { setWishList } from "../../Utility/localStorage";
 
 const GameDetails = () => {
   const { games, loading } = useGameData("/data.json");
@@ -116,7 +119,7 @@ const GameDetails = () => {
 
           <div className="divider"></div>
 
-          <div className="grid grid-cols-2 gap-3">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-y-3 md:gap-3">
             <p>Develop by: {game?.developer}</p>
             <p>Publisher: {game?.publisher}</p>
             <p>Multiplayer: {game?.multiplayer ? "Yes" : "No"}</p>
@@ -137,9 +140,16 @@ const GameDetails = () => {
             target="_blank"
             className="btn btn-success btn-outline text-white"
           >
+            <MdInstallDesktop />
             Install Now
           </Link>
-          <button className="btn btn-info text-white">Add to wishlist</button>
+          <button
+            onClick={() => setWishList(game?.id)}
+            className="btn btn-info text-white"
+          >
+            <LuClipboardList />
+            Add to wishlist
+          </button>
         </div>
       </div>
     </section>

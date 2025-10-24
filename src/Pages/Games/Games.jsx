@@ -52,7 +52,7 @@ const Games = () => {
 
         <div className="flex items-center gap-5">
           {/* sort  */}
-          <div className="">
+          <div>
             <select
               value={sortgame}
               onChange={(e) => setSortgame(e.target.value)}

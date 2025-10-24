@@ -6,10 +6,10 @@ import Register from "../Pages/Register/Register";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import ForgetPassword from "../Pages/ForgetPassword/ForgetPassword";
 import PrivateRoute from "./PrivateRoute";
-import MyFavorite from "../Pages/MyFavorite/MyFavorite";
 import Games from "../Pages/Games/Games";
 import Profile from "../Pages/Profile/Profile";
 import GameDetails from "../Pages/GameDetails/GameDetails";
+import MyWishList from "../Pages/MyWishList/MyWishList";
 
 const router = createBrowserRouter([
   {
@@ -50,10 +50,10 @@ const router = createBrowserRouter([
         element: <Register />,
       },
       {
-        path: "/myfavorite",
+        path: "/mywishlist",
         element: (
           <PrivateRoute>
-            <MyFavorite />
+            <MyWishList />
           </PrivateRoute>
         ),
       },

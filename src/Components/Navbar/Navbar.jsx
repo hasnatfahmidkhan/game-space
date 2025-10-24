@@ -27,7 +27,7 @@ const Navbar = () => {
         <MyLink to={"/games"}>Games</MyLink>
       </li>
       <li>
-        <MyLink to={"/myfavorite"}>My favorites</MyLink>
+        <MyLink to={"/mywishlist"}>My Wishlists</MyLink>
       </li>
       <li>
         <MyLink to={"/news"}>News</MyLink>
