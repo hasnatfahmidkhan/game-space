@@ -29,9 +29,6 @@ const Navbar = () => {
       <li>
         <MyLink to={"/mywishlist"}>My Wishlists</MyLink>
       </li>
-      <li>
-        <MyLink to={"/news"}>News</MyLink>
-      </li>
     </>
   );
   return (

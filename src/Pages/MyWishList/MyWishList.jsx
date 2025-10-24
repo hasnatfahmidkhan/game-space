@@ -25,7 +25,7 @@ const MyWishList = () => {
     // for ui update
     setWishlist((prev) => prev.filter((p) => p.id !== id));
   };
-  console.log(wishlist);
+
   if (sortWish === "rating-asc") {
     wishlist.sort((a, b) => a.ratings - b.ratings);
   } else if (sortWish === "rating-dsc") {

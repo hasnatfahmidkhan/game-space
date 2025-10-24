@@ -26,10 +26,6 @@ const router = createBrowserRouter([
         element: <Games />,
       },
       {
-        path: "/news",
-        element: <h2>News</h2>,
-      },
-      {
         path: "/profile",
         element: (
           <PrivateRoute>
