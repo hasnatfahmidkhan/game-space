@@ -3,6 +3,13 @@
     "id": "21",
     "title": "Garena Free Fire",
     "coverPhoto": "https://i.postimg.cc/6pKDYzWC/65.jpg",
+    "images": [
+      "https://i.postimg.cc/6pKDYzWC/65.jpg",
+      "https://i.postimg.cc/NMqMys0Y/61.jpg",
+      "https://i.postimg.cc/XqnY8sFc/62.jpg",
+      "https://i.postimg.cc/c1cHHNyD/63.jpg",
+      "https://i.postimg.cc/YSg2B5zF/64.jpg"
+    ],
     "category": "Battle Royale",
     "subCategory": "Survival Shooter",
     "platform": ["Mobile"],
@@ -19,6 +26,13 @@
     "id": "5",
     "title": "Minecraft",
     "coverPhoto": "https://i.ibb.co.com/j9KRFzvB/93.jpg",
+    "images": [
+      "https://i.ibb.co.com/j9KRFzvB/93.jpg",
+      "https://i.postimg.cc/T2QDsbw1/95.jpg",
+      "https://i.postimg.cc/jjVwfQ8M/94.jpg",
+      "https://i.postimg.cc/rsYzwS0d/92.jpg",
+      "https://i.postimg.cc/NjXLQ2gy/91.jpg"
+    ],
     "category": "Adventure",
     "subCategory": "Sandbox",
     "platform": ["PC", "Mobile", "Console"],
@@ -35,6 +49,13 @@
     "id": "8",
     "title": "The Witcher 3: Wild Hunt",
     "coverPhoto": "https://i.postimg.cc/G2ZDvX0c/55.jpg",
+    "images": [
+      "https://i.postimg.cc/G2ZDvX0c/55.jpg",
+      "https://i.postimg.cc/DzyNhLhy/141.jpg",
+      "https://i.postimg.cc/gkFBJfp4/142.jpg",
+      "https://i.postimg.cc/RVLG0hXJ/143.jpg",
+      "https://i.postimg.cc/yNtyGZ8B/145.jpg"
+    ],
     "category": "RPG",
     "subCategory": "Open World",
     "platform": ["PC", "Console"],
@@ -51,6 +72,13 @@
     "id": "13",
     "title": "Red Dead Redemption 2",
     "coverPhoto": "https://i.postimg.cc/gJ4Vbz8G/120.jpg",
+    "images": [
+      "https://i.postimg.cc/gJ4Vbz8G/120.jpg",
+      "https://i.postimg.cc/fTmjrL6C/116.jpg",
+      "https://i.postimg.cc/GmjPbf38/117.jpg",
+      "https://i.postimg.cc/cHvfM4R6/118.jpg",
+      "https://i.postimg.cc/4yttqLFz/119.jpg"
+    ],
     "category": "Action",
     "subCategory": "Open World",
     "platform": ["PC", "Console"],
@@ -67,6 +95,13 @@
     "id": "14",
     "title": "Elden Ring",
     "coverPhoto": "https://i.postimg.cc/0QXWv01S/54.jpg",
+    "images": [
+      "https://i.postimg.cc/7YgNbhYw/51.jpg",
+      "https://i.postimg.cc/nc737T2q/55.jpg",
+      "https://i.postimg.cc/BvhpszZs/53.jpg",
+      "https://i.postimg.cc/VvtWqLqJ/52.jpg",
+      "https://i.postimg.cc/JzNj72xh/48.jpg"
+    ],
     "category": "RPG",
     "subCategory": "Action Adventure",
     "platform": ["PC", "Console"],
@@ -83,6 +118,13 @@
     "id": "17",
     "title": "The Legend of Zelda: Breath of the Wild",
     "coverPhoto": "https://i.postimg.cc/9Mf4TGw3/136.jpg",
+    "images": [
+      "https://i.postimg.cc/9Mf4TGw3/136.jpg",
+      "https://i.postimg.cc/PJFcVq9p/138.jpg",
+      "https://i.postimg.cc/ZqhQM27Y/140.jpg",
+      "https://i.postimg.cc/1tvY4t9z/137.jpg",
+      "https://i.postimg.cc/RV6bV42w/139.jpg"
+    ],
     "category": "Adventure",
     "subCategory": "Open World",
     "platform": ["Nintendo Switch", "Wii U"],
@@ -99,6 +141,13 @@
     "id": "18",
     "title": "God of War Ragnarök",
     "coverPhoto": "https://i.postimg.cc/MGF32YS9/74.jpg",
+    "images": [
+      "https://i.postimg.cc/MGF32YS9/74.jpg",
+      "https://i.postimg.cc/ncs6WvkK/75.jpg",
+      "https://i.postimg.cc/3RJqFpNw/73.jpg",
+      "https://i.postimg.cc/tJ8mbM55/72.jpg",
+      "https://i.postimg.cc/pLb113yH/71.jpg"
+    ],
     "category": "Action",
     "subCategory": "Adventure",
     "platform": ["PlayStation 5", "PlayStation 4"],
@@ -115,6 +164,13 @@
     "id": "1",
     "title": "Player Unknown's Battlegrounds (PUBG)",
     "coverPhoto": "https://i.postimg.cc/pL13RvQH/110.jpg",
+    "images": [
+      "https://i.postimg.cc/pL13RvQH/110.jpg",
+      "https://i.postimg.cc/s2DX76Y0/109.jpg",
+      "https://i.postimg.cc/65JpY5rS/108.jpg",
+      "https://i.postimg.cc/LsX9nqRd/107.jpg",
+      "https://i.postimg.cc/4NQsPvNb/106.jpg"
+    ],
     "category": "FPS",
     "subCategory": "Battle Royale",
     "platform": ["Mobile", "PC", "Console"],

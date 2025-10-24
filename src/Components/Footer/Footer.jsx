@@ -1,48 +1,53 @@
-import { FaFacebook, FaGithub, FaTwitter } from "react-icons/fa6";
+import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa6";
 import { Link } from "react-router";
+import MyLink from "../MyLink/MyLink";
 
 const Footer = () => {
   return (
     <footer className="mt-10 rounded-2xl text-base p-6 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]">
       <div className="mx-auto flex w-10/12 flex-col items-center justify-between gap-4 sm:flex-row">
         {/* Brand / Logo */}
-        <Link to={"/"} className="text-2xl text-[#06b6d4] font-semibold">
-          Game space
+        <Link
+          to={"/"}
+          className="text-3xl text-info font-semibold flex items-end"
+        >
+          <img src="/logo.png" className="w-10" />
+          <span id="logo">AME SPACE</span>
         </Link>
 
         {/* Links */}
         <ul className="flex flex-wrap items-center justify-center gap-6 text-sm">
-          <li className="cursor-pointer transition-colors hover:text-gray-200">
-            Home
+          <li>
+            <MyLink to={"/"}>Home</MyLink>
           </li>
-          <li className="cursor-pointer transition-colors hover:text-gray-200">
-            Services
+          <li>
+            <MyLink to={"/games"}>Games</MyLink>
           </li>
-          <li className="cursor-pointer transition-colors hover:text-gray-200">
-            About
-          </li>
-          <li className="cursor-pointer transition-colors hover:text-gray-200">
-            Contact
+          <li>
+            <MyLink to={"/mywishlist"}>My Wishlists</MyLink>
           </li>
         </ul>
 
         {/* Social Icons */}
         <div className="flex items-center gap-4 ">
           <a
-            href="#"
-            className="transition-transform duration-200 hover:scale-110"
+            href="https://www.facebook.com/hasnatfahmidkhan"
+            target="_blank"
+            className="transition-transform duration-200 hover:scale-110 hover:text-info"
           >
             <FaFacebook size={20} />
           </a>
           <a
-            href="#"
-            className="transition-transform duration-200 hover:scale-110"
+            href="https://www.linkedin.com/in/hasnatfahmid/"
+            target="_blank"
+            className="transition-transform duration-200 hover:scale-110 hover:text-info"
           >
-            <FaTwitter size={20} />
+            <FaLinkedin size={20} />
           </a>
           <a
-            href="#"
-            className="transition-transform duration-200 hover:scale-110"
+            href="https://github.com/hasnatfahmidkhan"
+            target="_blank"
+            className="transition-transform duration-200 hover:scale-110 hover:text-info"
           >
             <FaGithub size={20} />
           </a>

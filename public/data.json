@@ -3,6 +3,13 @@
     "id": "21",
     "title": "Garena Free Fire",
     "coverPhoto": "https://i.postimg.cc/6pKDYzWC/65.jpg",
+    "images": [
+      "https://i.postimg.cc/6pKDYzWC/65.jpg",
+      "https://i.postimg.cc/NMqMys0Y/61.jpg",
+      "https://i.postimg.cc/XqnY8sFc/62.jpg",
+      "https://i.postimg.cc/c1cHHNyD/63.jpg",
+      "https://i.postimg.cc/YSg2B5zF/64.jpg"
+    ],
     "category": "Battle Royale",
     "subCategory": "Survival Shooter",
     "platform": ["Mobile"],
@@ -19,6 +26,13 @@
     "id": "2",
     "title": "Call of Duty: Warzone",
     "coverPhoto": "https://i.postimg.cc/FH0tN8RY/40.jpg",
+    "images": [
+      "https://i.postimg.cc/FH0tN8RY/40.jpg",
+      "https://i.postimg.cc/gJF9yrRL/36.jpg",
+      "https://i.postimg.cc/2yrPJJ0S/37.jpg",
+      "https://i.postimg.cc/MKZCmCc9/38.jpg",
+      "https://i.postimg.cc/g0hQ0d5m/39.jpg"
+    ],
     "category": "FPS",
     "subCategory": "Battle Royale",
     "platform": ["PC", "Console"],
@@ -36,6 +50,13 @@
     "id": "4",
     "title": "Fortnite",
     "coverPhoto": "https://i.postimg.cc/FK9DJB9T/60.jpg",
+    "images": [
+      "https://i.postimg.cc/FK9DJB9T/60.jpg",
+      "https://i.postimg.cc/02qYgvGD/59.jpg",
+      "https://i.postimg.cc/J4qB9k4v/58.jpg",
+      "https://i.postimg.cc/VN3Sj9Ky/57.jpg",
+      "https://i.postimg.cc/qqGzVP02/56.jpg"
+    ],
     "category": "Battle Royale",
     "subCategory": "Survival",
     "platform": ["PC", "Mobile", "Console"],
@@ -52,6 +73,13 @@
     "id": "5",
     "title": "Minecraft",
     "coverPhoto": "https://i.ibb.co.com/j9KRFzvB/93.jpg",
+    "images": [
+      "https://i.ibb.co.com/j9KRFzvB/93.jpg",
+      "https://i.postimg.cc/T2QDsbw1/95.jpg",
+      "https://i.postimg.cc/jjVwfQ8M/94.jpg",
+      "https://i.postimg.cc/rsYzwS0d/92.jpg",
+      "https://i.postimg.cc/NjXLQ2gy/91.jpg"
+    ],
     "category": "Adventure",
     "subCategory": "Sandbox",
     "platform": ["PC", "Mobile", "Console"],
@@ -68,6 +96,13 @@
     "id": "6",
     "title": "Genshin Impact",
     "coverPhoto": "https://i.postimg.cc/7h7WNJj7/70.jpg",
+    "images": [
+      "https://i.postimg.cc/7h7WNJj7/70.jpg",
+      "https://i.postimg.cc/5twJRwfP/69.jpg",
+      "https://i.postimg.cc/j2jr2mPB/68.jpg",
+      "https://i.postimg.cc/QxwrN6tJ/67.jpg",
+      "https://i.postimg.cc/jjr0PLyM/66.jpg"
+    ],
     "category": "RPG",
     "subCategory": "Open World",
     "platform": ["Mobile", "PC", "Console"],
@@ -84,6 +119,13 @@
     "id": "7",
     "title": "Apex Legends",
     "coverPhoto": "https://i.postimg.cc/CK1b0TMS/15.jpg",
+    "images": [
+      "https://i.postimg.cc/CK1b0TMS/15.jpg",
+      "https://i.postimg.cc/htcq6X3Y/11.jpg",
+      "https://i.postimg.cc/c47pRs44/12.jpg",
+      "https://i.postimg.cc/XvPmjqQY/13.jpg",
+      "https://i.postimg.cc/v8fkyQnN/14.jpg"
+    ],
     "category": "FPS",
     "subCategory": "Battle Royale",
     "platform": ["PC", "Console"],
@@ -100,6 +142,13 @@
     "id": "8",
     "title": "The Witcher 3: Wild Hunt",
     "coverPhoto": "https://i.postimg.cc/G2ZDvX0c/55.jpg",
+    "images": [
+      "https://i.postimg.cc/G2ZDvX0c/55.jpg",
+      "https://i.postimg.cc/DzyNhLhy/141.jpg",
+      "https://i.postimg.cc/gkFBJfp4/142.jpg",
+      "https://i.postimg.cc/RVLG0hXJ/143.jpg",
+      "https://i.postimg.cc/yNtyGZ8B/145.jpg"
+    ],
     "category": "RPG",
     "subCategory": "Open World",
     "platform": ["PC", "Console"],
@@ -116,6 +165,13 @@
     "id": "9",
     "title": "Cyberpunk 2077",
     "coverPhoto": "https://i.postimg.cc/6qSmrLHT/49.jpg",
+    "images": [
+      "https://i.postimg.cc/6qSmrLHT/49.jpg",
+      "https://i.postimg.cc/W4V6Mvz6/50.jpg",
+      "https://i.postimg.cc/KzqPS3NG/46.jpg",
+      "https://i.postimg.cc/gk6vQJ6X/47.jpg",
+      "https://i.postimg.cc/JzNj72xh/48.jpg"
+    ],
     "category": "RPG",
     "subCategory": "Open World",
     "platform": ["PC", "Console"],
@@ -132,6 +188,13 @@
     "id": "10",
     "title": "League of Legends",
     "coverPhoto": "https://i.ibb.co.com/XryFMSRP/89.jpg",
+    "images": [
+      "https://i.ibb.co.com/XryFMSRP/89.jpg",
+      "https://i.postimg.cc/Qt1q5dkm/90.jpg",
+      "https://i.postimg.cc/ZYPc505M/88.jpg",
+      "https://i.postimg.cc/VLDWXTM2/87.jpg",
+      "https://i.postimg.cc/63Jr9NJK/86.jpg"
+    ],
     "category": "MOBA",
     "subCategory": "Strategy",
     "platform": ["PC"],
@@ -148,6 +211,13 @@
     "id": "3",
     "title": "Valorant",
     "coverPhoto": "https://i.postimg.cc/rpNZntyF/44.jpg",
+    "images": [
+      "https://i.postimg.cc/rpNZntyF/44.jpg",
+      "https://i.postimg.cc/Y0kYcfc3/148.jpg",
+      "https://i.postimg.cc/RVgf8Hgq/146.jpg",
+      "https://i.postimg.cc/pdFFp1PN/147.jpg",
+      "https://i.postimg.cc/kGfVk0v6/149.jpg"
+    ],
     "category": "FPS",
     "subCategory": "Tactical Shooter",
     "platform": ["PC"],
@@ -165,6 +235,13 @@
     "id": "22",
     "title": "Call of Duty: Mobile",
     "coverPhoto": "https://i.postimg.cc/658s8THq/43.jpg",
+    "images": [
+      "https://i.postimg.cc/658s8THq/43.jpg",
+      "https://i.postimg.cc/HW6ZdVxQ/41.jpg",
+      "https://i.postimg.cc/3xvnX1Bh/42.jpg",
+      "https://i.postimg.cc/wv62dpdT/44.jpg",
+      "https://i.postimg.cc/D00c8PZj/45.jpg"
+    ],
     "category": "FPS",
     "subCategory": "Action Shooter",
     "platform": ["Mobile"],
@@ -181,6 +258,13 @@
     "id": "23",
     "title": "Clash of Clans",
     "coverPhoto": "https://i.postimg.cc/mrH2C88G/26.jpg",
+    "images": [
+      "https://i.postimg.cc/mrH2C88G/26.jpg",
+      "https://i.postimg.cc/6qFpCB9b/29.jpg",
+      "https://i.postimg.cc/gk6JmLsz/28.jpg",
+      "https://i.postimg.cc/tC011zYC/30.jpg",
+      "https://i.postimg.cc/0yPbn2G5/27.jpg"
+    ],
     "category": "Strategy",
     "subCategory": "Base Building",
     "platform": ["Mobile"],
@@ -197,6 +281,13 @@
     "id": "24",
     "title": "Mobile Legends: Bang Bang",
     "coverPhoto": "https://i.postimg.cc/Z57znpmC/99.jpg",
+    "images": [
+      "https://i.postimg.cc/Z57znpmC/99.jpg",
+      "https://i.postimg.cc/RCb0fLhG/100.jpg",
+      "https://i.postimg.cc/kgWM0rc2/98.jpg",
+      "https://i.postimg.cc/DZw24SKQ/97.jpg",
+      "https://i.postimg.cc/x8WYZgNH/96.jpg"
+    ],
     "category": "MOBA",
     "subCategory": "Team Battle",
     "platform": ["Mobile"],
@@ -213,6 +304,13 @@
     "id": "25",
     "title": "Asphalt 9: Legends",
     "coverPhoto": "https://i.postimg.cc/s2vG8Ymn/18.jpg",
+    "images": [
+      "https://i.postimg.cc/s2vG8Ymn/18.jpg",
+      "https://i.postimg.cc/13jJ6T6q/16.jpg",
+      "https://i.postimg.cc/wBNcNB9v/19.jpg",
+      "https://i.postimg.cc/NGD8mSvv/17.jpg",
+      "https://i.postimg.cc/8z2LTVMq/20.jpg"
+    ],
     "category": "Racing",
     "subCategory": "Arcade",
     "platform": ["Mobile"],
@@ -228,7 +326,14 @@
   {
     "id": "26",
     "title": "PUBG Mobile Lite",
-    "coverPhoto": "https://i.postimg.cc/pL13RvQH/110.jpg",
+    "coverPhoto": "https://i.postimg.cc/0QXJzghC/pubg-lite.jpg",
+    "images": [
+      "https://i.postimg.cc/0QXJzghC/pubg-lite.jpg",
+      "https://i.postimg.cc/FzFD4Q3H/113.jpg",
+      "https://i.postimg.cc/Wb3XYTs8/115.jpg",
+      "https://i.postimg.cc/LsX9nqRd/107.jpg",
+      "https://i.postimg.cc/4NQsPvNb/106.jpg"
+    ],
     "category": "Battle Royale",
     "subCategory": "Action",
     "platform": ["Mobile"],
@@ -245,6 +350,12 @@
     "id": "27",
     "title": "Brawl Stars",
     "coverPhoto": "https://i.postimg.cc/TPLhQR2Z/25.jpg",
+    "images": [
+      "https://i.postimg.cc/TPLhQR2Z/25.jpg",
+      "https://i.postimg.cc/YqVWxwnr/21.jpg",
+      "https://i.postimg.cc/1R7n9QZB/22.jpg",
+      "https://i.postimg.cc/YCYhfLLx/23.jpg"
+    ],
     "category": "Action",
     "subCategory": "Multiplayer Arena",
     "platform": ["Mobile"],
@@ -261,6 +372,13 @@
     "id": "28",
     "title": "Subway Surfers",
     "coverPhoto": "https://i.postimg.cc/XNz5fDgP/133.jpg",
+    "images": [
+      "https://i.postimg.cc/XNz5fDgP/133.jpg",
+      "https://i.postimg.cc/7L2xgFCw/134.jpg",
+      "https://i.postimg.cc/rsQcVcbX/132.jpg",
+      "https://i.postimg.cc/J4YmSrZq/131.jpg",
+      "https://i.postimg.cc/rm92jMqL/135.jpg"
+    ],
     "category": "Arcade",
     "subCategory": "Endless Runner",
     "platform": ["Mobile"],
@@ -277,6 +395,13 @@
     "id": "29",
     "title": "Clash Royale",
     "coverPhoto": "https://i.postimg.cc/tC4q2X2d/31.jpg",
+    "images": [
+      "https://i.postimg.cc/tC4q2X2d/31.jpg",
+      "https://i.postimg.cc/sgTDJPDX/32.jpg",
+      "https://i.postimg.cc/PJntq2K7/33.jpg",
+      "https://i.postimg.cc/c1fxzGLv/34.jpg",
+      "https://i.postimg.cc/R039QjY9/35.jpg"
+    ],
     "category": "Strategy",
     "subCategory": "Card Battle",
     "platform": ["Mobile"],
@@ -293,6 +418,13 @@
     "id": "11",
     "title": "Grand Theft Auto V",
     "coverPhoto": "https://i.postimg.cc/CKgLCbtb/gta-v.jpg",
+    "images": [
+      "https://i.postimg.cc/CKgLCbtb/gta-v.jpg",
+      "https://i.postimg.cc/L6LMXt1s/80.jpg",
+      "https://i.postimg.cc/MGsC4th5/79.jpg",
+      "https://i.postimg.cc/sfGk6YKH/76.jpg",
+      "https://i.postimg.cc/htcNtHn5/78.jpg"
+    ],
     "category": "Action",
     "subCategory": "Open World",
     "platform": ["PC", "Console"],
@@ -309,6 +441,13 @@
     "id": "12",
     "title": "Among Us",
     "coverPhoto": "https://i.postimg.cc/bvT1cYfS/4.jpg",
+    "images": [
+      "https://i.postimg.cc/bvT1cYfS/4.jpg",
+      "https://i.postimg.cc/4ymg8pYS/3.jpg",
+      "https://i.postimg.cc/25rNssq1/2.jpg",
+      "https://i.postimg.cc/sx4Thg9F/5.jpg",
+      "https://i.postimg.cc/FzfMbmqH/1.jpg"
+    ],
     "category": "Party",
     "subCategory": "Social Deduction",
     "platform": ["PC", "Mobile"],
@@ -325,6 +464,13 @@
     "id": "13",
     "title": "Red Dead Redemption 2",
     "coverPhoto": "https://i.postimg.cc/gJ4Vbz8G/120.jpg",
+    "images": [
+      "https://i.postimg.cc/gJ4Vbz8G/120.jpg",
+      "https://i.postimg.cc/fTmjrL6C/116.jpg",
+      "https://i.postimg.cc/GmjPbf38/117.jpg",
+      "https://i.postimg.cc/cHvfM4R6/118.jpg",
+      "https://i.postimg.cc/4yttqLFz/119.jpg"
+    ],
     "category": "Action",
     "subCategory": "Open World",
     "platform": ["PC", "Console"],
@@ -341,6 +487,13 @@
     "id": "14",
     "title": "Elden Ring",
     "coverPhoto": "https://i.postimg.cc/0QXWv01S/54.jpg",
+    "images": [
+      "https://i.postimg.cc/7YgNbhYw/51.jpg",
+      "https://i.postimg.cc/nc737T2q/55.jpg",
+      "https://i.postimg.cc/BvhpszZs/53.jpg",
+      "https://i.postimg.cc/VvtWqLqJ/52.jpg",
+      "https://i.postimg.cc/JzNj72xh/48.jpg"
+    ],
     "category": "RPG",
     "subCategory": "Action Adventure",
     "platform": ["PC", "Console"],
@@ -357,6 +510,13 @@
     "id": "15",
     "title": "Hollow Knight",
     "coverPhoto": "https://i.ibb.co.com/bgTw7h8t/89.jpg",
+    "images": [
+      "https://i.ibb.co.com/bgTw7h8t/89.jpg",
+      "https://i.postimg.cc/fWdPjwT2/85.jpg",
+      "https://i.postimg.cc/nhFwJBKq/84.jpg",
+      "https://i.postimg.cc/1tqvHHSk/83.jpg",
+      "https://i.postimg.cc/G3vMTqqy/82.jpg"
+    ],
     "category": "Adventure",
     "subCategory": "Metroidvania",
     "platform": ["PC", "Console"],
@@ -389,6 +549,13 @@
     "id": "17",
     "title": "The Legend of Zelda: Breath of the Wild",
     "coverPhoto": "https://i.postimg.cc/9Mf4TGw3/136.jpg",
+    "images": [
+      "https://i.postimg.cc/9Mf4TGw3/136.jpg",
+      "https://i.postimg.cc/PJFcVq9p/138.jpg",
+      "https://i.postimg.cc/ZqhQM27Y/140.jpg",
+      "https://i.postimg.cc/1tvY4t9z/137.jpg",
+      "https://i.postimg.cc/RV6bV42w/139.jpg"
+    ],
     "category": "Adventure",
     "subCategory": "Open World",
     "platform": ["Nintendo Switch", "Wii U"],
@@ -405,6 +572,13 @@
     "id": "18",
     "title": "God of War Ragnarök",
     "coverPhoto": "https://i.postimg.cc/MGF32YS9/74.jpg",
+    "images": [
+      "https://i.postimg.cc/MGF32YS9/74.jpg",
+      "https://i.postimg.cc/ncs6WvkK/75.jpg",
+      "https://i.postimg.cc/3RJqFpNw/73.jpg",
+      "https://i.postimg.cc/tJ8mbM55/72.jpg",
+      "https://i.postimg.cc/pLb113yH/71.jpg"
+    ],
     "category": "Action",
     "subCategory": "Adventure",
     "platform": ["PlayStation 5", "PlayStation 4"],
@@ -421,6 +595,13 @@
     "id": "19",
     "title": "Rocket League",
     "coverPhoto": "https://i.postimg.cc/wT1hndBh/122.jpg",
+    "images": [
+      "https://i.postimg.cc/wT1hndBh/122.jpg",
+      "https://i.postimg.cc/nrvj0sCV/121.jpg",
+      "https://i.postimg.cc/gkW6rKTS/123.jpg",
+      "https://i.postimg.cc/N05KZC5V/124.jpg",
+      "https://i.postimg.cc/Wz6z0QH5/125.jpg"
+    ],
     "category": "Sports",
     "subCategory": "Arcade",
     "platform": ["PC", "Mobile", "Console"],
@@ -437,6 +618,13 @@
     "id": "1",
     "title": "Player Unknown's Battlegrounds (PUBG)",
     "coverPhoto": "https://i.postimg.cc/pL13RvQH/110.jpg",
+    "images": [
+      "https://i.postimg.cc/pL13RvQH/110.jpg",
+      "https://i.postimg.cc/s2DX76Y0/109.jpg",
+      "https://i.postimg.cc/65JpY5rS/108.jpg",
+      "https://i.postimg.cc/LsX9nqRd/107.jpg",
+      "https://i.postimg.cc/4NQsPvNb/106.jpg"
+    ],
     "category": "FPS",
     "subCategory": "Battle Royale",
     "platform": ["Mobile", "PC", "Console"],

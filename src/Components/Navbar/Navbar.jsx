@@ -6,6 +6,7 @@ import AuthContext from "../../Context/AuthContext";
 import userImage from "../../assets/user.png";
 import { toast } from "react-toastify";
 import { ClockLoader } from "react-spinners";
+import { Link } from "react-router";
 
 const Navbar = () => {
   const { user, signOutFunc, authLoading } = use(AuthContext);
@@ -35,10 +36,13 @@ const Navbar = () => {
     <nav className="bg-base-300 shadow-md">
       <Container className={"navbar"}>
         <div className="navbar-start">
-          <a className="text-3xl text-info font-semibold flex items-end">
+          <Link
+            to={"/"}
+            className="text-3xl text-info font-semibold flex items-end"
+          >
             <img src="/logo.png" className="w-10" />
             <span id="logo">AME SPACE</span>
-          </a>
+          </Link>
         </div>
         <div className="navbar-end ">
           <div className="dropdown dropdown-end">

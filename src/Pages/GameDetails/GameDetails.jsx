@@ -10,7 +10,7 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
-
+import "./customswiper.css";
 // import required modules
 import { Autoplay, FreeMode, Navigation, Thumbs } from "swiper/modules";
 import { FaStar } from "react-icons/fa6";
@@ -47,17 +47,13 @@ const GameDetails = () => {
           autoplay={true}
           thumbs={{ swiper: thumbsSwiper }}
           modules={[FreeMode, Navigation, Thumbs, Autoplay]}
-          className="h-52 md:h-64 lg:h-72 xl:h-80 2xl:h-96 rounded-2xl"
+          className="h-52 md:h-64 lg:h-72 xl:h-80 2xl:h-96 border border-white/30 rounded-2xl"
         >
-          <SwiperSlide>
-            <img className="h-full" src={game?.coverPhoto} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-          </SwiperSlide>
+          {game?.images?.map((image) => (
+            <SwiperSlide>
+              <img className="h-full cursor-pointer" src={image} />
+            </SwiperSlide>
+          ))}
         </Swiper>
 
         {/* swiper for small image  */}
@@ -65,21 +61,27 @@ const GameDetails = () => {
           onSwiper={setThumbsSwiper}
           loop={true}
           spaceBetween={10}
-          slidesPerView={3}
+          breakpoints={{
+            0: {
+              slidesPerView: 2,
+            },
+            768: {
+              slidesPerView: 4,
+            },
+          }}
           freeMode={true}
           watchSlidesProgress={true}
           modules={[FreeMode, Navigation, Thumbs]}
           className="h-28 md:h-40"
         >
-          <SwiperSlide>
-            <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-          </SwiperSlide>
+          {game?.images?.map((image) => (
+            <SwiperSlide>
+              <img
+                className="h-full object-cover cursor-pointer rounded-2xl border border-white/30"
+                src={image}
+              />
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
       <div className="w-full md:w-1/2 text-white/50 text-lg">

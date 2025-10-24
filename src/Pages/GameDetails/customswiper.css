@@ -1,0 +1,4 @@
+@import "tailwindcss";
+.swiper-slide-thumb-active img {
+  @apply border border-sky-500 transition-all duration-300 ease-in;
+}
