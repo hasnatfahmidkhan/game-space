@@ -115,27 +115,27 @@
     "multiplayer": true
   },
   {
-    "id": "17",
-    "title": "The Legend of Zelda: Breath of the Wild",
-    "coverPhoto": "https://i.postimg.cc/9Mf4TGw3/136.jpg",
+    "id": "25",
+    "title": "Asphalt 9: Legends",
+    "coverPhoto": "https://i.postimg.cc/s2vG8Ymn/18.jpg",
     "images": [
-      "https://i.postimg.cc/9Mf4TGw3/136.jpg",
-      "https://i.postimg.cc/PJFcVq9p/138.jpg",
-      "https://i.postimg.cc/ZqhQM27Y/140.jpg",
-      "https://i.postimg.cc/1tvY4t9z/137.jpg",
-      "https://i.postimg.cc/RV6bV42w/139.jpg"
+      "https://i.postimg.cc/s2vG8Ymn/18.jpg",
+      "https://i.postimg.cc/13jJ6T6q/16.jpg",
+      "https://i.postimg.cc/wBNcNB9v/19.jpg",
+      "https://i.postimg.cc/NGD8mSvv/17.jpg",
+      "https://i.postimg.cc/8z2LTVMq/20.jpg"
     ],
-    "category": "Adventure",
-    "subCategory": "Open World",
-    "platform": ["Nintendo Switch", "Wii U"],
-    "releaseDate": "2017-03-03",
-    "developer": "Nintendo",
-    "publisher": "Nintendo",
-    "description": "Breath of the Wild redefines open-world exploration with freedom, creativity, and discovery. As Link, players explore the vast kingdom of Hyrule, solve ancient puzzles, and uncover secrets in one of the most critically acclaimed games of all time.",
-    "ratings": 4.9,
-    "downloadLink": "https://www.zelda.com/breath-of-the-wild/",
-    "price": "$59.99",
-    "multiplayer": false
+    "category": "Racing",
+    "subCategory": "Arcade",
+    "platform": ["Mobile"],
+    "releaseDate": "2018-07-25",
+    "developer": "Gameloft",
+    "publisher": "Gameloft",
+    "description": "Asphalt 9 delivers stunning high-speed racing with real cars, jaw-dropping tracks, and cinematic graphics. With online multiplayer and customizable vehicles, it’s the ultimate arcade racer for mobile gamers.",
+    "ratings": 4.6,
+    "downloadLink": "https://asphaltlegends.com/",
+    "price": "Free",
+    "multiplayer": true
   },
   {
     "id": "18",
