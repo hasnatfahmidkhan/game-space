@@ -111,14 +111,15 @@ const Navbar = () => {
                   ) : (
                     <li>
                       <MyLink to={"/profile"}>
-                        {user.photoURL ? (
-                          <img
-                            className="h-12 w-12 rounded-full object-cover"
-                            src={user.photoURL}
-                          />
-                        ) : (
-                          <img src={userImage} className="h-10 w-10" />
-                        )}
+                        <img
+                          className="h-12 w-12 rounded-full object-cover"
+                          src={user.photoURL || userImage}
+                          onError={(e) => {
+                            e.target.onerror = null; // prevent the infinite loop
+                            e.target.src = userImage; // set default image
+                          }}
+                          alt={user.displayName}
+                        />
                       </MyLink>
                     </li>
                   )}

@@ -1,4 +1,4 @@
-import { useParams } from "react-router";
+import { Link, useParams } from "react-router";
 import useGameData from "../../Hooks/useGameData";
 import { useEffect, useState } from "react";
 
@@ -32,7 +32,7 @@ const GameDetails = () => {
   }
 
   return (
-    <section className="flex flex-col md:flex-row gap-4 md:gap-8 p-4 md:p-6 border border-white/30 rounded-2xl">
+    <section className="flex flex-col md:flex-row gap-4 md:gap-8  p-4 md:p-6 border border-white/30 rounded-2xl">
       {/* title  */}
       <title>{game?.title}</title>
       <div className="w-full md:w-1/2 space-y-5 rounded-2xl overflow-hidden">
@@ -47,7 +47,7 @@ const GameDetails = () => {
           className="h-52 md:h-64 lg:h-72 xl:h-80 2xl:h-96 rounded-2xl"
         >
           <SwiperSlide>
-            <img src={game?.coverPhoto}  />
+            <img className="h-full" src={game?.coverPhoto} />
           </SwiperSlide>
           <SwiperSlide>
             <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
@@ -79,18 +79,18 @@ const GameDetails = () => {
           </SwiperSlide>
         </Swiper>
       </div>
-      <div className="w-full h-96 md:w-1/2 text-white/50 text-lg">
-        <div className="space-y-2">
+      <div className="w-full md:w-1/2 text-white/50 text-lg">
+        <div className="space-y-4">
           {/* title and release date  */}
-          <div className="space-y-2">
-            <h2 className="text-3xl md:text-5xl text-info font-semibold">
-              {game?.title}
-            </h2>
-            <p>
-              <span>Release On: </span>
-              <span>{game?.releaseDate}</span>
-            </p>
-          </div>
+          <h2 className="text-3xl md:text-5xl text-info font-semibold">
+            {game?.title}
+          </h2>
+
+          <div className="divider"></div>
+          <p>
+            <span>Release On: </span>
+            <span>{game?.releaseDate}</span>
+          </p>
 
           {/* price and ratings */}
           <div className="flex items-center gap-4 text-xl font-medium text-info">
@@ -107,12 +107,39 @@ const GameDetails = () => {
             </p>
           </div>
 
+          <div className="divider"></div>
+
           {/* description  */}
           <div>
             <p className="font-light">{game?.description}</p>
           </div>
 
-          {/*  */}
+          <div className="divider"></div>
+
+          <div className="grid grid-cols-2 gap-3">
+            <p>Develop by: {game?.developer}</p>
+            <p>Publisher: {game?.publisher}</p>
+            <p>Multiplayer: {game?.multiplayer ? "Yes" : "No"}</p>
+            <p>Catergory: {game?.category}</p>
+            <p>SubCategory: {game?.category}</p>
+            <p className="space-x-2">
+              Platform:{" "}
+              {game?.platform?.map((p) => (
+                <span key={p}>{p}</span>
+              ))}
+            </p>
+          </div>
+        </div>
+        <div className="divider"></div>
+        <div className="pt-5 flex items-center justify-end gap-4">
+          <Link
+            to={game?.downloadLink}
+            target="_blank"
+            className="btn btn-success btn-outline text-white"
+          >
+            Install Now
+          </Link>
+          <button className="btn btn-info text-white">Add to wishlist</button>
         </div>
       </div>
     </section>
