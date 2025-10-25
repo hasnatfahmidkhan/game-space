@@ -1,15 +1,14 @@
 import { use, useState } from "react";
 import { FaArrowLeft } from "react-icons/fa";
-import { Link, useLocation, useNavigate } from "react-router";
+import { Link, useLocation } from "react-router";
 import { toast } from "react-toastify";
 import AuthContext from "../../Context/AuthContext";
 import "../Register/register.css";
 const ForgetPassword = () => {
   const { resetPasswordFunc, setAuthLoading } = use(AuthContext);
   const [emailSent, setEmailSent] = useState(false);
-  const navigate = useNavigate();
   const location = useLocation();
-  
+
   // password reset
   const handlePasswordReset = (e) => {
     e.preventDefault();
@@ -21,7 +20,7 @@ const ForgetPassword = () => {
         setEmailSent(false);
         toast.success("Sent you a mail, Please check your inbox!");
         e.target.reset();
-        navigate("/auth/login");
+        window.open("https://mail.google.com/", "_blank");
       })
       .catch((err) => {
         toast.error(err.message);

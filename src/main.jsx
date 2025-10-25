@@ -22,7 +22,7 @@ createRoot(document.getElementById("root")).render(
         pauseOnHover
         theme="light"
         transition={Bounce}
-        className={'max-w-80 mx-auto'}
+        className={"max-w-80 mx-auto"}
       />
     </AuthProvider>
   </StrictMode>

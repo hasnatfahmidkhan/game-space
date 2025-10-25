@@ -6,11 +6,11 @@ const PrivateRoute = ({ children }) => {
   const { user } = use(AuthContext);
   const location = useLocation();
 
-  if (user && user.email) {
-    return children;
+  if (!(user && user.emailVerified)) {
+    return <Navigate to={"/auth/login"} state={location.pathname} />;
   }
 
-  return <Navigate to={"/auth/login"} state={location.pathname} />;
+  return children;
 };
 
 export default PrivateRoute;

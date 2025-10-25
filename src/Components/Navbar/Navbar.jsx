@@ -106,7 +106,7 @@ const Navbar = () => {
           <div className="hidden lg:flex">
             <ul className="menu menu-horizontal items-center gap-1">
               {links}
-              {user && user?.emailVerified ? (
+              {user ? (
                 <div className="flex items-center justify-center gap-1">
                   {authLoading ? (
                     <ClockLoader color="#32d2c8" />

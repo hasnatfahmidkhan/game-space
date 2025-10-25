@@ -8,7 +8,7 @@ import "../Register/register.css";
 const Login = () => {
   const { singInFunc, googleSignInFunc, setAuthLoading } = use(AuthContext);
   const [showPassword, setShowPassword] = useState(false);
-  const navigation = useLocation();
+  const location = useLocation();
   const navigate = useNavigate();
   const emailRef = useRef(null);
 
@@ -22,7 +22,7 @@ const Login = () => {
       e.target.reset();
       setAuthLoading(false);
       toast.success("Login successfully!");
-      navigate(navigation.state || "/");
+      navigate(location.state || "/");
     } catch (error) {
       toast.error(error.message);
     }
@@ -34,7 +34,7 @@ const Login = () => {
       await googleSignInFunc();
       setAuthLoading(false);
       toast.success("Sign in succesfully!");
-      navigate(navigation.state || "/");
+      navigate(location.state || "/");
     } catch (error) {
       toast.error(error.message);
     }
@@ -43,7 +43,7 @@ const Login = () => {
   const handleForgetPassword = () => {
     navigate("/auth/forget-password", { state: emailRef.current.value });
   };
-  
+
   return (
     <section className="flex items-center justify-center h-[calc(100vh-170px)] ">
       <form onSubmit={handleLogin} className="max-w-sm w-full ">

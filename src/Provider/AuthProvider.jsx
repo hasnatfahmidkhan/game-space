@@ -59,7 +59,7 @@ const AuthProvider = ({ children }) => {
 
   // reset password
   const resetPasswordFunc = async (email) => {
-    setAuthLoading(true)
+    setAuthLoading(true);
     return await sendPasswordResetEmail(auth, email);
   };
 
