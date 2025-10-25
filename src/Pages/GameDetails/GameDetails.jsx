@@ -17,6 +17,7 @@ import { FaStar } from "react-icons/fa6";
 import { LuClipboardList } from "react-icons/lu";
 import { MdInstallDesktop } from "react-icons/md";
 import { setWishList } from "../../Utility/localStorage";
+import DetailsCardSkeleton from "../../Skeleton/DetailsCardSkeleton";
 
 const GameDetails = () => {
   const { games, loading } = useGameData("/data.json");
@@ -31,7 +32,7 @@ const GameDetails = () => {
   }, [games, id]);
 
   if (loading) {
-    return <p>Loadding....</p>;
+    return <DetailsCardSkeleton />;
   }
 
   return (

@@ -35,6 +35,7 @@ const Games = () => {
 
   return (
     <section>
+      <title>Explore All Games</title>
       <div className="py-12 text-center space-y-2">
         <h1 className="text-4xl font-bold text-info">Explore All Games</h1>
         <p className="text-2xl  text-white/50">
