@@ -39,7 +39,7 @@ const Navbar = () => {
         <div className="navbar-start">
           <Link
             to={"/"}
-            className="text-3xl text-info font-semibold flex items-end"
+            className="text-2xl md:text-3xl text-info font-semibold flex items-end"
           >
             <img src="/logo.png" className="w-10" />
             <span id="logo">AME SPACE</span>

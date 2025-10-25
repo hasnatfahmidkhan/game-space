@@ -1,20 +1,36 @@
-import { Outlet } from "react-router";
+import { Outlet, useLocation } from "react-router";
 import Navbar from "../../Components/Navbar/Navbar";
 import Container from "../../Components/Container/Container";
 import Footer from "../../Components/Footer/Footer";
 import PageWrapper from "../../Components/PageWrapper/PageWrapper";
 import { useEffect, useState } from "react";
 import Preloader from "../../Components/Preloader/Preloader";
+import { BounceLoader } from "react-spinners";
 
 const RootLayout = () => {
   const [preload, setPreload] = useState(true);
+  const [loading, setLoading] = useState(false);
+  const location = useLocation();
 
+  // preloader
   useEffect(() => {
     setPreload(true);
     setTimeout(() => {
       setPreload(false);
     }, 4000);
   }, []);
+
+  // every navigation show loader at the outlet
+  useEffect(() => {
+    setLoading(true);
+
+    // scroll to top whenever route change
+    window.scrollTo({ top: 0, behavior: "smooth" });
+
+    setTimeout(() => {
+      setLoading(false);
+    }, 500);
+  }, [location.pathname]);
 
   if (preload) {
     return <Preloader />;
@@ -27,7 +43,13 @@ const RootLayout = () => {
       <main className="flex-1">
         <Container className={"overflow-hidden pb-6 pt-8"}>
           <PageWrapper>
-            <Outlet />
+            {loading ? (
+              <div className="flex items-center justify-center h-96">
+                <BounceLoader color="#0ea5e9" />
+              </div>
+            ) : (
+              <Outlet />
+            )}
           </PageWrapper>
         </Container>
       </main>
