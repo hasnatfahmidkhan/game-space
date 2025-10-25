@@ -20,17 +20,17 @@ const Newsletter = () => {
   return (
     <div className="border border-white/30 hover:border-sky-500 transition-colors duration-300 py-10 mt-20 mb-10 rounded-2xl">
       <div className="max-w-xl h-96 mx-auto flex flex-col items-center justify-center text-center">
-        <div className="space-y-7">
-          <h2 className="md:text-5xl font-semibold tracking-wide">
+        <div className="space-y-4 md:space-y-7">
+          <h2 className="text-2xl md:text-5xl font-semibold tracking-wide">
             GameSpace Weekly
           </h2>
-          <p className="text-xl text-white/30 ">
+          <p className="text-base md:text-xl text-white/30 ">
             Your ultimate source for games updates, news releases, and pro tips
             - all in one place.
           </p>
           <form
             onSubmit={handleNewsletter}
-            className="flex items-center gap-4 w-2/3 mx-auto"
+            className="flex flex-col md:flex-row items-center gap-4 w-2/3 mx-auto"
           >
             <input
               required
