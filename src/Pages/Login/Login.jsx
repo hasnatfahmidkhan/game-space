@@ -1,4 +1,4 @@
-import { use, useState } from "react";
+import { use, useRef, useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { Link, useLocation, useNavigate } from "react-router";
 import AuthContext from "../../Context/AuthContext";
@@ -10,6 +10,7 @@ const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
   const navigation = useLocation();
   const navigate = useNavigate();
+  const emailRef = useRef(null);
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -38,6 +39,11 @@ const Login = () => {
       toast.error(error.message);
     }
   };
+
+  const handleForgetPassword = () => {
+    navigate("/auth/forget-password", { state: emailRef.current.value });
+  };
+  
   return (
     <section className="flex items-center justify-center h-[calc(100vh-170px)] ">
       <form onSubmit={handleLogin} className="max-w-sm w-full ">
@@ -48,6 +54,7 @@ const Login = () => {
           <div className="space-y-1">
             <label className="label text-sm">Email</label>
             <input
+              ref={emailRef}
               required
               name="email"
               type="email"
@@ -75,9 +82,13 @@ const Login = () => {
               </span>
             </div>
             <p className="text-xs text-gray-500">
-              <Link to={"/auth/forget-password"} className="hover:underline">
+              <button
+                type="button"
+                onClick={handleForgetPassword}
+                className="cursor-pointer hover:underline"
+              >
                 Forget Password?
-              </Link>
+              </button>
             </p>
           </div>
 

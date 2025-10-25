@@ -55,9 +55,9 @@ const Register = () => {
 
   // email verification
   const checkVerificationStatus = async (user, intervalId) => {
-    try {
-      await user.reload();
+    await user.reload();
 
+    try {
       if (user.emailVerified) {
         clearInterval(intervalId);
         setIsWaitingForVerfication(false);
@@ -83,7 +83,7 @@ const Register = () => {
     try {
       const userCredential = await SignUpFunc(email, password);
       const currentUser = userCredential.user;
-      console.log(currentUser);
+      // console.log(currentUser);
 
       // update profile
       await updateProfileFunc(name, photo);
@@ -98,7 +98,6 @@ const Register = () => {
         "Please check your email and click the verification link. This page will automatically redirect once verified.",
         "info"
       );
-
       // check every 3 second is email is verified or not
       const verificationInterval = setInterval(() => {
         checkVerificationStatus(currentUser, verificationInterval);

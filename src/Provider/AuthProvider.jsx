@@ -87,7 +87,7 @@ const AuthProvider = ({ children }) => {
     singInFunc,
     resetPasswordFunc,
   };
-  console.log(user);
+  // console.log(user);
   return (
     <AuthContext.Provider value={authInfo}>{children}</AuthContext.Provider>
   );

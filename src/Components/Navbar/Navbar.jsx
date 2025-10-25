@@ -9,11 +9,12 @@ import { ClockLoader } from "react-spinners";
 import { Link } from "react-router";
 
 const Navbar = () => {
-  const { user, signOutFunc, authLoading } = use(AuthContext);
+  const { user, signOutFunc, authLoading, setUser } = use(AuthContext);
   const handleSignOut = () => {
     signOutFunc()
       .then(() => {
         toast.success("Sign out succesfully!");
+        setUser(null);
       })
       .catch((err) => {
         toast.error(err.message);

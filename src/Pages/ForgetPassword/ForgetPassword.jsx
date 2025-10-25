@@ -1,6 +1,6 @@
 import { use, useState } from "react";
 import { FaArrowLeft } from "react-icons/fa";
-import { Link, useNavigate } from "react-router";
+import { Link, useLocation, useNavigate } from "react-router";
 import { toast } from "react-toastify";
 import AuthContext from "../../Context/AuthContext";
 import "../Register/register.css";
@@ -8,7 +8,8 @@ const ForgetPassword = () => {
   const { resetPasswordFunc, setAuthLoading } = use(AuthContext);
   const [emailSent, setEmailSent] = useState(false);
   const navigate = useNavigate();
-
+  const location = useLocation();
+  
   // password reset
   const handlePasswordReset = (e) => {
     e.preventDefault();
@@ -45,6 +46,7 @@ const ForgetPassword = () => {
             <label className="label text-sm">Email</label>
             <input
               required
+              defaultValue={location?.state}
               name="email"
               type="email"
               className="input forminp"
