@@ -36,7 +36,7 @@ const MyWishList = () => {
     <section>
       <title>My Wishlist</title>
       <div className="flex justify-between items-center">
-        <h2 className="text-3xl md:text-4xl font-semibold">MyWishList</h2>
+        <h2 className="text-3xl md:text-4xl font-semibold">My wishlist</h2>
         {/* sort  */}
         <div>
           <select
@@ -57,7 +57,7 @@ const MyWishList = () => {
         {wishlist.length === 0 ? (
           <div className="flex flex-col md:items-center">
             <p className="text-gray-500 text-center">
-              No games added to Mywishlist yet.
+              No games added to wishlist yet.
             </p>
             <motion.div
               initial={{

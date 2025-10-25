@@ -46,7 +46,7 @@ const Games = () => {
         <h2 className="text-3xl font-semibold text-white/80">
           All Games{" "}
           <span className="text-xs font-normal tracking-wide">
-            ({games.length} games found)
+            ({displayGames.length} games found)
           </span>
         </h2>
 
