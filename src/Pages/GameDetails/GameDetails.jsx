@@ -58,9 +58,14 @@ const GameDetails = () => {
 
         {/* swiper for small image  */}
         <Swiper
+          style={{
+            "--swiper-navigation-color": "#fff",
+            "--swiper-navigation-size": "20px",
+          }}
           onSwiper={setThumbsSwiper}
           loop={true}
           spaceBetween={10}
+          navigation={true}
           breakpoints={{
             0: {
               slidesPerView: 2,
