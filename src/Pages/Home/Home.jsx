@@ -11,7 +11,7 @@ const Home = () => {
       <Banner></Banner>
       <FeaturedGames />
       <div className="flex justify-center pt-10">
-        <Link to={"/games"} className="btn btn-info">
+        <Link to={"/games"} className="btn btn-info text-white">
           <FaGamepad size={20} />
           All Games
         </Link>

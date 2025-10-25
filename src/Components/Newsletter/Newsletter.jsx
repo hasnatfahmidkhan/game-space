@@ -1,4 +1,5 @@
 import { toast } from "react-toastify";
+import { IoIosSend } from "react-icons/io";
 
 const Newsletter = () => {
   const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
@@ -38,7 +39,10 @@ const Newsletter = () => {
               className="input forminp"
               placeholder="Enter your email"
             />
-            <button className="btn btn-info">Netlify Me</button>
+            <button className="btn btn-info text-white">
+              <IoIosSend size={18}/>
+              Netlify Me
+            </button>
           </form>
         </div>
       </div>
