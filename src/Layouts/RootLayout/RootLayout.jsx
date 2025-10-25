@@ -6,11 +6,20 @@ import PageWrapper from "../../Components/PageWrapper/PageWrapper";
 import { useEffect, useState } from "react";
 import Preloader from "../../Components/Preloader/Preloader";
 import { BounceLoader } from "react-spinners";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 const RootLayout = () => {
   const [preload, setPreload] = useState(true);
   const [loading, setLoading] = useState(false);
   const location = useLocation();
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      easing: "ease-in-out",
+      once: true,
+      mirror: false,
+    });
+  }, []);
 
   // preloader
   useEffect(() => {
@@ -29,7 +38,7 @@ const RootLayout = () => {
 
     setTimeout(() => {
       setLoading(false);
-    }, 500);
+    }, 700);
   }, [location.pathname]);
 
   if (preload) {

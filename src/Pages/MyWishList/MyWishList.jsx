@@ -79,13 +79,15 @@ const MyWishList = () => {
           </div>
         ) : (
           <AnimatePresence>
-            {wishlist.map((game) => (
+            {wishlist.map((game, index) => (
               <motion.div
+                data-aos="fade-up"
+                data-aos-delay={index || 0}
                 layout
-                animate={{
-                  opacity: 1,
-                  height: "auto",
-                }}
+                // animate={{
+                //   opacity: 1,
+                //   height: "auto",
+                // }}
                 exit={{
                   opacity: 0,
                   height: 0,

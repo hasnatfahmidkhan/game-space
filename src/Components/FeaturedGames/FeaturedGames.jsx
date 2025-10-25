@@ -3,6 +3,7 @@ import useGameData from "../../Hooks/useGameData";
 import GameCard from "../GameCard/GameCard";
 import GameCardSkeleton from "../../Skeleton/GameCardSkeleton";
 
+
 const FeaturedGames = () => {
   const { games, loading } = useGameData("/popular.json");
   // console.log(games, loading);
@@ -23,7 +24,9 @@ const FeaturedGames = () => {
         {loading ? (
           <GameCardSkeleton />
         ) : (
-          games.map((game) => <GameCard key={game.id} game={game} />)
+          games.map((game, index) => (
+            <GameCard aosDelay={index * 20} key={game.id} game={game} />
+          ))
         )}
       </div>
     </section>

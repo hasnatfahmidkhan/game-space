@@ -36,7 +36,10 @@ const GameDetails = () => {
   }
 
   return (
-    <section className="flex flex-col md:flex-row gap-4 md:gap-8  p-4 md:p-6 border border-white/30 rounded-2xl">
+    <section
+      data-aos="zoom-in"
+      className="flex flex-col md:flex-row gap-4 md:gap-8  p-4 md:p-6 border border-white/30 rounded-2xl"
+    >
       {/* title  */}
       <title>{game?.title}</title>
       <div className="w-full md:w-1/2 space-y-5 rounded-2xl overflow-hidden">

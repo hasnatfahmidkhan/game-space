@@ -18,7 +18,10 @@ const Newsletter = () => {
     }
   };
   return (
-    <div className="border border-white/30 hover:border-sky-500 transition-colors duration-300 py-10 mt-20 mb-10 rounded-2xl">
+    <div
+      data-aos="fade-up"
+      className="border border-white/30 hover:border-sky-500 transition-colors duration-300 py-10 mt-20 mb-10 rounded-2xl"
+    >
       <div className="max-w-xl h-96 mx-auto flex flex-col items-center justify-center text-center">
         <div className="space-y-4 md:space-y-7">
           <h2 className="text-2xl md:text-5xl font-semibold tracking-wide">
@@ -40,7 +43,7 @@ const Newsletter = () => {
               placeholder="Enter your email"
             />
             <button className="btn btn-info text-white">
-              <IoIosSend size={18}/>
+              <IoIosSend size={18} />
               Netlify Me
             </button>
           </form>

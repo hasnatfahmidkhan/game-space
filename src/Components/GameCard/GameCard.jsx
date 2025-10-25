@@ -1,12 +1,14 @@
 import { FaStar } from "react-icons/fa6";
 import { useNavigate } from "react-router";
 import { motion } from "motion/react";
-const GameCard = ({ game }) => {
+const GameCard = ({ game, aosDelay }) => {
   const navigate = useNavigate();
 
   return (
     <>
-      <motion.div
+      <div
+        data-aos="fade-up"
+        data-aos-delay={aosDelay || 0}
         onClick={() => navigate(`/game-details/${game.id}`)}
         className="cursor-pointer card bg-base-800 shadow-sm hover:shadow-2xl transition-shadow duration-300 border border-white/30 hover:border-info/50 group h-full"
       >
@@ -43,7 +45,7 @@ const GameCard = ({ game }) => {
             </div>
           </div>
         </div>
-      </motion.div>
+      </div>
     </>
   );
 };
