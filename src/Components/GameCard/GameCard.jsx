@@ -5,7 +5,7 @@ const GameCard = ({ game }) => {
   const navigate = useNavigate();
 
   return (
-    <div>
+    <>
       <motion.div
         onClick={() => navigate(`/game-details/${game.id}`)}
         className="cursor-pointer card bg-base-800 shadow-sm hover:shadow-2xl transition-shadow duration-300 border border-white/30 hover:border-info/50 group h-full"
@@ -44,7 +44,7 @@ const GameCard = ({ game }) => {
           </div>
         </div>
       </motion.div>
-    </div>
+    </>
   );
 };
 

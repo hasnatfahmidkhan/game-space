@@ -1,16 +1,53 @@
-# React + Vite
+# Gamespace - A Game Library
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An engaging online library for discovering and supporting game developers.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Live URL
 
-## React Compiler
+[Visit Gamespace Live](https://game-space-app.netlify.app/)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Purpose
 
-## Expanding the ESLint configuration
+**Gamespace** is designed to connect gamers with talented indie developers.  
+It allows users to browse various games, read details, explore developer info, and download or install games they find interesting.  
+The platform also includes secure authentication, user profile management, and interactive animations for a smooth user experience.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Technologies & Dependencies
+
+
+### Frontend Stack
+- **React 19**
+- **React Router 7**
+- **Tailwind CSS + DaisyUI**
+- **Firebase Authentication**
+- **Axios** for data fetching
+- **Motion (Framer Motion)** for animations
+- **Swiper.js** for the homepage slider
+- **React Toastify** for notifications
+- **Lottie React** for animations
+- **React Icons** for UI icons
+- **React Spinners** for loading states
+- **SweetAlert** for alert dialogs
+
+### npm Packages Used
+
+```json
+"dependencies": {
+  "@tailwindcss/vite": "^4.1.15",
+  "axios": "^1.12.2",
+  "daisyui": "^5.3.7",
+  "firebase": "^12.4.0",
+  "lottie-react": "^2.4.1",
+  "motion": "^12.23.24",
+  "react": "^19.1.1",
+  "react-dom": "^19.1.1",
+  "react-icons": "^5.5.0",
+  "react-router": "^7.9.4",
+  "react-spinners": "^0.17.0",
+  "react-toastify": "^11.0.5",
+  "sweetalert": "^2.1.2",
+  "swiper": "^12.0.3",
+  "tailwindcss": "^4.1.15"
+}
