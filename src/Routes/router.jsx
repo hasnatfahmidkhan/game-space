@@ -10,6 +10,7 @@ import Games from "../Pages/Games/Games";
 import Profile from "../Pages/Profile/Profile";
 import GameDetails from "../Pages/GameDetails/GameDetails";
 import MyWishList from "../Pages/MyWishList/MyWishList";
+import UpdateProfile from "../Pages/UpdateProfile/UpdateProfile";
 
 const router = createBrowserRouter([
   {
@@ -44,6 +45,10 @@ const router = createBrowserRouter([
       {
         path: "/auth/register",
         element: <Register />,
+      },
+      {
+        path: "/auth/update-profile",
+        element: <UpdateProfile />,
       },
       {
         path: "/mywishlist",

@@ -4,7 +4,6 @@ import useGameData from "../../Hooks/useGameData";
 import {
   Navigation,
   Pagination,
-  Scrollbar,
   A11y,
   Autoplay,
 } from "swiper/modules";
@@ -20,7 +19,6 @@ const Banner = () => {
   const { games, loading } = useGameData("/banner.json");
   const { images } = games;
 
-  console.log(images);
   if (loading) {
     return <div className="skeleton h-[750px] w-full"></div>;
   }
