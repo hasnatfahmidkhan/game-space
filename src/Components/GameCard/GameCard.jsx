@@ -1,6 +1,5 @@
 import { FaStar } from "react-icons/fa6";
 import { useNavigate } from "react-router";
-import { motion } from "motion/react";
 const GameCard = ({ game, aosDelay }) => {
   const navigate = useNavigate();
 
