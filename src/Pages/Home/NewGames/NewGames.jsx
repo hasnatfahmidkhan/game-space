@@ -12,7 +12,7 @@ const NewGames = () => {
     <div>
       <section className="pt-10 md:pt-20 px-4 space-y-15">
         {/* header of popular games  */}
-        <div className="flex flex-col items-center gap-3 md:gap-5 text-center">
+        <div className="heading_container">
           <Heading icon={<FaGamepad />}>New Release</Heading>
           <SubHeading>
             Fresh games just added to the library — be the first to dive in.

@@ -4,7 +4,7 @@ import { Link, useLocation, useNavigate } from "react-router";
 import AuthContext from "../../Context/AuthContext";
 import { toast } from "react-toastify";
 import { FaGoogle } from "react-icons/fa6";
-import "../Register/register.css";
+
 const Login = () => {
   const { singInFunc, googleSignInFunc, setAuthLoading } = use(AuthContext);
   const [showPassword, setShowPassword] = useState(false);

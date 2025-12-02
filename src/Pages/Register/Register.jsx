@@ -6,7 +6,7 @@ import { toast } from "react-toastify";
 import swal from "sweetalert";
 import { LuLoaderCircle } from "react-icons/lu";
 import { FaGoogle } from "react-icons/fa6";
-import "./register.css";
+
 const Register = () => {
   const {
     SignUpFunc,

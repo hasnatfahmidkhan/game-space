@@ -6,7 +6,7 @@ const About = () => {
   return (
     <section className="pt-10 md:pt-20 px-4 space-y-15">
       {/* header of popular games  */}
-      <div className="flex flex-col items-center gap-3 md:gap-5 text-center">
+      <div className="heading_container">
         <Heading icon={<FaInfoCircle />}>About Us</Heading>
         <p className="text-white/70 text-base md:text-lg max-w-4xl mx-auto">
           Game Space is a non-profit online game library built for gamers who

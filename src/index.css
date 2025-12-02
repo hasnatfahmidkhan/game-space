@@ -5,6 +5,10 @@
   themes: night --default;
 }
 
-/* * {
-  font-family: "Baloo Bhai 2", sans-serif;
-} */
+.heading_container {
+  @apply flex flex-col items-center gap-3 md:gap-5 text-center;
+}
+
+.forminp {
+  @apply w-full text-sm focus:outline-none focus:border-sky-400 placeholder:text-xs placeholder:text-white/50;
+}

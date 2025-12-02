@@ -1,4 +1,1 @@
-@import "tailwindcss";
-.forminp {
-  @apply w-full text-sm focus:outline-none focus:border-sky-400 placeholder:text-xs placeholder:text-white/50;
-}
+
