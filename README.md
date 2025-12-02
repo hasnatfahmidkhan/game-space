@@ -1,4 +1,4 @@
-# Gamespace - A Game Library
+# 🎮 Gamespace - A Game Library
 
 An engaging online library for discovering and supporting game developers.
 
@@ -6,16 +6,57 @@ An engaging online library for discovering and supporting game developers.
 
 ## Live URL
 
-[Visit Gamespace Live](https://game-space-app.netlify.app/)
+**Live Site:** https://game-space-app.netlify.app/
 
-## Purpose
+---
 
-**Gamespace** is designed to connect gamers with talented indie developers.  
+## 📝 Overview 
+
 It allows users to browse various games, read details, explore developer info, and download or install games they find interesting.  
 The platform also includes secure authentication, user profile management, and interactive animations for a smooth user experience.
 
-## Technologies & Dependencies
+---
 
+## 📸 Screenshot  
+<img src="https://i.ibb.co.com/QFDPPcJy/Screenshot-2025-11-19-105128.png" />
+
+---
+
+## 🎯 Purpose
+
+**Gamespace** is designed to connect gamers with talented indie developers.  
+
+---
+
+## 🚀 Features
+
+- 🎮 **Game Library Management**  
+  Users can explore diffrent games.
+
+- 🔍 **Search & Filter**  
+  Easily find games by name.
+
+- 📊 **Sort Games by Ratings**  
+  Quickly view top-rated games in your library or the platform.
+
+- 📝 **Detailed Game Pages**  
+  View full game information including release date, genre, platform, description, and screenshots.
+
+- 💖 **Wishlist**  
+  Add favorite games to a personal wishlist for quick access later.
+
+- ⬇️ **Install / Visit Official Site**  
+  Click to go directly to the official game website for installation or purchase.
+
+- 📱 **Fully Responsive UI**  
+  Optimized for desktop, tablet, and mobile devices.
+
+- ⚡ **Modern Interface & Animations**  
+  Smooth interactions with React and Tailwind CSS for an engaging experience.
+
+---
+
+## 🧩 Technologies & Dependencies
 
 ### Frontend Stack
 - **React 19**
@@ -31,23 +72,72 @@ The platform also includes secure authentication, user profile management, and i
 - **React Spinners** for loading states
 - **SweetAlert** for alert dialogs
 
-### npm Packages Used
+---
 
-```json
+## 📦 Dependencies
+```
 "dependencies": {
-  "@tailwindcss/vite": "^4.1.15",
-  "axios": "^1.12.2",
-  "daisyui": "^5.3.7",
-  "firebase": "^12.4.0",
-  "lottie-react": "^2.4.1",
-  "motion": "^12.23.24",
-  "react": "^19.1.1",
-  "react-dom": "^19.1.1",
-  "react-icons": "^5.5.0",
-  "react-router": "^7.9.4",
-  "react-spinners": "^0.17.0",
-  "react-toastify": "^11.0.5",
-  "sweetalert": "^2.1.2",
-  "swiper": "^12.0.3",
-  "tailwindcss": "^4.1.15"
+    "@tanstack/react-query": "^5.90.7",
+    "firebase": "^12.5.0",
+    "lottie-react": "^2.4.1",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-hook-form": "^7.66.0",
+    "react-hot-toast": "^2.6.0",
+    "react-icons": "^5.5.0",
+    "react-spinners": "^0.17.0",
+    "sweetalert2": "^11.26.3",
+    "swiper": "^12.0.3"
+  }
+  
+```
+
+## 📦 **Dev Dependencies**
+```
+{
+    "@eslint/js": "^9.36.0",
+    "@tailwindcss/vite": "^4.1.17",
+    "@types/react": "^19.1.16",
+    "@types/react-dom": "^19.1.9",
+    "@vitejs/plugin-react": "^5.0.4",
+    "axios": "^1.13.2",
+    "daisyui": "^5.4.7",
+    "eslint": "^9.36.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.22",
+    "globals": "^16.4.0",
+    "react-router": "^7.9.5",
+    "tailwindcss": "^4.1.17",
+    "vite": "^7.1.7"
+  
 }
+```
+
+----
+
+## ⚙ Installation 
+Clone the repo and install dependencies:
+
+```bash
+git clone https://github.com/hasnatfahmidkhan/game-space
+npm install
+```
+
+Set up environment variables by creating a `.env` file in the root directory:
+
+```env
+VITE_APIKEY=your_api_key
+VITE_AUTHDOMAIN=your_auth_domain
+VITE_PROJECTID=your_project_id
+VITE_STORAGEBUCKET=your_storage_bucket
+VITE_MESSAGINGSENDERID=your_sender_id
+VITE_APPID=your_app_id
+```
+---
+4. Start the development server:
+
+```
+npm run dev
+```
+---
+5. Open your browser and navigate to `http://localhost:5173` to view the application.

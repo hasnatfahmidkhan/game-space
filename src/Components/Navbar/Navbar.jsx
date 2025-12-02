@@ -28,9 +28,11 @@ const Navbar = () => {
       <li>
         <MyLink to={"/games"}>Games</MyLink>
       </li>
-      <li>
-        <MyLink to={"/mywishlist"}>My Wishlists</MyLink>
-      </li>
+      {user && (
+        <li>
+          <MyLink to={"/mywishlist"}>My Wishlists</MyLink>
+        </li>
+      )}
     </>
   );
   return (

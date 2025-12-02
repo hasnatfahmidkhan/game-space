@@ -60,11 +60,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/game-details/:id",
-        element: (
-          <PrivateRoute>
-            <GameDetails />
-          </PrivateRoute>
-        ),
+        element: <GameDetails />,
       },
     ],
   },
