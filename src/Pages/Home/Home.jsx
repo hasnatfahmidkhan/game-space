@@ -5,6 +5,7 @@ import "../Register/register.css";
 import FeaturedGames from "./FeaturedGames/FeaturedGames";
 import Newsletter from "./Newsletter/Newsletter";
 import NewGames from "./NewGames/NewGames";
+import About from "./About/About";
 const Home = () => {
   return (
     <div>
@@ -20,6 +21,7 @@ const Home = () => {
       {/* News letter */}
       <NewGames />
       <Newsletter />
+      <About />
     </div>
   );
 };

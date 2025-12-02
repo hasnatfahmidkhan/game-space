@@ -90,28 +90,5 @@
     "downloadLink": "https://store.example.com/shadow-circuit",
     "price": "$17.99",
     "multiplayer": true
-  },
-  {
-    "id": "34",
-    "title": "Pixel Farm Tycoon",
-    "coverPhoto": "https://example.com/images/pixel-farm-tycoon-cover.jpg",
-    "images": [
-      "https://example.com/images/pixel-farm-tycoon-1.jpg",
-      "https://example.com/images/pixel-farm-tycoon-2.jpg",
-      "https://example.com/images/pixel-farm-tycoon-3.jpg",
-      "https://example.com/images/pixel-farm-tycoon-4.jpg",
-      "https://example.com/images/pixel-farm-tycoon-5.jpg"
-    ],
-    "category": "Simulation",
-    "subCategory": "Management",
-    "platform": ["PC", "Mobile"],
-    "releaseDate": "2024-05-10",
-    "developer": "CozyBit Studio",
-    "publisher": "Greenfield Interactive",
-    "description": "Pixel Farm Tycoon is a cozy management sim where you build a thriving farm from the ground up. Grow rare crops, breed animals, automate production lines, and trade with quirky neighboring towns.",
-    "ratings": 4.7,
-    "downloadLink": "https://store.example.com/pixel-farm-tycoon",
-    "price": "$14.99",
-    "multiplayer": false
   }
 ]

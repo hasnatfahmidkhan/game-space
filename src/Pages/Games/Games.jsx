@@ -9,8 +9,9 @@ const Games = () => {
   const { games, loading } = useGameData("/data.json");
   const [searchLoading, setSearchLoading] = useState(false);
   const [sortgame, setSortgame] = useState("none");
+  const [filtertgame, setFiltertgame] = useState("none");
   const [search, setSearch] = useState("");
-
+  console.log(games);
   const handleSearch = (e) => {
     setSearchLoading(true);
     setSearch(e.target.value);
@@ -26,11 +27,20 @@ const Games = () => {
     ? games.filter((game) => game.title.toLowerCase().includes(search))
     : games;
 
-  const displayGames = [...searchedGames];
+  let displayGames = [...searchedGames];
+
+  // sorting
   if (sortgame === "rating-asc") {
     displayGames.sort((a, b) => a.ratings - b.ratings);
   } else if (sortgame === "rating-dsc") {
     displayGames.sort((a, b) => b.ratings - a.ratings);
+  }
+
+  // filtering
+  if (filtertgame !== "none" && filtertgame !== "All") {
+    displayGames = displayGames.filter((game) =>
+      game.platform.includes(filtertgame)
+    );
   }
 
   return (
@@ -52,6 +62,22 @@ const Games = () => {
         </h2>
 
         <div className="flex items-center gap-5">
+          {/* sort  */}
+          <div>
+            <select
+              value={filtertgame}
+              onChange={(e) => setFiltertgame(e.target.value)}
+              className="select focus-within:border-sky-500 w-fit focus-within:outline-none"
+            >
+              <option value="none" disabled>
+                Filter game
+              </option>
+              <option value="All">All</option>
+              <option value="PC">Pc</option>
+              <option value="Mobile">Mobile</option>
+              <option value="Console">Console</option>
+            </select>
+          </div>
           {/* sort  */}
           <div>
             <select
