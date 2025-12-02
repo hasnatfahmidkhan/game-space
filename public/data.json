@@ -45,7 +45,6 @@
     "price": "Free",
     "multiplayer": true
   },
-
   {
     "id": "4",
     "title": "Fortnite",
@@ -230,7 +229,6 @@
     "price": "Free",
     "multiplayer": true
   },
-
   {
     "id": "22",
     "title": "Call of Duty: Mobile",
@@ -636,5 +634,120 @@
     "downloadLink": "https://www.pubgmobile.com/en-US/home.shtml",
     "price": "Free",
     "multiplayer": true
+  },
+  {
+    "id": "30",
+    "title": "Neon Drift Legends",
+    "coverPhoto": "https://example.com/images/neon-drift-legends-cover.jpg",
+    "images": [
+      "https://example.com/images/neon-drift-legends-1.jpg",
+      "https://example.com/images/neon-drift-legends-2.jpg",
+      "https://example.com/images/neon-drift-legends-3.jpg",
+      "https://example.com/images/neon-drift-legends-4.jpg",
+      "https://example.com/images/neon-drift-legends-5.jpg"
+    ],
+    "category": "Racing",
+    "subCategory": "Arcade",
+    "platform": ["PC", "Console"],
+    "releaseDate": "2024-08-02",
+    "developer": "Midnight Pixel Studio",
+    "publisher": "UrbanPulse Games",
+    "description": "Neon Drift Legends is a high-speed, synthwave-infused racing game set in a futuristic city. Master tight corners, build your drift combo, and climb the online leaderboards under glowing neon skies.",
+    "ratings": 4.6,
+    "downloadLink": "https://store.example.com/neon-drift-legends",
+    "price": "$19.99",
+    "multiplayer": true
+  },
+  {
+    "id": "31",
+    "title": "Starfall Tactics: Armada",
+    "coverPhoto": "https://example.com/images/starfall-tactics-cover.jpg",
+    "images": [
+      "https://example.com/images/starfall-tactics-1.jpg",
+      "https://example.com/images/starfall-tactics-2.jpg",
+      "https://example.com/images/starfall-tactics-3.jpg",
+      "https://example.com/images/starfall-tactics-4.jpg",
+      "https://example.com/images/starfall-tactics-5.jpg"
+    ],
+    "category": "Strategy",
+    "subCategory": "Real-Time Tactics",
+    "platform": ["PC"],
+    "releaseDate": "2024-10-14",
+    "developer": "NovaForge Interactive",
+    "publisher": "Deep Orbit Publishing",
+    "description": "Starfall Tactics: Armada is a real-time strategy game where you design fleets, outmaneuver enemy commanders, and control key sectors of a dynamic galaxy map filled with hazards and secrets.",
+    "ratings": 4.4,
+    "downloadLink": "https://store.example.com/starfall-tactics-armada",
+    "price": "$24.99",
+    "multiplayer": true
+  },
+  {
+    "id": "32",
+    "title": "Echoes of Aether",
+    "coverPhoto": "https://example.com/images/echoes-of-aether-cover.jpg",
+    "images": [
+      "https://example.com/images/echoes-of-aether-1.jpg",
+      "https://example.com/images/echoes-of-aether-2.jpg",
+      "https://example.com/images/echoes-of-aether-3.jpg",
+      "https://example.com/images/echoes-of-aether-4.jpg",
+      "https://example.com/images/echoes-of-aether-5.jpg"
+    ],
+    "category": "RPG",
+    "subCategory": "Action RPG",
+    "platform": ["PC", "Console"],
+    "releaseDate": "2023-11-30",
+    "developer": "Silverwind Games",
+    "publisher": "Aetherline Studios",
+    "description": "Echoes of Aether is an action RPG set in a shattered world where time fractures in combat. Chain abilities across timelines, forge powerful relics, and uncover the truth behind the collapsing realms.",
+    "ratings": 4.8,
+    "downloadLink": "https://store.example.com/echoes-of-aether",
+    "price": "$29.99",
+    "multiplayer": false
+  },
+  {
+    "id": "33",
+    "title": "Shadow Circuit",
+    "coverPhoto": "https://example.com/images/shadow-circuit-cover.jpg",
+    "images": [
+      "https://example.com/images/shadow-circuit-1.jpg",
+      "https://example.com/images/shadow-circuit-2.jpg",
+      "https://example.com/images/shadow-circuit-3.jpg",
+      "https://example.com/images/shadow-circuit-4.jpg",
+      "https://example.com/images/shadow-circuit-5.jpg"
+    ],
+    "category": "Action",
+    "subCategory": "Roguelite",
+    "platform": ["PC", "Console"],
+    "releaseDate": "2025-01-20",
+    "developer": "CircuitBreaker Labs",
+    "publisher": "Neon Alley Publishing",
+    "description": "Shadow Circuit is a fast-paced roguelite where you hack through procedurally generated cyber-arenas. Upgrade your implants, adapt to new enemy patterns, and rewrite the rules of the simulation.",
+    "ratings": 4.3,
+    "downloadLink": "https://store.example.com/shadow-circuit",
+    "price": "$17.99",
+    "multiplayer": true
+  },
+  {
+    "id": "34",
+    "title": "Pixel Farm Tycoon",
+    "coverPhoto": "https://example.com/images/pixel-farm-tycoon-cover.jpg",
+    "images": [
+      "https://example.com/images/pixel-farm-tycoon-1.jpg",
+      "https://example.com/images/pixel-farm-tycoon-2.jpg",
+      "https://example.com/images/pixel-farm-tycoon-3.jpg",
+      "https://example.com/images/pixel-farm-tycoon-4.jpg",
+      "https://example.com/images/pixel-farm-tycoon-5.jpg"
+    ],
+    "category": "Simulation",
+    "subCategory": "Management",
+    "platform": ["PC", "Mobile"],
+    "releaseDate": "2024-05-10",
+    "developer": "CozyBit Studio",
+    "publisher": "Greenfield Interactive",
+    "description": "Pixel Farm Tycoon is a cozy management sim where you build a thriving farm from the ground up. Grow rare crops, breed animals, automate production lines, and trade with quirky neighboring towns.",
+    "ratings": 4.7,
+    "downloadLink": "https://store.example.com/pixel-farm-tycoon",
+    "price": "$14.99",
+    "multiplayer": false
   }
 ]
