@@ -46,7 +46,7 @@ const RootLayout = () => {
   }
   return (
     <section className="flex flex-col min-h-screen">
-      <header>
+      <header className="sticky top-0 z-30">
         <Navbar />
       </header>
       <main className="flex-1">

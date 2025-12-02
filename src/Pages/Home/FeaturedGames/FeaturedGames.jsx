@@ -1,8 +1,7 @@
 import { FaGamepad } from "react-icons/fa6";
-import useGameData from "../../Hooks/useGameData";
-import GameCard from "../GameCard/GameCard";
-import GameCardSkeleton from "../../Skeleton/GameCardSkeleton";
-
+import useGameData from "../../../Hooks/useGameData";
+import GameCardSkeleton from "../../../Skeleton/GameCardSkeleton";
+import GameCard from "../../../Components/GameCard/GameCard";
 
 const FeaturedGames = () => {
   const { games, loading } = useGameData("/popular.json");
