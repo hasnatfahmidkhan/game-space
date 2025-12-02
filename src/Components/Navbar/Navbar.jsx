@@ -27,6 +27,7 @@ const Navbar = () => {
   const publicLinks = [
     { to: "/", label: "Home" },
     { to: "/games", label: "Games" },
+    { to: "/contact", label: "Contact" },
   ];
 
   // Protected links (visible only to logged-in users)

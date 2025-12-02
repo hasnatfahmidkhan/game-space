@@ -11,7 +11,7 @@ const Games = () => {
   const [sortgame, setSortgame] = useState("none");
   const [filtertgame, setFiltertgame] = useState("none");
   const [search, setSearch] = useState("");
-  console.log(games);
+
   const handleSearch = (e) => {
     setSearchLoading(true);
     setSearch(e.target.value);

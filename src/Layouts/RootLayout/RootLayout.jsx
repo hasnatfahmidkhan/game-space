@@ -30,20 +30,20 @@ const RootLayout = () => {
   }, []);
 
   // every navigation show loader at the outlet
-  useEffect(() => {
-    setLoading(true);
+  // useEffect(() => {
+  //   setLoading(true);
 
-    // scroll to top whenever route change
-    window.scrollTo({ top: 0, behavior: "smooth" });
+  //   // scroll to top whenever route change
+  //   window.scrollTo({ top: 0, behavior: "smooth" });
 
-    setTimeout(() => {
-      setLoading(false);
-    }, 700);
-  }, [location.pathname]);
+  //   setTimeout(() => {
+  //     setLoading(false);
+  //   }, 700);
+  // }, [location.pathname]);
 
-  if (preload) {
-    return <Preloader />;
-  }
+  // if (preload) {
+  //   return <Preloader />;
+  // }
   return (
     <section className="flex flex-col min-h-screen">
       <header className="sticky top-0 z-30">

@@ -11,6 +11,7 @@ import Profile from "../Pages/Profile/Profile";
 import GameDetails from "../Pages/GameDetails/GameDetails";
 import MyWishList from "../Pages/MyWishList/MyWishList";
 import UpdateProfile from "../Pages/UpdateProfile/UpdateProfile";
+import Contact from "../Pages/Contact/Contact";
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
         element: <Games />,
       },
       {
+        path: "/contact",
+        element: <Contact />,
+      },
+      {
         path: "/profile",
         element: (
           <PrivateRoute>
@@ -40,7 +45,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/auth/forget-password",
-        element: <ForgetPassword />,
+        element: (
+          <PrivateRoute>
+            <ForgetPassword />
+          </PrivateRoute>
+        ),
       },
       {
         path: "/auth/register",

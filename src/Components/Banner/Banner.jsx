@@ -1,12 +1,7 @@
 import React from "react";
 import useGameData from "../../Hooks/useGameData";
 // import Swiper core and required modules
-import {
-  Navigation,
-  Pagination,
-  A11y,
-  Autoplay,
-} from "swiper/modules";
+import { Navigation, Pagination, A11y, Autoplay } from "swiper/modules";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -40,7 +35,7 @@ const Banner = () => {
       {images?.map((slide) => (
         <SwiperSlide className="">
           <img
-            className="max-h-[750px] w-full object-center object-cover rounded-sm"
+            className="h-[250px] md:h-[450px] lg:h-[600px] 2xl:h-[750px] w-full object-center object-cover rounded-sm"
             src={slide}
             alt=""
           />
