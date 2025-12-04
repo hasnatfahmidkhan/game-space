@@ -12,8 +12,7 @@ An engaging online library for discovering and supporting game developers.
 
 ## 📝 Overview 
 
-It allows users to browse various games, read details, explore developer info, and download or install games they find interesting.  
-The platform also includes secure authentication, user profile management, and interactive animations for a smooth user experience.
+Gamespace is a non-profit, single-page game library where users can explore a curated collection of games, view detailed information, and visit official download/install links.
 
 ---
 
@@ -35,13 +34,18 @@ The platform also includes secure authentication, user profile management, and i
 
 - 🔍 **Search & Filter**  
   Easily find games by name.
+  Filter game by category.
 
 - 📊 **Sort Games by Ratings**  
   Quickly view top-rated games in your library or the platform.
 
 - 📝 **Detailed Game Pages**  
-  View full game information including release date, genre, platform, description, and screenshots.
-
+  - Game title, cover, screenshots gallery  
+  - Category & subcategory  
+  - Platforms (PC / Mobile / Console)  
+  - Release date, price, ratings, description  
+  - New: **age rating**, **play time estimate**, **key features**, and for PC titles, **minimum & recommended system requirements**
+  
 - 💖 **Wishlist**  
   Add favorite games to a personal wishlist for quick access later.
 
