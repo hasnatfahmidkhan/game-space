@@ -896,12 +896,12 @@
   {
     "id": "30",
     "title": "Neon Drift Legends",
-    "coverPhoto": "https://i.ibb.co.com/21z0Jjnh/1.jpg",
+    "coverPhoto": "https://i.postimg.cc/rwgkKCBk/1.jpg",
     "images": [
-      "https://i.ibb.co.com/DHrbMJTx/2.jpg",
-      "https://i.ibb.co.com/B2hv4LZ9/3.jpg",
-      "https://i.ibb.co.com/hxS8Ys6w/4.jpg",
-      "https://i.ibb.co.com/SDMs0CPS/5.jpg"
+      "https://i.postimg.cc/L8vpnBcd/2.jpg",
+      "https://i.postimg.cc/CxJgzH3T/3.jpg",
+      "https://i.postimg.cc/y8nHkXMC/4.jpg",
+      "https://i.postimg.cc/pLkHpYwx/5.jpg"
     ],
     "category": "Racing",
     "subCategory": "Arcade",
@@ -928,12 +928,12 @@
   {
     "id": "31",
     "title": "Starfall Tactics: Armada",
-    "coverPhoto": "https://i.ibb.co.com/TqcYtvT5/1.jpg",
+    "coverPhoto": "https://i.postimg.cc/287pK78V/1.jpg",
     "images": [
-      "https://i.ibb.co.com/JRp5mQPx/2.jpg",
-      "https://i.ibb.co.com/kF60z73/3.jpg",
-      "https://i.ibb.co.com/9m7t0gvn/4.jpg",
-      "https://i.ibb.co.com/1Yj86ffW/5.jpg"
+      "https://i.postimg.cc/9FY3nYFD/2.jpg",
+      "https://i.postimg.cc/Ghx05xhB/3.jpg",
+      "https://i.postimg.cc/wTQKGQTy/4.jpg",
+      "https://i.postimg.cc/ZKxkMxKp/5.jpg"
     ],
     "category": "Strategy",
     "subCategory": "Real-Time Tactics",
@@ -960,12 +960,13 @@
   {
     "id": "32",
     "title": "Echoes of Aether",
-    "coverPhoto": "https://i.ibb.co.com/pBkHZP5j/1.jpg",
+    "coverPhoto": "https://i.postimg.cc/HWfsgzg2/1.jpg",
     "images": [
-      "https://i.ibb.co.com/yBBJdKH8/2.jpg",
-      "https://i.ibb.co.com/R4YWnZqM/3.jpg",
-      "https://i.ibb.co.com/4BvTtQL/4.jpg",
-      "https://i.ibb.co.com/KzjmMWHj/5.jpg"
+      "https://i.postimg.cc/HWfsgzg2/1.jpg",
+      "https://i.postimg.cc/BZdQ0p0p/2.jpg",
+      "https://i.postimg.cc/jqGdbcbv/3.jpg",
+      "https://i.postimg.cc/Y2JqHRHb/4.jpg",
+      "https://i.postimg.cc/fW6TNCN2/5.jpg"
     ],
     "category": "RPG",
     "subCategory": "Action RPG",
@@ -989,70 +990,38 @@
     "minSpecs": "CPU: Intel Core i5-4460 / AMD FX-8350, RAM: 8 GB, GPU: NVIDIA GTX 960 / AMD R9 280, Storage: 30 GB",
     "recommendedSpecs": "CPU: Intel Core i7-6700 / AMD Ryzen 5 2600, RAM: 16 GB, GPU: NVIDIA GTX 1070 / AMD RX Vega 56, Storage: 35 GB SSD"
   },
+
   {
     "id": "33",
-    "title": "Shadow Circuit",
-    "coverPhoto": "https://example.com/images/shadow-circuit-cover.jpg",
+    "title": "Grand Theft Auto VI",
+    "coverPhoto": "https://i.postimg.cc/5tZk0X2W/1.jpg",
     "images": [
-      "https://example.com/images/shadow-circuit-1.jpg",
-      "https://example.com/images/shadow-circuit-2.jpg",
-      "https://example.com/images/shadow-circuit-3.jpg",
-      "https://example.com/images/shadow-circuit-4.jpg",
-      "https://example.com/images/shadow-circuit-5.jpg"
+      "https://i.postimg.cc/5tZk0X2W/1.jpg",
+      "https://i.postimg.cc/SKwtsnxk/2.jpg",
+      "https://i.postimg.cc/nL6wzXh8/3.jpg",
+      "https://i.postimg.cc/mr06DPgR/4.jpg",
+      "https://i.postimg.cc/7LpQ65ZH/5.jpg"
     ],
-    "category": "Action",
-    "subCategory": "Roguelite",
-    "platform": ["PC", "Console"],
-    "releaseDate": "2025-01-20",
-    "developer": "CircuitBreaker Labs",
-    "publisher": "Neon Alley Publishing",
-    "description": "Shadow Circuit is a fast-paced roguelite where you hack through procedurally generated cyber-arenas. Upgrade your implants, adapt to new enemy patterns, and rewrite the rules of the simulation.",
-    "ratings": 4.3,
-    "downloadLink": "https://store.example.com/shadow-circuit",
-    "price": "$17.99",
+    "category": "Action-Adventure",
+    "subCategory": "Open World",
+    "platform": ["PS5", "Xbox Series X/S", "PC"],
+    "releaseDate": "2025-09-17",
+    "developer": "Rockstar Games",
+    "publisher": "Rockstar Games",
+    "description": "Grand Theft Auto VI brings players back to the neon-soaked streets of Leonida, inspired by modern-day Vice City. Featuring multiple protagonists, an evolving open world, and Rockstar’s most ambitious storytelling yet, GTA 6 delivers a dynamic crime saga set in a sprawling and immersive sandbox.",
+    "ratings": 4.9,
+    "downloadLink": "https://store.example.com/gta6",
+    "price": "$69.99",
     "multiplayer": true,
-    "ageRating": "Teen 13+",
-    "playTime": "20-60 hours",
+    "ageRating": "Mature 17+",
+    "playTime": "40-100 hours",
     "features": [
-      "Procedurally generated cyber arenas with escalating difficulty",
-      "Implant-based progression and build variety",
-      "High-speed combat with dodge and combo systems",
-      "Daily challenges and online leaderboards"
+      "Massive open world spanning Vice City and surrounding regions",
+      "Multiple playable characters with intersecting stories",
+      "Dynamic AI, weather systems, and real-time world evolution",
+      "GTA Online 2.0 with expanded multiplayer and live events"
     ],
-    "minSpecs": "CPU: Intel Core i3-4150 / AMD FX-4300, RAM: 8 GB, GPU: NVIDIA GTX 750 Ti / AMD R7 260X, Storage: 15 GB",
-    "recommendedSpecs": "CPU: Intel Core i5-6500 / AMD Ryzen 5 1400, RAM: 16 GB, GPU: NVIDIA GTX 1060 / AMD RX 580, Storage: 20 GB SSD"
-  },
-  {
-    "id": "34",
-    "title": "Pixel Farm Tycoon",
-    "coverPhoto": "https://example.com/images/pixel-farm-tycoon-cover.jpg",
-    "images": [
-      "https://example.com/images/pixel-farm-tycoon-1.jpg",
-      "https://example.com/images/pixel-farm-tycoon-2.jpg",
-      "https://example.com/images/pixel-farm-tycoon-3.jpg",
-      "https://example.com/images/pixel-farm-tycoon-4.jpg",
-      "https://example.com/images/pixel-farm-tycoon-5.jpg"
-    ],
-    "category": "Simulation",
-    "subCategory": "Management",
-    "platform": ["PC", "Mobile"],
-    "releaseDate": "2024-05-10",
-    "developer": "CozyBit Studio",
-    "publisher": "Greenfield Interactive",
-    "description": "Pixel Farm Tycoon is a cozy management sim where you build a thriving farm from the ground up. Grow rare crops, breed animals, automate production lines, and trade with quirky neighboring towns.",
-    "ratings": 4.7,
-    "downloadLink": "https://store.example.com/pixel-farm-tycoon",
-    "price": "$14.99",
-    "multiplayer": false,
-    "ageRating": "Everyone",
-    "playTime": "20-60 hours",
-    "features": [
-      "Build and customize your own pixel-art farm",
-      "Automate production lines to optimize profits",
-      "Breed animals and discover rare crop varieties",
-      "Relaxing gameplay loop with day-night cycles"
-    ],
-    "minSpecs": "CPU: Intel Core i3-2100 / AMD FX-4100, RAM: 4 GB, GPU: Intel HD 4000 / equivalent, Storage: 5 GB",
-    "recommendedSpecs": "CPU: Intel Core i5-6500 / AMD Ryzen 3 1200, RAM: 8 GB, GPU: NVIDIA GTX 950 / AMD R7 370, Storage: 5 GB SSD"
+    "minSpecs": "CPU: Intel Core i7-8700 / AMD Ryzen 5 3600, RAM: 16 GB, GPU: NVIDIA GTX 1660 Ti / AMD RX 5600 XT, Storage: 150 GB SSD",
+    "recommendedSpecs": "CPU: Intel Core i9-9900K / AMD Ryzen 7 5800X, RAM: 32 GB, GPU: NVIDIA RTX 3080 / AMD RX 6800 XT, Storage: 150 GB NVMe SSD"
   }
 ]
