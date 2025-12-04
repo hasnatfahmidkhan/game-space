@@ -62,7 +62,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/auth/update-profile",
-        element: <UpdateProfile />,
+        element: (
+          <PrivateRoute>
+            <UpdateProfile />
+          </PrivateRoute>
+        ),
       },
       {
         path: "/mywishlist",
