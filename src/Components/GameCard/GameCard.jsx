@@ -16,6 +16,7 @@ const GameCard = ({ game, aosDelay }) => {
             className="group-hover:scale-105 transition-transform duration-300 w-full h-full object-cover object-center"
             src={game.coverPhoto}
             alt={game.title}
+            loading="lazy"
           />
         </figure>
         <div className="card-body justify-between">

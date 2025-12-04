@@ -20,7 +20,15 @@
     "ratings": 4.4,
     "downloadLink": "https://ff.garena.com/",
     "price": "Free",
-    "multiplayer": true
+    "multiplayer": true,
+    "ageRating": "Teen 13+",
+    "playTime": "Session-based; 8-15 minutes per match",
+    "features": [
+      "Fast 50-player battle royale matches optimized for mobile",
+      "Unique characters with powerful special abilities",
+      "Regular seasonal events, skins, and ranked modes",
+      "Optimized to run smoothly on a wide range of devices"
+    ]
   },
   {
     "id": "2",
@@ -43,7 +51,17 @@
     "ratings": 4.6,
     "downloadLink": "https://www.callofduty.com/warzone",
     "price": "Free",
-    "multiplayer": true
+    "multiplayer": true,
+    "ageRating": "Mature 17+",
+    "playTime": "50-200+ hours",
+    "features": [
+      "150-player battle royale and Resurgence-style modes",
+      "Realistic gunplay with deep weapon customization",
+      "Massive urban map with vehicles and dynamic events",
+      "Cross-play support between PC and consoles"
+    ],
+    "minSpecs": "CPU: Intel Core i3-4340 / AMD FX-6300, RAM: 8 GB, GPU: NVIDIA GTX 670 / GTX 1650 or AMD Radeon HD 7950, Storage: 125 GB",
+    "recommendedSpecs": "CPU: Intel Core i5-2500K / Ryzen 5 1600X, RAM: 12 GB, GPU: NVIDIA GTX 970 / RTX 2060 or AMD RX 580, Storage: 175 GB SSD"
   },
   {
     "id": "4",
@@ -66,7 +84,17 @@
     "ratings": 4.4,
     "downloadLink": "https://www.epicgames.com/fortnite/",
     "price": "Free",
-    "multiplayer": true
+    "multiplayer": true,
+    "ageRating": "Teen 13+",
+    "playTime": "100-300+ hours",
+    "features": [
+      "100-player battle royale with fast-paced building mechanics",
+      "Creative mode for designing your own maps and experiences",
+      "Constant live events, collaborations, and seasonal content",
+      "Cross-platform progression and matchmaking"
+    ],
+    "minSpecs": "CPU: Core i3-3225 3.3 GHz, RAM: 4 GB, GPU: Intel HD 4000 or equivalent, Storage: 30 GB",
+    "recommendedSpecs": "CPU: Core i5-7300U 3.5 GHz or better, RAM: 8 GB, GPU: NVIDIA GTX 960 / RX 570 or better, Storage: 40 GB SSD"
   },
   {
     "id": "5",
@@ -89,7 +117,17 @@
     "ratings": 4.9,
     "downloadLink": "https://www.minecraft.net/",
     "price": "$26.95",
-    "multiplayer": true
+    "multiplayer": true,
+    "ageRating": "Everyone 10+",
+    "playTime": "50-500+ hours",
+    "features": [
+      "Limitless procedurally generated worlds to explore and build",
+      "Survival and Creative modes for different playstyles",
+      "Rich modding community and marketplace content",
+      "Cross-platform multiplayer on supported editions"
+    ],
+    "minSpecs": "CPU: Intel Core i3-3210 / AMD A8-7600, RAM: 4 GB, GPU: Intel HD 4000 / AMD Radeon R5, Storage: 4 GB",
+    "recommendedSpecs": "CPU: Intel Core i5-4690 / AMD A10-7800, RAM: 8 GB, GPU: NVIDIA GTX 960 / AMD R9 280, Storage: 4 GB SSD"
   },
   {
     "id": "6",
@@ -112,7 +150,17 @@
     "ratings": 4.8,
     "downloadLink": "https://genshin.hoyoverse.com/",
     "price": "Free",
-    "multiplayer": true
+    "multiplayer": true,
+    "ageRating": "Teen 13+",
+    "playTime": "60-200+ hours",
+    "features": [
+      "Massive open world with seamless exploration and climbing",
+      "Elemental combo combat using a party of distinct characters",
+      "Gacha-based character and weapon system with ongoing updates",
+      "Cross-save support across mobile, PC, and certain consoles"
+    ],
+    "minSpecs": "CPU: Intel Core i5 / equivalent, RAM: 8 GB, GPU: NVIDIA GTX 1030 or equivalent, Storage: 30 GB",
+    "recommendedSpecs": "CPU: Intel Core i7 / equivalent, RAM: 16 GB, GPU: NVIDIA GTX 1060 6 GB or better, Storage: 40 GB SSD"
   },
   {
     "id": "7",
@@ -135,7 +183,17 @@
     "ratings": 4.6,
     "downloadLink": "https://www.ea.com/games/apex-legends",
     "price": "Free",
-    "multiplayer": true
+    "multiplayer": true,
+    "ageRating": "Teen 13+",
+    "playTime": "80-300+ hours",
+    "features": [
+      "Legend-based gameplay with unique tactical, passive, and ultimate abilities",
+      "Ping system for quick, non-verbal communication",
+      "Fast, fluid movement with sliding and ziplining",
+      "Ranked mode and regular seasonal content drops"
+    ],
+    "minSpecs": "CPU: Intel Core i3-6300 / AMD FX-4350, RAM: 6 GB, GPU: NVIDIA GTX 640 / Radeon HD 7730, Storage: 56 GB",
+    "recommendedSpecs": "CPU: Intel Core i5-3570K / Ryzen 5, RAM: 8 GB, GPU: NVIDIA GTX 970 / Radeon R9 290, Storage: 56 GB SSD"
   },
   {
     "id": "8",
@@ -158,7 +216,17 @@
     "ratings": 4.9,
     "downloadLink": "https://thewitcher.com/en/witcher3",
     "price": "$39.99",
-    "multiplayer": false
+    "multiplayer": false,
+    "ageRating": "Mature 17+",
+    "playTime": "60-200+ hours",
+    "features": [
+      "Rich narrative with branching choices and consequences",
+      "Huge open world with cities, villages, and wilderness",
+      "Deep side quests that feel as meaningful as the main story",
+      "Two major expansions adding new regions and storylines"
+    ],
+    "minSpecs": "CPU: Intel Core i5-2500K / AMD Phenom II X4 940, RAM: 6 GB, GPU: NVIDIA GTX 660 / AMD HD 7870, Storage: 35 GB",
+    "recommendedSpecs": "CPU: Intel Core i7-3770 / AMD FX-8350, RAM: 8 GB, GPU: NVIDIA GTX 770 / AMD R9 290, Storage: 40 GB SSD"
   },
   {
     "id": "9",
@@ -181,7 +249,17 @@
     "ratings": 4.2,
     "downloadLink": "https://www.cyberpunk.net/",
     "price": "$49.99",
-    "multiplayer": false
+    "multiplayer": false,
+    "ageRating": "Mature 17+",
+    "playTime": "40-150+ hours",
+    "features": [
+      "First-person RPG with branching storylines and endings",
+      "Extensive character build customization and cyberware",
+      "Dense open world with vertical exploration and side gigs",
+      "Next-gen visual upgrades and performance improvements"
+    ],
+    "minSpecs": "CPU: Intel Core i5-3570K / AMD FX-8310, RAM: 8 GB, GPU: GTX 780 / Radeon RX 470, Storage: 70 GB SSD",
+    "recommendedSpecs": "CPU: Intel Core i7-4790 / Ryzen 3 3200G, RAM: 12 GB, GPU: GTX 1060 6 GB / GTX 1660 Super / Radeon RX 590, Storage: 70 GB SSD"
   },
   {
     "id": "10",
@@ -204,7 +282,17 @@
     "ratings": 4.7,
     "downloadLink": "https://www.leagueoflegends.com/",
     "price": "Free",
-    "multiplayer": true
+    "multiplayer": true,
+    "ageRating": "Teen 13+",
+    "playTime": "100-500+ hours",
+    "features": [
+      "Over 160 champions with unique kits and playstyles",
+      "Highly competitive ranked ladder and esports ecosystem",
+      "Regular balance patches and seasonal events",
+      "Strategic 5v5 gameplay with deep macro and micro decisions"
+    ],
+    "minSpecs": "CPU: 3 GHz processor, RAM: 4 GB, GPU: Intel HD 4000 or equivalent, Storage: 16 GB",
+    "recommendedSpecs": "CPU: 3 GHz dual-core or better, RAM: 8 GB, GPU: NVIDIA GTX 560 / AMD HD 6950 or better, Storage: 20 GB SSD"
   },
   {
     "id": "3",
@@ -227,7 +315,17 @@
     "ratings": 4.7,
     "downloadLink": "https://playvalorant.com/",
     "price": "Free",
-    "multiplayer": true
+    "multiplayer": true,
+    "ageRating": "Teen 13+",
+    "playTime": "80-300+ hours",
+    "features": [
+      "Tactical 5v5 shooter with precise gunplay",
+      "Agents with unique abilities for strategic depth",
+      "Ranked competitive ladder and anti-cheat system",
+      "Optimized to run on low- to mid-range PCs"
+    ],
+    "minSpecs": "CPU: Intel Core 2 Duo E8400, RAM: 4 GB, GPU: Intel HD 4000, Storage: 20 GB",
+    "recommendedSpecs": "CPU: Intel i3-4150, RAM: 8 GB, GPU: NVIDIA GTX 1050 Ti, Storage: 20 GB SSD"
   },
   {
     "id": "22",
@@ -250,7 +348,15 @@
     "ratings": 4.6,
     "downloadLink": "https://www.callofduty.com/mobile",
     "price": "Free",
-    "multiplayer": true
+    "multiplayer": true,
+    "ageRating": "Teen 13+",
+    "playTime": "30-200+ hours",
+    "features": [
+      "Classic Call of Duty maps and modes on mobile",
+      "Ranked multiplayer and 100-player battle royale",
+      "Customizable loadouts and scorestreaks",
+      "Controller support and regular seasonal content"
+    ]
   },
   {
     "id": "23",
@@ -273,7 +379,15 @@
     "ratings": 4.8,
     "downloadLink": "https://supercell.com/en/games/clashofclans/",
     "price": "Free",
-    "multiplayer": true
+    "multiplayer": true,
+    "ageRating": "Everyone 10+",
+    "playTime": "50-300+ hours",
+    "features": [
+      "Build and upgrade your village defenses and troops",
+      "Join clans and participate in epic Clan Wars",
+      "Unlock heroes and powerful spells over time",
+      "Deep long-term progression with regular updates"
+    ]
   },
   {
     "id": "24",
@@ -296,7 +410,15 @@
     "ratings": 4.5,
     "downloadLink": "https://m.mobilelegends.com/",
     "price": "Free",
-    "multiplayer": true
+    "multiplayer": true,
+    "ageRating": "Teen 13+",
+    "playTime": "50-400+ hours",
+    "features": [
+      "Classic 5v5 MOBA gameplay on mobile",
+      "Dozens of heroes with unique roles and abilities",
+      "Short, action-packed matches ideal for quick sessions",
+      "Ranked ladder and regional esports scene"
+    ]
   },
   {
     "id": "25",
@@ -319,7 +441,15 @@
     "ratings": 4.6,
     "downloadLink": "https://asphaltlegends.com/",
     "price": "Free",
-    "multiplayer": true
+    "multiplayer": true,
+    "ageRating": "Everyone 10+",
+    "playTime": "20-150+ hours",
+    "features": [
+      "Arcade-style racing with real licensed supercars",
+      "TouchDrive simplified controls or manual steering",
+      "Multiplayer races, events, and career mode",
+      "Console-like visuals optimized for mobile devices"
+    ]
   },
   {
     "id": "26",
@@ -342,7 +472,15 @@
     "ratings": 4.3,
     "downloadLink": "https://www.pubgmlite.com/",
     "price": "Free",
-    "multiplayer": true
+    "multiplayer": true,
+    "ageRating": "Teen 13+",
+    "playTime": "30-200+ hours",
+    "features": [
+      "Lighter, optimized version of PUBG Mobile for low-end phones",
+      "Smaller maps with faster-paced battles",
+      "Classic PUBG gunplay and survival mechanics",
+      "Frequent in-game events and seasonal rewards"
+    ]
   },
   {
     "id": "27",
@@ -364,7 +502,15 @@
     "ratings": 4.6,
     "downloadLink": "https://supercell.com/en/games/brawlstars/",
     "price": "Free",
-    "multiplayer": true
+    "multiplayer": true,
+    "ageRating": "Everyone 10+",
+    "playTime": "20-150+ hours",
+    "features": [
+      "Short, intense 3v3 and solo game modes",
+      "Wide variety of Brawlers with unlockable abilities",
+      "Rotating events and seasonal game modes",
+      "Easy to pick up, hard to master competitive gameplay"
+    ]
   },
   {
     "id": "28",
@@ -387,7 +533,15 @@
     "ratings": 4.5,
     "downloadLink": "https://sybogames.com/games/subway-surfers/",
     "price": "Free",
-    "multiplayer": false
+    "multiplayer": false,
+    "ageRating": "Everyone",
+    "playTime": "Endless; ideal for short casual sessions",
+    "features": [
+      "Simple one-touch endless running gameplay",
+      "Colorful worlds inspired by cities around the globe",
+      "Character and board customization with unlockable items",
+      "Frequent limited-time events and challenges"
+    ]
   },
   {
     "id": "29",
@@ -410,7 +564,15 @@
     "ratings": 4.7,
     "downloadLink": "https://supercell.com/en/games/clashroyale/",
     "price": "Free",
-    "multiplayer": true
+    "multiplayer": true,
+    "ageRating": "Everyone 10+",
+    "playTime": "40-200+ hours",
+    "features": [
+      "Real-time 1v1 and 2v2 tower defense battles",
+      "Deck-building with cards from the Clash universe",
+      "Global and local ranked ladders",
+      "Clans, donations, and cooperative challenges"
+    ]
   },
   {
     "id": "11",
@@ -433,7 +595,17 @@
     "ratings": 4.8,
     "downloadLink": "https://www.rockstargames.com/V/",
     "price": "$29.99",
-    "multiplayer": true
+    "multiplayer": true,
+    "ageRating": "Mature 17+",
+    "playTime": "40-300+ hours",
+    "features": [
+      "Massive open world with three playable protagonists",
+      "Heist missions with multiple approaches and outcomes",
+      "GTA Online with constant updates and new content",
+      "Highly detailed city, vehicles, and physics systems"
+    ],
+    "minSpecs": "CPU: Intel Core 2 Quad Q6600 / AMD Phenom 9850, RAM: 4 GB, GPU: NVIDIA 9800 GT 1 GB / AMD HD 4870, Storage: 72 GB",
+    "recommendedSpecs": "CPU: Intel Core i5-3470 / AMD FX-8350, RAM: 8 GB, GPU: NVIDIA GTX 660 2 GB / AMD HD 7870, Storage: 72 GB SSD"
   },
   {
     "id": "12",
@@ -456,7 +628,17 @@
     "ratings": 4.3,
     "downloadLink": "https://www.innersloth.com/games/among-us/",
     "price": "Free",
-    "multiplayer": true
+    "multiplayer": true,
+    "ageRating": "Everyone 10+",
+    "playTime": "10-100+ hours",
+    "features": [
+      "Online and local multiplayer for 4-15 players",
+      "Simple tasks mixed with sabotage and deception",
+      "Multiple maps and roles to keep games fresh",
+      "Cross-play support across mobile and PC"
+    ],
+    "minSpecs": "CPU: Intel Pentium 4, RAM: 1 GB, GPU: Any integrated graphics, Storage: 250 MB",
+    "recommendedSpecs": "CPU: Dual-core processor, RAM: 2 GB, GPU: Any modern integrated GPU, Storage: 250 MB"
   },
   {
     "id": "13",
@@ -479,7 +661,17 @@
     "ratings": 4.9,
     "downloadLink": "https://www.rockstargames.com/reddeadredemption2/",
     "price": "$59.99",
-    "multiplayer": true
+    "multiplayer": true,
+    "ageRating": "Mature 17+",
+    "playTime": "60-200+ hours",
+    "features": [
+      "Cinematic story with deep character development",
+      "Vast open world with realistic wildlife and physics",
+      "Honor system that reacts to your decisions",
+      "Red Dead Online with co-op and PvP content"
+    ],
+    "minSpecs": "CPU: Intel Core i5-2500K / AMD FX-6300, RAM: 8 GB, GPU: NVIDIA GTX 770 2 GB / Radeon R9 280, Storage: 150 GB",
+    "recommendedSpecs": "CPU: Intel Core i7-4770K / AMD Ryzen 5 1500X, RAM: 12 GB, GPU: NVIDIA GTX 1060 6 GB / Radeon RX 480 4 GB, Storage: 150 GB SSD"
   },
   {
     "id": "14",
@@ -502,14 +694,24 @@
     "ratings": 4.9,
     "downloadLink": "https://en.bandainamcoent.eu/elden-ring/elden-ring",
     "price": "$59.99",
-    "multiplayer": true
+    "multiplayer": true,
+    "ageRating": "Mature 17+",
+    "playTime": "60-150+ hours",
+    "features": [
+      "Open-world Souls-like gameplay with true freedom of exploration",
+      "Challenging combat with diverse weapons and magic",
+      "Legacy dungeons with classic FromSoftware level design",
+      "Co-op and PvP multiplayer invasions and summons"
+    ],
+    "minSpecs": "CPU: Intel Core i5-8400 / AMD Ryzen 3 3300X, RAM: 12 GB, GPU: NVIDIA GTX 1060 3 GB / AMD RX 580 4 GB, Storage: 60 GB",
+    "recommendedSpecs": "CPU: Intel Core i7-8700K / AMD Ryzen 5 3600X, RAM: 16 GB, GPU: NVIDIA GTX 1070 8 GB / AMD RX Vega 56 8 GB, Storage: 60 GB SSD"
   },
   {
     "id": "15",
     "title": "Hollow Knight",
     "coverPhoto": "https://i.ibb.co.com/bgTw7h8t/89.jpg",
     "images": [
-      "https://i.ibb.co.com/bgTw7h8t/89.jpg",
+      "https://i.ibb-Co.com/bgTw7h8t/89.jpg",
       "https://i.postimg.cc/fWdPjwT2/85.jpg",
       "https://i.postimg.cc/nhFwJBKq/84.jpg",
       "https://i.postimg.cc/1tqvHHSk/83.jpg",
@@ -525,7 +727,17 @@
     "ratings": 4.8,
     "downloadLink": "https://www.hollowknight.com/",
     "price": "$14.99",
-    "multiplayer": false
+    "multiplayer": false,
+    "ageRating": "Everyone 10+",
+    "playTime": "30-80 hours",
+    "features": [
+      "Hand-drawn art style with atmospheric soundtrack",
+      "Challenging 2D combat with precise controls",
+      "Large interconnected world full of secrets and bosses",
+      "Deep optional content and multiple endings"
+    ],
+    "minSpecs": "CPU: Intel Core 2 Duo E5200, RAM: 4 GB, GPU: GeForce 9800GTX+ (1 GB) or better, Storage: 9 GB",
+    "recommendedSpecs": "CPU: Intel Core i5, RAM: 8 GB, GPU: GeForce GTX 560 or better, Storage: 9 GB SSD"
   },
   {
     "id": "16",
@@ -541,7 +753,17 @@
     "ratings": 4.2,
     "downloadLink": "https://overwatch.blizzard.com/",
     "price": "Free",
-    "multiplayer": true
+    "multiplayer": true,
+    "ageRating": "Teen 13+",
+    "playTime": "50-300+ hours",
+    "features": [
+      "5v5 hero-based shooter with unique roles and abilities",
+      "Multiple modes including Competitive, Arcade, and Events",
+      "Cross-play and cross-progression across platforms",
+      "Regular hero additions, balance patches, and seasonal events"
+    ],
+    "minSpecs": "CPU: Intel Core i3 or AMD Phenom X3 8650, RAM: 6 GB, GPU: NVIDIA GTX 600 series / AMD Radeon HD 7000, Storage: 50 GB",
+    "recommendedSpecs": "CPU: Intel Core i7 / AMD Ryzen 5, RAM: 8 GB, GPU: NVIDIA GTX 1060 / AMD R9 380, Storage: 50 GB SSD"
   },
   {
     "id": "17",
@@ -564,7 +786,15 @@
     "ratings": 4.9,
     "downloadLink": "https://www.zelda.com/breath-of-the-wild/",
     "price": "$59.99",
-    "multiplayer": false
+    "multiplayer": false,
+    "ageRating": "Everyone 10+",
+    "playTime": "60-150+ hours",
+    "features": [
+      "Physics-driven open world with true player freedom",
+      "Shrines, dungeons, and environmental puzzles",
+      "Survival elements like cooking and weather effects",
+      "Expansions adding story, items, and challenges"
+    ]
   },
   {
     "id": "18",
@@ -587,7 +817,15 @@
     "ratings": 4.9,
     "downloadLink": "https://www.playstation.com/en-us/games/god-of-war-ragnarok/",
     "price": "$69.99",
-    "multiplayer": false
+    "multiplayer": false,
+    "ageRating": "Mature 17+",
+    "playTime": "30-70 hours",
+    "features": [
+      "Cinematic single-player story with emotional depth",
+      "Brutal, weighty combat with customizable builds",
+      "Multiple realms to explore with puzzles and secrets",
+      "Accessibility options and performance/quality graphics modes"
+    ]
   },
   {
     "id": "19",
@@ -610,7 +848,17 @@
     "ratings": 4.7,
     "downloadLink": "https://www.rocketleague.com/",
     "price": "Free",
-    "multiplayer": true
+    "multiplayer": true,
+    "ageRating": "Everyone",
+    "playTime": "40-300+ hours",
+    "features": [
+      "High-speed 3v3, 2v2, and 1v1 car soccer matches",
+      "Skill-based aerials, dribbles, and advanced mechanics",
+      "Ranked competitive play and tournaments",
+      "Cross-play and cosmetic customization"
+    ],
+    "minSpecs": "CPU: 2.5 GHz Dual-core, RAM: 4 GB, GPU: NVIDIA GTX 260 / Radeon HD 4850, Storage: 20 GB",
+    "recommendedSpecs": "CPU: 3.0 GHz Quad-core, RAM: 8 GB, GPU: NVIDIA GTX 660 / Radeon HD 7950 or better, Storage: 20 GB SSD"
   },
   {
     "id": "1",
@@ -633,18 +881,27 @@
     "ratings": 4.5,
     "downloadLink": "https://www.pubgmobile.com/en-US/home.shtml",
     "price": "Free",
-    "multiplayer": true
+    "multiplayer": true,
+    "ageRating": "Mature 17+",
+    "playTime": "60-300+ hours",
+    "features": [
+      "Realistic ballistics and gunplay in large-scale battles",
+      "Multiple maps with different terrains and strategies",
+      "Solo, Duo, and Squad modes",
+      "Ranked play and seasonal battle passes"
+    ],
+    "minSpecs": "CPU: Intel Core i5-4430 / AMD FX-6300, RAM: 8 GB, GPU: NVIDIA GTX 960 2 GB / AMD R7 370 2 GB, Storage: 40 GB",
+    "recommendedSpecs": "CPU: Intel Core i5-6600K / AMD Ryzen 5 1600, RAM: 16 GB, GPU: NVIDIA GTX 1060 3 GB / AMD RX 580 4 GB, Storage: 50 GB SSD"
   },
   {
     "id": "30",
     "title": "Neon Drift Legends",
-    "coverPhoto": "https://example.com/images/neon-drift-legends-cover.jpg",
+    "coverPhoto": "https://i.ibb.co.com/21z0Jjnh/1.jpg",
     "images": [
-      "https://example.com/images/neon-drift-legends-1.jpg",
-      "https://example.com/images/neon-drift-legends-2.jpg",
-      "https://example.com/images/neon-drift-legends-3.jpg",
-      "https://example.com/images/neon-drift-legends-4.jpg",
-      "https://example.com/images/neon-drift-legends-5.jpg"
+      "https://i.ibb.co.com/DHrbMJTx/2.jpg",
+      "https://i.ibb.co.com/B2hv4LZ9/3.jpg",
+      "https://i.ibb.co.com/hxS8Ys6w/4.jpg",
+      "https://i.ibb.co.com/SDMs0CPS/5.jpg"
     ],
     "category": "Racing",
     "subCategory": "Arcade",
@@ -656,18 +913,27 @@
     "ratings": 4.6,
     "downloadLink": "https://store.example.com/neon-drift-legends",
     "price": "$19.99",
-    "multiplayer": true
+    "multiplayer": true,
+    "ageRating": "Everyone 10+",
+    "playTime": "20-80 hours",
+    "features": [
+      "Arcade drifting with combo-based scoring",
+      "Stylized neon cityscapes and synthwave soundtrack",
+      "Online leaderboards and competitive events",
+      "Car customization with visual and performance upgrades"
+    ],
+    "minSpecs": "CPU: Intel Core i3-4130 / AMD FX-4100, RAM: 8 GB, GPU: NVIDIA GTX 750 Ti / AMD R7 360, Storage: 20 GB",
+    "recommendedSpecs": "CPU: Intel Core i5-4570 / AMD Ryzen 5 1400, RAM: 16 GB, GPU: NVIDIA GTX 1060 / AMD RX 580, Storage: 25 GB SSD"
   },
   {
     "id": "31",
     "title": "Starfall Tactics: Armada",
-    "coverPhoto": "https://example.com/images/starfall-tactics-cover.jpg",
+    "coverPhoto": "https://i.ibb.co.com/TqcYtvT5/1.jpg",
     "images": [
-      "https://example.com/images/starfall-tactics-1.jpg",
-      "https://example.com/images/starfall-tactics-2.jpg",
-      "https://example.com/images/starfall-tactics-3.jpg",
-      "https://example.com/images/starfall-tactics-4.jpg",
-      "https://example.com/images/starfall-tactics-5.jpg"
+      "https://i.ibb.co.com/JRp5mQPx/2.jpg",
+      "https://i.ibb.co.com/kF60z73/3.jpg",
+      "https://i.ibb.co.com/9m7t0gvn/4.jpg",
+      "https://i.ibb.co.com/1Yj86ffW/5.jpg"
     ],
     "category": "Strategy",
     "subCategory": "Real-Time Tactics",
@@ -679,18 +945,27 @@
     "ratings": 4.4,
     "downloadLink": "https://store.example.com/starfall-tactics-armada",
     "price": "$24.99",
-    "multiplayer": true
+    "multiplayer": true,
+    "ageRating": "Teen 13+",
+    "playTime": "30-120 hours",
+    "features": [
+      "Real-time tactical fleet battles in space",
+      "Ship design with modular components and loadouts",
+      "Dynamic galaxy map with shifting control and events",
+      "Online skirmishes and ranked multiplayer modes"
+    ],
+    "minSpecs": "CPU: Intel Core i3-6100 / AMD FX-6300, RAM: 8 GB, GPU: NVIDIA GTX 750 / AMD R7 260X, Storage: 25 GB",
+    "recommendedSpecs": "CPU: Intel Core i5-8400 / AMD Ryzen 5 2600, RAM: 16 GB, GPU: NVIDIA GTX 1060 / AMD RX 580, Storage: 30 GB SSD"
   },
   {
     "id": "32",
     "title": "Echoes of Aether",
-    "coverPhoto": "https://example.com/images/echoes-of-aether-cover.jpg",
+    "coverPhoto": "https://i.ibb.co.com/pBkHZP5j/1.jpg",
     "images": [
-      "https://example.com/images/echoes-of-aether-1.jpg",
-      "https://example.com/images/echoes-of-aether-2.jpg",
-      "https://example.com/images/echoes-of-aether-3.jpg",
-      "https://example.com/images/echoes-of-aether-4.jpg",
-      "https://example.com/images/echoes-of-aether-5.jpg"
+      "https://i.ibb.co.com/yBBJdKH8/2.jpg",
+      "https://i.ibb.co.com/R4YWnZqM/3.jpg",
+      "https://i.ibb.co.com/4BvTtQL/4.jpg",
+      "https://i.ibb.co.com/KzjmMWHj/5.jpg"
     ],
     "category": "RPG",
     "subCategory": "Action RPG",
@@ -702,7 +977,17 @@
     "ratings": 4.8,
     "downloadLink": "https://store.example.com/echoes-of-aether",
     "price": "$29.99",
-    "multiplayer": false
+    "multiplayer": false,
+    "ageRating": "Teen 13+",
+    "playTime": "25-70 hours",
+    "features": [
+      "Fast-paced action combat with time-fracture mechanics",
+      "Character builds focused on relics and temporal abilities",
+      "Multiple regions with unique enemies and secrets",
+      "Branching narrative with multiple endings"
+    ],
+    "minSpecs": "CPU: Intel Core i5-4460 / AMD FX-8350, RAM: 8 GB, GPU: NVIDIA GTX 960 / AMD R9 280, Storage: 30 GB",
+    "recommendedSpecs": "CPU: Intel Core i7-6700 / AMD Ryzen 5 2600, RAM: 16 GB, GPU: NVIDIA GTX 1070 / AMD RX Vega 56, Storage: 35 GB SSD"
   },
   {
     "id": "33",
@@ -725,7 +1010,17 @@
     "ratings": 4.3,
     "downloadLink": "https://store.example.com/shadow-circuit",
     "price": "$17.99",
-    "multiplayer": true
+    "multiplayer": true,
+    "ageRating": "Teen 13+",
+    "playTime": "20-60 hours",
+    "features": [
+      "Procedurally generated cyber arenas with escalating difficulty",
+      "Implant-based progression and build variety",
+      "High-speed combat with dodge and combo systems",
+      "Daily challenges and online leaderboards"
+    ],
+    "minSpecs": "CPU: Intel Core i3-4150 / AMD FX-4300, RAM: 8 GB, GPU: NVIDIA GTX 750 Ti / AMD R7 260X, Storage: 15 GB",
+    "recommendedSpecs": "CPU: Intel Core i5-6500 / AMD Ryzen 5 1400, RAM: 16 GB, GPU: NVIDIA GTX 1060 / AMD RX 580, Storage: 20 GB SSD"
   },
   {
     "id": "34",
@@ -748,6 +1043,16 @@
     "ratings": 4.7,
     "downloadLink": "https://store.example.com/pixel-farm-tycoon",
     "price": "$14.99",
-    "multiplayer": false
+    "multiplayer": false,
+    "ageRating": "Everyone",
+    "playTime": "20-60 hours",
+    "features": [
+      "Build and customize your own pixel-art farm",
+      "Automate production lines to optimize profits",
+      "Breed animals and discover rare crop varieties",
+      "Relaxing gameplay loop with day-night cycles"
+    ],
+    "minSpecs": "CPU: Intel Core i3-2100 / AMD FX-4100, RAM: 4 GB, GPU: Intel HD 4000 / equivalent, Storage: 5 GB",
+    "recommendedSpecs": "CPU: Intel Core i5-6500 / AMD Ryzen 3 1200, RAM: 8 GB, GPU: NVIDIA GTX 950 / AMD R7 370, Storage: 5 GB SSD"
   }
 ]

@@ -2,13 +2,12 @@
   {
     "id": "30",
     "title": "Neon Drift Legends",
-    "coverPhoto": "https://example.com/images/neon-drift-legends-cover.jpg",
+    "coverPhoto": "https://i.ibb.co.com/21z0Jjnh/1.jpg",
     "images": [
-      "https://example.com/images/neon-drift-legends-1.jpg",
-      "https://example.com/images/neon-drift-legends-2.jpg",
-      "https://example.com/images/neon-drift-legends-3.jpg",
-      "https://example.com/images/neon-drift-legends-4.jpg",
-      "https://example.com/images/neon-drift-legends-5.jpg"
+      "https://i.ibb.co.com/DHrbMJTx/2.jpg",
+      "https://i.ibb.co.com/B2hv4LZ9/3.jpg",
+      "https://i.ibb.co.com/hxS8Ys6w/4.jpg",
+      "https://i.ibb.co.com/SDMs0CPS/5.jpg"
     ],
     "category": "Racing",
     "subCategory": "Arcade",
@@ -20,18 +19,27 @@
     "ratings": 4.6,
     "downloadLink": "https://store.example.com/neon-drift-legends",
     "price": "$19.99",
-    "multiplayer": true
+    "multiplayer": true,
+    "ageRating": "Everyone 10+",
+    "playTime": "20-80 hours",
+    "features": [
+      "Arcade drifting with combo-based scoring",
+      "Stylized neon cityscapes and synthwave soundtrack",
+      "Online leaderboards and competitive events",
+      "Car customization with visual and performance upgrades"
+    ],
+    "minSpecs": "CPU: Intel Core i3-4130 / AMD FX-4100, RAM: 8 GB, GPU: NVIDIA GTX 750 Ti / AMD R7 360, Storage: 20 GB",
+    "recommendedSpecs": "CPU: Intel Core i5-4570 / AMD Ryzen 5 1400, RAM: 16 GB, GPU: NVIDIA GTX 1060 / AMD RX 580, Storage: 25 GB SSD"
   },
   {
     "id": "31",
     "title": "Starfall Tactics: Armada",
-    "coverPhoto": "https://example.com/images/starfall-tactics-cover.jpg",
+    "coverPhoto": "https://i.ibb.co.com/TqcYtvT5/1.jpg",
     "images": [
-      "https://example.com/images/starfall-tactics-1.jpg",
-      "https://example.com/images/starfall-tactics-2.jpg",
-      "https://example.com/images/starfall-tactics-3.jpg",
-      "https://example.com/images/starfall-tactics-4.jpg",
-      "https://example.com/images/starfall-tactics-5.jpg"
+      "https://i.ibb.co.com/JRp5mQPx/2.jpg",
+      "https://i.ibb.co.com/kF60z73/3.jpg",
+      "https://i.ibb.co.com/9m7t0gvn/4.jpg",
+      "https://i.ibb.co.com/1Yj86ffW/5.jpg"
     ],
     "category": "Strategy",
     "subCategory": "Real-Time Tactics",
@@ -43,18 +51,27 @@
     "ratings": 4.4,
     "downloadLink": "https://store.example.com/starfall-tactics-armada",
     "price": "$24.99",
-    "multiplayer": true
+    "multiplayer": true,
+    "ageRating": "Teen 13+",
+    "playTime": "30-120 hours",
+    "features": [
+      "Real-time tactical fleet battles in space",
+      "Ship design with modular components and loadouts",
+      "Dynamic galaxy map with shifting control and events",
+      "Online skirmishes and ranked multiplayer modes"
+    ],
+    "minSpecs": "CPU: Intel Core i3-6100 / AMD FX-6300, RAM: 8 GB, GPU: NVIDIA GTX 750 / AMD R7 260X, Storage: 25 GB",
+    "recommendedSpecs": "CPU: Intel Core i5-8400 / AMD Ryzen 5 2600, RAM: 16 GB, GPU: NVIDIA GTX 1060 / AMD RX 580, Storage: 30 GB SSD"
   },
   {
     "id": "32",
     "title": "Echoes of Aether",
-    "coverPhoto": "https://example.com/images/echoes-of-aether-cover.jpg",
+    "coverPhoto": "https://i.ibb.co.com/pBkHZP5j/1.jpg",
     "images": [
-      "https://example.com/images/echoes-of-aether-1.jpg",
-      "https://example.com/images/echoes-of-aether-2.jpg",
-      "https://example.com/images/echoes-of-aether-3.jpg",
-      "https://example.com/images/echoes-of-aether-4.jpg",
-      "https://example.com/images/echoes-of-aether-5.jpg"
+      "https://i.ibb.co.com/yBBJdKH8/2.jpg",
+      "https://i.ibb.co.com/R4YWnZqM/3.jpg",
+      "https://i.ibb.co.com/4BvTtQL/4.jpg",
+      "https://i.ibb.co.com/KzjmMWHj/5.jpg"
     ],
     "category": "RPG",
     "subCategory": "Action RPG",
@@ -89,6 +106,16 @@
     "ratings": 4.3,
     "downloadLink": "https://store.example.com/shadow-circuit",
     "price": "$17.99",
-    "multiplayer": true
+    "multiplayer": true,
+    "ageRating": "Teen 13+",
+    "playTime": "20-60 hours",
+    "features": [
+      "Procedurally generated cyber arenas with escalating difficulty",
+      "Implant-based progression and build variety",
+      "High-speed combat with dodge and combo systems",
+      "Daily challenges and online leaderboards"
+    ],
+    "minSpecs": "CPU: Intel Core i3-4150 / AMD FX-4300, RAM: 8 GB, GPU: NVIDIA GTX 750 Ti / AMD R7 260X, Storage: 15 GB",
+    "recommendedSpecs": "CPU: Intel Core i5-6500 / AMD Ryzen 5 1400, RAM: 16 GB, GPU: NVIDIA GTX 1060 / AMD RX 580, Storage: 20 GB SSD"
   }
 ]
