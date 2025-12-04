@@ -53,7 +53,7 @@ const Games = () => {
         </p>
       </div>
 
-      <div className="flex items-center justify-between">
+      <div className="flex flex-wrap items-center justify-between gap-y-3 lg:gap-y-0">
         <h2 className="text-3xl font-semibold text-white/80">
           All Games{" "}
           <span className="text-xs font-normal tracking-wide">
@@ -61,36 +61,38 @@ const Games = () => {
           </span>
         </h2>
 
-        <div className="flex items-center gap-5">
-          {/* sort  */}
-          <div>
-            <select
-              value={filtertgame}
-              onChange={(e) => setFiltertgame(e.target.value)}
-              className="select focus-within:border-sky-500 w-fit focus-within:outline-none"
-            >
-              <option value="none" disabled>
-                Filter game
-              </option>
-              <option value="All">All</option>
-              <option value="PC">Pc</option>
-              <option value="Mobile">Mobile</option>
-              <option value="Console">Console</option>
-            </select>
-          </div>
-          {/* sort  */}
-          <div>
-            <select
-              value={sortgame}
-              onChange={(e) => setSortgame(e.target.value)}
-              className="select focus-within:border-sky-500 w-fit focus-within:outline-none"
-            >
-              <option value="none" disabled>
-                Sort by ratings
-              </option>
-              <option value="rating-asc">Low - High</option>
-              <option value="rating-dsc">High - Low</option>
-            </select>
+        <div className="flex flex-col sm:flex-row gap-5">
+          <div className="flex items-center gap-5">
+            {/* Filter  */}
+            <div>
+              <select
+                value={filtertgame}
+                onChange={(e) => setFiltertgame(e.target.value)}
+                className="select focus-within:border-sky-500 w-fit focus-within:outline-none"
+              >
+                <option value="none" disabled>
+                  Filter game
+                </option>
+                <option value="All">All</option>
+                <option value="PC">Pc</option>
+                <option value="Mobile">Mobile</option>
+                <option value="Console">Console</option>
+              </select>
+            </div>
+            {/* sort  */}
+            <div>
+              <select
+                value={sortgame}
+                onChange={(e) => setSortgame(e.target.value)}
+                className="select focus-within:border-sky-500 w-fit focus-within:outline-none"
+              >
+                <option value="none" disabled>
+                  Sort by ratings
+                </option>
+                <option value="rating-asc">Low - High</option>
+                <option value="rating-dsc">High - Low</option>
+              </select>
+            </div>
           </div>
 
           {/* search  */}
