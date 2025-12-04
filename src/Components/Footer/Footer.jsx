@@ -24,7 +24,10 @@ const Footer = () => {
             <MyLink to={"/games"}>Games</MyLink>
           </li>
           <li>
-            <MyLink to={"/mywishlist"}>My Wishlists</MyLink>
+            <MyLink to={"/about"}>Aboout</MyLink>
+          </li>
+          <li>
+            <MyLink to={"/contact"}>Contact</MyLink>
           </li>
         </ul>
 
