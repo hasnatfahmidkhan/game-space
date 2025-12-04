@@ -12,6 +12,7 @@ import GameDetails from "../Pages/GameDetails/GameDetails";
 import MyWishList from "../Pages/MyWishList/MyWishList";
 import UpdateProfile from "../Pages/UpdateProfile/UpdateProfile";
 import Contact from "../Pages/Contact/Contact";
+import About from "../Pages/About/About";
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact />,
+      },
+      {
+        path: "/about",
+        element: <About />,
       },
       {
         path: "/profile",

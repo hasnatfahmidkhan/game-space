@@ -239,8 +239,8 @@ const Contact = () => {
         </div>
       </div>
       {/* Faq  */}
-      <div className="w-full max-w-2xl mt-20 mx-auto px-4">
-        <div className="bg-base-800 rounded-lg border border-white/70 hover:border-info p-8">
+      <div className="w-full max-w-2xl mt-20 mx-auto">
+        <div className="bg-base-800 rounded-lg border border-white/70 hover:border-info p-4 md:p-8">
           <h2 className="text-3xl font-bold text-info mb-8 text-center">
             Frequently Asked Questions
           </h2>
